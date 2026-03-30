@@ -117,7 +117,9 @@ export default function SiteHeader() {
                 className="button button-primary button-compact nav-cta hidden min-[980px]:inline-flex min-[980px]:whitespace-nowrap"
                 href="/contact"
               >
-                Contact Us &rarr;
+                <span aria-hidden="true" className="nav-cta-fill" />
+                <span className="nav-cta-label">Contact Now</span>
+                <span aria-hidden="true" className="nav-cta-icon">&rarr;</span>
               </Link>
 
               <button
@@ -149,7 +151,7 @@ export default function SiteHeader() {
                       aria-current={isActive ? "page" : undefined}
                       className={cn(
                         "rounded-2xl px-4 py-3 text-base font-semibold text-[var(--ink-700)] transition-colors",
-                        isActive && "bg-[rgba(30,157,134,0.12)] text-[var(--teal-500)]"
+                        isActive && "bg-[rgba(47,107,69,0.12)] text-[var(--teal-500)]"
                       )}
                     >
                       {item.label}
@@ -203,8 +205,10 @@ export default function SiteHeader() {
                 );
               })}
 
-              <Link className="button button-primary mt-2" href="/contact">
-                Contact Us &rarr;
+              <Link className="button button-primary nav-cta mt-2" href="/contact">
+                <span aria-hidden="true" className="nav-cta-fill" />
+                <span className="nav-cta-label">Contact Now</span>
+                <span aria-hidden="true" className="nav-cta-icon">&rarr;</span>
               </Link>
             </div>
           </div>
@@ -213,3 +217,4 @@ export default function SiteHeader() {
     </>
   );
 }
+

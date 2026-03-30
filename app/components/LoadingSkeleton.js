@@ -26,7 +26,7 @@ export default function LoadingSkeleton({
         marginBottom, 
         position: 'relative',
         overflow: 'hidden',
-        backgroundColor: 'rgba(46, 167, 105, 0.05)',
+        backgroundColor: 'rgba(63, 123, 79, 0.05)',
         ...lineStyle 
       }} 
     >
@@ -53,7 +53,7 @@ export default function LoadingSkeleton({
   const renderList = () => (
     <div className="skeleton-list">
       {Array.from({ length: items }).map((_, i) => (
-        <div key={i} style={{ display: 'flex', gap: '20px', alignItems: 'center', padding: '20px 0', borderBottom: '1px solid rgba(46, 167, 105, 0.1)' }}>
+        <div key={i} style={{ display: 'flex', gap: '20px', alignItems: 'center', padding: '20px 0', borderBottom: '1px solid rgba(63, 123, 79, 0.1)' }}>
           <ShimmerLine width="64px" height="64px" borderRadius="50%" marginBottom="0" />
           <div style={{ flex: 1 }}>
             <ShimmerLine width="30%" height="14px" marginBottom="8px" />
@@ -120,7 +120,7 @@ export default function LoadingSkeleton({
           background: linear-gradient(
             90deg, 
             transparent, 
-            rgba(46, 167, 105, 0.08), 
+            rgba(63, 123, 79, 0.08), 
             transparent
           );
           animation: shimmer 1.5s infinite linear;
@@ -133,3 +133,4 @@ export default function LoadingSkeleton({
     </div>
   );
 }
+

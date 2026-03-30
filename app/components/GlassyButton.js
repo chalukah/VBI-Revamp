@@ -45,7 +45,7 @@ export default function GlassyButton({ href, iconName, label, active, onClick })
     borderRight: "1px solid rgba(0, 0, 0, 0.05)",
     borderBottom: "1px solid rgba(0, 0, 0, 0.15)",
     boxShadow: active 
-      ? "0 4px 12px rgba(30, 157, 134, 0.3), inset 0 2px 4px rgba(0,0,0,0.1)"
+      ? "0 4px 12px rgba(47, 107, 69, 0.3), inset 0 2px 4px rgba(0,0,0,0.1)"
       : `
         0 10px 20px rgba(0, 0, 0, 0.12), 
         0 4px 6px rgba(0, 0, 0, 0.08),
@@ -89,7 +89,7 @@ export default function GlassyButton({ href, iconName, label, active, onClick })
           <div style={{
             position: "absolute",
             inset: 0,
-            background: "radial-gradient(circle at center, rgba(30, 157, 134, 0.15) 0%, transparent 70%)"
+            background: "radial-gradient(circle at center, rgba(47, 107, 69, 0.15) 0%, transparent 70%)"
           }} />
         )}
 
@@ -151,3 +151,4 @@ export default function GlassyButton({ href, iconName, label, active, onClick })
     </Link>
   );
 }
+

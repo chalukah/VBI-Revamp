@@ -9,12 +9,12 @@ import { useRef, useEffect, useState } from "react";
  */
 export default function ConicGradientBorder({
   children,
-  borderColor = "#1e9d86",
+  borderColor = "#2f6b45",
   animationDuration = 4,
   blurRadius = 2,
   borderRadius = 50,
   backgroundColor = "rgba(255, 255, 255, 0.06)",
-  overlayBorderColor = "rgba(30, 157, 134, 0.25)",
+  overlayBorderColor = "rgba(47, 107, 69, 0.25)",
   overlayMargin = 1.5,
   className = "",
   style = {},
@@ -85,3 +85,4 @@ export default function ConicGradientBorder({
     </div>
   );
 }
+

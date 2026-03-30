@@ -171,14 +171,14 @@ export default function NavButton({ href, iconName, label, active, onClick }) {
             inset: strokeWidth,
             borderRadius: "50%",
             background: active 
-              ? "linear-gradient(180deg, #1e9d86, #0f4e43)"
+              ? "linear-gradient(180deg, #2f6b45, #0f4e43)"
               : hovered 
-                ? "linear-gradient(180deg, #2ea769, #1c1c1c)" 
+                ? "linear-gradient(180deg, #3f7b4f, #1c1c1c)" 
                 : "linear-gradient(180deg, #222, #000)",
             boxShadow: `
               inset 0 1px 2px rgba(255,255,255,0.1), 
               inset 0 -3px 6px rgba(0,0,0,0.6),
-              ${active || hovered ? '0 0 15px rgba(30, 157, 134, 0.3)' : 'none'}
+              ${active || hovered ? '0 0 15px rgba(47, 107, 69, 0.3)' : 'none'}
             `,
             transition: 'all 0.4s cubic-bezier(0.23, 1, 0.32, 1)',
             zIndex: 1,
@@ -257,3 +257,4 @@ export default function NavButton({ href, iconName, label, active, onClick }) {
     </Link>
   );
 }
+
