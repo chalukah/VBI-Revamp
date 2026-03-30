@@ -1,0 +1,2847 @@
+[
+  {
+    "start": 0.08,
+    "duration": 3.92,
+    "text": "My name is David Andre and this is the"
+  },
+  {
+    "start": 2.0,
+    "duration": 4.16,
+    "text": "clearest explanation of auto research"
+  },
+  {
+    "start": 4.0,
+    "duration": 4.08,
+    "text": "you're going to find on the internet. So"
+  },
+  {
+    "start": 6.16,
+    "duration": 4.32,
+    "text": "what is auto research? It's an open-"
+  },
+  {
+    "start": 8.08,
+    "duration": 4.96,
+    "text": "source project by Andre Karpathy that"
+  },
+  {
+    "start": 10.48,
+    "duration": 4.72,
+    "text": "lets AI improve itself autonomously. You"
+  },
+  {
+    "start": 13.04,
+    "duration": 3.92,
+    "text": "have an AI agent that runs experiments"
+  },
+  {
+    "start": 15.2,
+    "duration": 3.68,
+    "text": "automatically and it keeps what works"
+  },
+  {
+    "start": 16.96,
+    "duration": 3.52,
+    "text": "and throws away everything that doesn't."
+  },
+  {
+    "start": 18.88,
+    "duration": 3.92,
+    "text": "So in this video I'm going to explain"
+  },
+  {
+    "start": 20.48,
+    "duration": 3.92,
+    "text": "how auto research actually works, how"
+  },
+  {
+    "start": 22.8,
+    "duration": 2.88,
+    "text": "you can use it in your own life and"
+  },
+  {
+    "start": 24.4,
+    "duration": 3.52,
+    "text": "business because there are a lot of"
+  },
+  {
+    "start": 25.68,
+    "duration": 4.32,
+    "text": "implications and how you can build your"
+  },
+  {
+    "start": 27.92,
+    "duration": 3.519,
+    "text": "very first auto research loop. So, if"
+  },
+  {
+    "start": 30.0,
+    "duration": 3.6,
+    "text": "you really want to be on the cutting"
+  },
+  {
+    "start": 31.439,
+    "duration": 4.481,
+    "text": "edge of AI, make sure to watch until the"
+  },
+  {
+    "start": 33.6,
+    "duration": 4.08,
+    "text": "end. First off, who is Andre Kapathy?"
+  },
+  {
+    "start": 35.92,
+    "duration": 3.6,
+    "text": "He's one of the most legendary AI"
+  },
+  {
+    "start": 37.68,
+    "duration": 4.0,
+    "text": "researchers of all time. He's one of the"
+  },
+  {
+    "start": 39.52,
+    "duration": 4.719,
+    "text": "OpenAI co-founders, and he's the main"
+  },
+  {
+    "start": 41.68,
+    "duration": 4.399,
+    "text": "person behind Tesla autopilot. Oh, yeah."
+  },
+  {
+    "start": 44.239,
+    "duration": 3.84,
+    "text": "And he's also the guy who invented the"
+  },
+  {
+    "start": 46.079,
+    "duration": 4.241,
+    "text": "term VIP coding. Plus, he has"
+  },
+  {
+    "start": 48.079,
+    "duration": 4.64,
+    "text": "contributed a lot to the open-source"
+  },
+  {
+    "start": 50.32,
+    "duration": 4.079,
+    "text": "community, especially in AI. And yes,"
+  },
+  {
+    "start": 52.719,
+    "duration": 3.68,
+    "text": "most importantly, he was born in"
+  },
+  {
+    "start": 54.399,
+    "duration": 4.16,
+    "text": "Czechoslovakia. However, this video is"
+  },
+  {
+    "start": 56.399,
+    "duration": 4.241,
+    "text": "about one of his contributions and that"
+  },
+  {
+    "start": 58.559,
+    "duration": 4.561,
+    "text": "is auto research. Karpathi had a"
+  },
+  {
+    "start": 60.64,
+    "duration": 4.32,
+    "text": "training script for the GPD2 model that"
+  },
+  {
+    "start": 63.12,
+    "duration": 3.679,
+    "text": "he's been optimizing for many months."
+  },
+  {
+    "start": 64.96,
+    "duration": 4.4,
+    "text": "And then he realized why am I doing"
+  },
+  {
+    "start": 66.799,
+    "duration": 4.561,
+    "text": "this? Why not just have an AI agent run"
+  },
+  {
+    "start": 69.36,
+    "duration": 3.36,
+    "text": "different experiments in a loop to"
+  },
+  {
+    "start": 71.36,
+    "duration": 3.2,
+    "text": "figure out what's the best way to"
+  },
+  {
+    "start": 72.72,
+    "duration": 5.439,
+    "text": "optimize this model? And this is the"
+  },
+  {
+    "start": 74.56,
+    "duration": 6.08,
+    "text": "core idea. Give AI one file, one metric,"
+  },
+  {
+    "start": 78.159,
+    "duration": 5.121,
+    "text": "and let it run hundreds if not thousands"
+  },
+  {
+    "start": 80.64,
+    "duration": 4.479,
+    "text": "of experiments by itself while you sleep"
+  },
+  {
+    "start": 83.28,
+    "duration": 3.6,
+    "text": "and watch it improve. And yes, at the"
+  },
+  {
+    "start": 85.119,
+    "duration": 3.601,
+    "text": "end of the video, I'll show you how you"
+  },
+  {
+    "start": 86.88,
+    "duration": 4.16,
+    "text": "can build your first order research"
+  },
+  {
+    "start": 88.72,
+    "duration": 3.84,
+    "text": "loop. And yes, you can do this even if"
+  },
+  {
+    "start": 91.04,
+    "duration": 3.6,
+    "text": "you are a complete beginner. Now, let's"
+  },
+  {
+    "start": 92.56,
+    "duration": 3.599,
+    "text": "talk about the prepare. py file because"
+  },
+  {
+    "start": 94.64,
+    "duration": 4.479,
+    "text": "it's essential to understand this. The"
+  },
+  {
+    "start": 96.159,
+    "duration": 4.96,
+    "text": "agent cannot touch prepare. So that it"
+  },
+  {
+    "start": 99.119,
+    "duration": 3.36,
+    "text": "can't cheat the eal you set for it."
+  },
+  {
+    "start": 101.119,
+    "duration": 3.601,
+    "text": "Without this limitation, it could"
+  },
+  {
+    "start": 102.479,
+    "duration": 4.64,
+    "text": "rewrite the scoring function to fake its"
+  },
+  {
+    "start": 104.72,
+    "duration": 5.28,
+    "text": "results. So basically, the prepare py"
+  },
+  {
+    "start": 107.119,
+    "duration": 4.481,
+    "text": "file defines what better means. Now, of"
+  },
+  {
+    "start": 110.0,
+    "duration": 3.04,
+    "text": "course, if you set the wrong metric,"
+  },
+  {
+    "start": 111.6,
+    "duration": 4.08,
+    "text": "you'll get the wrong results. So here's"
+  },
+  {
+    "start": 113.04,
+    "duration": 4.399,
+    "text": "a nice graphic that visualizes the loop."
+  },
+  {
+    "start": 115.68,
+    "duration": 4.24,
+    "text": "First the agent comes up with a"
+  },
+  {
+    "start": 117.439,
+    "duration": 4.32,
+    "text": "hypothesis, right? A theory of what it's"
+  },
+  {
+    "start": 119.92,
+    "duration": 3.76,
+    "text": "going to improve, what experiment it"
+  },
+  {
+    "start": 121.759,
+    "duration": 3.68,
+    "text": "could run. Then it modifies the code."
+  },
+  {
+    "start": 123.68,
+    "duration": 4.079,
+    "text": "You train it for around 5 minutes. Then"
+  },
+  {
+    "start": 125.439,
+    "duration": 4.001,
+    "text": "it runs the evaluation to see if it's"
+  },
+  {
+    "start": 127.759,
+    "duration": 3.2,
+    "text": "good or if it's not good. If it wants to"
+  },
+  {
+    "start": 129.44,
+    "duration": 3.76,
+    "text": "keep it, it will just commit it to your"
+  },
+  {
+    "start": 130.959,
+    "duration": 4.081,
+    "text": "git history. If it's bad and if it"
+  },
+  {
+    "start": 133.2,
+    "duration": 4.399,
+    "text": "worsens the results, it will do git"
+  },
+  {
+    "start": 135.04,
+    "duration": 5.36,
+    "text": "reset and repeat the whole loop over and"
+  },
+  {
+    "start": 137.599,
+    "duration": 4.161,
+    "text": "over and over as many times as you want."
+  },
+  {
+    "start": 140.4,
+    "duration": 3.28,
+    "text": "you know [laughter] depending on how"
+  },
+  {
+    "start": 141.76,
+    "duration": 3.44,
+    "text": "many dollars you want to spend or tokens"
+  },
+  {
+    "start": 143.68,
+    "duration": 3.12,
+    "text": "and yeah this is auto research basically"
+  },
+  {
+    "start": 145.2,
+    "duration": 3.52,
+    "text": "in a single image. So if you start it"
+  },
+  {
+    "start": 146.8,
+    "duration": 4.799,
+    "text": "right before going to bed it can run"
+  },
+  {
+    "start": 148.72,
+    "duration": 5.12,
+    "text": "roughly 100 experiments overnight. Now"
+  },
+  {
+    "start": 151.599,
+    "duration": 3.521,
+    "text": "by giving it a fixed time budget you"
+  },
+  {
+    "start": 153.84,
+    "duration": 2.399,
+    "text": "make every experiment directly"
+  },
+  {
+    "start": 155.12,
+    "duration": 3.119,
+    "text": "comparable because let's say you're"
+  },
+  {
+    "start": 156.239,
+    "duration": 4.64,
+    "text": "hiring for your company. If you have one"
+  },
+  {
+    "start": 158.239,
+    "duration": 4.72,
+    "text": "applicant and you give him seven days to"
+  },
+  {
+    "start": 160.879,
+    "duration": 4.0,
+    "text": "complete a task and the other one only"
+  },
+  {
+    "start": 162.959,
+    "duration": 4.64,
+    "text": "has seven minutes then obviously the one"
+  },
+  {
+    "start": 164.879,
+    "duration": 4.561,
+    "text": "who does seven days on average will do"
+  },
+  {
+    "start": 167.599,
+    "duration": 3.441,
+    "text": "better. So you want to make sure this is"
+  },
+  {
+    "start": 169.44,
+    "duration": 3.68,
+    "text": "the same in AI agents. That way the"
+  },
+  {
+    "start": 171.04,
+    "duration": 4.24,
+    "text": "agent can't cheat just by training"
+  },
+  {
+    "start": 173.12,
+    "duration": 4.479,
+    "text": "longer or by training better ideas. Only"
+  },
+  {
+    "start": 175.28,
+    "duration": 4.16,
+    "text": "the raw idea wins with the same time"
+  },
+  {
+    "start": 177.599,
+    "duration": 3.92,
+    "text": "allocated. But if you think that order"
+  },
+  {
+    "start": 179.44,
+    "duration": 4.719,
+    "text": "research only applies to the training of"
+  },
+  {
+    "start": 181.519,
+    "duration": 4.8,
+    "text": "AI models, you are badly mistaken. This"
+  },
+  {
+    "start": 184.159,
+    "duration": 4.0,
+    "text": "has massive implications across every"
+  },
+  {
+    "start": 186.319,
+    "duration": 4.241,
+    "text": "domain of your life or business. You can"
+  },
+  {
+    "start": 188.159,
+    "duration": 4.481,
+    "text": "build a recursive self-improving loop"
+  },
+  {
+    "start": 190.56,
+    "duration": 3.92,
+    "text": "for nearly anything that can be"
+  },
+  {
+    "start": 192.64,
+    "duration": 4.64,
+    "text": "measured. Thanks to AI agents, soon"
+  },
+  {
+    "start": 194.48,
+    "duration": 4.72,
+    "text": "enough the execution of any work or task"
+  },
+  {
+    "start": 197.28,
+    "duration": 4.48,
+    "text": "will become basically free. However,"
+  },
+  {
+    "start": 199.2,
+    "duration": 4.319,
+    "text": "what will become valuable is knowing"
+  },
+  {
+    "start": 201.76,
+    "duration": 3.36,
+    "text": "what to measure, picking the right"
+  },
+  {
+    "start": 203.519,
+    "duration": 3.921,
+    "text": "metric, and setting the right"
+  },
+  {
+    "start": 205.12,
+    "duration": 3.759,
+    "text": "constraints. This is the skill that is"
+  },
+  {
+    "start": 207.44,
+    "duration": 2.879,
+    "text": "going to make millionaires in the"
+  },
+  {
+    "start": 208.879,
+    "duration": 3.681,
+    "text": "future. And by the way, this is the"
+  },
+  {
+    "start": 210.319,
+    "duration": 4.161,
+    "text": "clearest example of what AI agents"
+  },
+  {
+    "start": 212.56,
+    "duration": 4.56,
+    "text": "actually look like in practice. Not just"
+  },
+  {
+    "start": 214.48,
+    "duration": 5.6,
+    "text": "chat bots, but real autonomous loops"
+  },
+  {
+    "start": 217.12,
+    "duration": 4.56,
+    "text": "that do meaningful work for companies or"
+  },
+  {
+    "start": 220.08,
+    "duration": 3.84,
+    "text": "individuals. And if you reason about the"
+  },
+  {
+    "start": 221.68,
+    "duration": 4.639,
+    "text": "state of AI from first principles, you"
+  },
+  {
+    "start": 223.92,
+    "duration": 4.879,
+    "text": "realize that this has been the end goal"
+  },
+  {
+    "start": 226.319,
+    "duration": 5.2,
+    "text": "all along. Andre Karpathy predicts that"
+  },
+  {
+    "start": 228.799,
+    "duration": 4.8,
+    "text": "all LLM frontier labs will do this. They"
+  },
+  {
+    "start": 231.519,
+    "duration": 3.681,
+    "text": "will run some sort of auto research."
+  },
+  {
+    "start": 233.599,
+    "duration": 2.881,
+    "text": "This is the final boss battle. And if"
+  },
+  {
+    "start": 235.2,
+    "duration": 2.64,
+    "text": "you think about it, this is literally"
+  },
+  {
+    "start": 236.48,
+    "duration": 3.2,
+    "text": "what [clears throat] recursive"
+  },
+  {
+    "start": 237.84,
+    "duration": 4.0,
+    "text": "self-improvement will look like. And the"
+  },
+  {
+    "start": 239.68,
+    "duration": 4.479,
+    "text": "funny thing is that right now the AI"
+  },
+  {
+    "start": 241.84,
+    "duration": 4.399,
+    "text": "labs like OpenAI Enthropic Gemini are"
+  },
+  {
+    "start": 244.159,
+    "duration": 4.0,
+    "text": "spending tens of millions of dollars on"
+  },
+  {
+    "start": 246.239,
+    "duration": 4.241,
+    "text": "researchers, all of which are trying to"
+  },
+  {
+    "start": 248.159,
+    "duration": 4.0,
+    "text": "build this. Yet Karpafei made it"
+  },
+  {
+    "start": 250.48,
+    "duration": 3.28,
+    "text": "completely open source. Now to"
+  },
+  {
+    "start": 252.159,
+    "duration": 4.001,
+    "text": "understand order research, you must"
+  },
+  {
+    "start": 253.76,
+    "duration": 4.56,
+    "text": "understand its free file architecture."
+  },
+  {
+    "start": 256.16,
+    "duration": 4.4,
+    "text": "First you have program.mmd. This is the"
+  },
+  {
+    "start": 258.32,
+    "duration": 3.84,
+    "text": "most important file. This is the human"
+  },
+  {
+    "start": 260.56,
+    "duration": 3.68,
+    "text": "setting the goal, the constraints and"
+  },
+  {
+    "start": 262.16,
+    "duration": 4.56,
+    "text": "the rules for the agent. Then you have"
+  },
+  {
+    "start": 264.24,
+    "duration": 4.56,
+    "text": "the train. py file. This is the one file"
+  },
+  {
+    "start": 266.72,
+    "duration": 4.24,
+    "text": "that the agent can actually change. And"
+  },
+  {
+    "start": 268.8,
+    "duration": 4.399,
+    "text": "this could be anything by the way. Code,"
+  },
+  {
+    "start": 270.96,
+    "duration": 4.32,
+    "text": "some config, a prompt, some math"
+  },
+  {
+    "start": 273.199,
+    "duration": 3.761,
+    "text": "equation, literally anything you want to"
+  },
+  {
+    "start": 275.28,
+    "duration": 3.44,
+    "text": "optimize. And then you have prepared."
+  },
+  {
+    "start": 276.96,
+    "duration": 4.0,
+    "text": "py. This is the metric and the"
+  },
+  {
+    "start": 278.72,
+    "duration": 4.479,
+    "text": "evaluation script. The agent cannot"
+  },
+  {
+    "start": 280.96,
+    "duration": 4.239,
+    "text": "touch this. Absolutely never. Because"
+  },
+  {
+    "start": 283.199,
+    "duration": 3.521,
+    "text": "this is what measures the result. And by"
+  },
+  {
+    "start": 285.199,
+    "duration": 2.881,
+    "text": "the way, there are several tech"
+  },
+  {
+    "start": 286.72,
+    "duration": 4.32,
+    "text": "billionaires who are going crazy over"
+  },
+  {
+    "start": 288.08,
+    "duration": 5.28,
+    "text": "this such as the CEO of Shopify and the"
+  },
+  {
+    "start": 291.04,
+    "duration": 4.32,
+    "text": "CEO of Stripe because these guys realize"
+  },
+  {
+    "start": 293.36,
+    "duration": 3.52,
+    "text": "that this is not just about training AI"
+  },
+  {
+    "start": 295.36,
+    "duration": 3.6,
+    "text": "models. And this is perhaps the biggest"
+  },
+  {
+    "start": 296.88,
+    "duration": 3.92,
+    "text": "misconception about auto research."
+  },
+  {
+    "start": 298.96,
+    "duration": 3.92,
+    "text": "People think that it's just about"
+  },
+  {
+    "start": 300.8,
+    "duration": 3.679,
+    "text": "optimizing of machine learning, right?"
+  },
+  {
+    "start": 302.88,
+    "duration": 3.52,
+    "text": "Because this is what Karpathi used as"
+  },
+  {
+    "start": 304.479,
+    "duration": 3.761,
+    "text": "example. But if you actually pay"
+  },
+  {
+    "start": 306.4,
+    "duration": 3.44,
+    "text": "attention and if you think about it a"
+  },
+  {
+    "start": 308.24,
+    "duration": 3.36,
+    "text": "little bit more, you realize that as"
+  },
+  {
+    "start": 309.84,
+    "duration": 3.44,
+    "text": "long as you have a clear metric and you"
+  },
+  {
+    "start": 311.6,
+    "duration": 3.439,
+    "text": "can run these experiments, this could be"
+  },
+  {
+    "start": 313.28,
+    "duration": 3.44,
+    "text": "used in so many different ways in"
+  },
+  {
+    "start": 315.039,
+    "duration": 3.921,
+    "text": "marketing, in business, in testing new"
+  },
+  {
+    "start": 316.72,
+    "duration": 4.56,
+    "text": "products, in trading strategies, in"
+  },
+  {
+    "start": 318.96,
+    "duration": 4.239,
+    "text": "personal life, in weather forecast,"
+  },
+  {
+    "start": 321.28,
+    "duration": 3.759,
+    "text": "literally hundreds of possible domains."
+  },
+  {
+    "start": 323.199,
+    "duration": 3.761,
+    "text": "You can build these auto research loops"
+  },
+  {
+    "start": 325.039,
+    "duration": 4.081,
+    "text": "that don't have any human in the loop,"
+  },
+  {
+    "start": 326.96,
+    "duration": 3.92,
+    "text": "but instead swarm of AI agents running"
+  },
+  {
+    "start": 329.12,
+    "duration": 3.28,
+    "text": "experiments, discarding what doesn't"
+  },
+  {
+    "start": 330.88,
+    "duration": 4.319,
+    "text": "work, and keeping what works. And as"
+  },
+  {
+    "start": 332.4,
+    "duration": 5.04,
+    "text": "Kafi says here, we might be in the early"
+  },
+  {
+    "start": 335.199,
+    "duration": 3.84,
+    "text": "stages of the singularity. Now, every AI"
+  },
+  {
+    "start": 337.44,
+    "duration": 3.759,
+    "text": "workflow has the same bottleneck,"
+  },
+  {
+    "start": 339.039,
+    "duration": 3.841,
+    "text": "getting fresh real world data. You can"
+  },
+  {
+    "start": 341.199,
+    "duration": 3.921,
+    "text": "build the most sophisticated AI agent,"
+  },
+  {
+    "start": 342.88,
+    "duration": 4.319,
+    "text": "but if it can't see what's actually on"
+  },
+  {
+    "start": 345.12,
+    "duration": 4.799,
+    "text": "the web right now, it's flying blind."
+  },
+  {
+    "start": 347.199,
+    "duration": 5.121,
+    "text": "That's where Oxyabs comes in. The Oxyabs"
+  },
+  {
+    "start": 349.919,
+    "duration": 4.321,
+    "text": "web scraper API lets you pull structured"
+  },
+  {
+    "start": 352.32,
+    "duration": 3.76,
+    "text": "data from basically any website. This"
+  },
+  {
+    "start": 354.24,
+    "duration": 4.08,
+    "text": "could be Amazon product listings, Google"
+  },
+  {
+    "start": 356.08,
+    "duration": 4.32,
+    "text": "search results, real estate listings,"
+  },
+  {
+    "start": 358.32,
+    "duration": 4.64,
+    "text": "all through a single API call. It"
+  },
+  {
+    "start": 360.4,
+    "duration": 4.639,
+    "text": "handles proxy rotation, capture solving,"
+  },
+  {
+    "start": 362.96,
+    "duration": 3.44,
+    "text": "and JavaScript rendering, so you don't"
+  },
+  {
+    "start": 365.039,
+    "duration": 3.28,
+    "text": "have to do that yourself. But here's"
+  },
+  {
+    "start": 366.4,
+    "duration": 4.56,
+    "text": "what makes it interesting for us AI"
+  },
+  {
+    "start": 368.319,
+    "duration": 4.481,
+    "text": "developers. Oxyabs has an official MCP"
+  },
+  {
+    "start": 370.96,
+    "duration": 3.76,
+    "text": "that you can connect directly to cursor"
+  },
+  {
+    "start": 372.8,
+    "duration": 4.48,
+    "text": "or cloth code in a matter of a minute,"
+  },
+  {
+    "start": 374.72,
+    "duration": 4.64,
+    "text": "so that your AI agent gets live web"
+  },
+  {
+    "start": 377.28,
+    "duration": 4.24,
+    "text": "scraping superpowers. Say you need to"
+  },
+  {
+    "start": 379.36,
+    "duration": 3.92,
+    "text": "pull competitors pricing or scrape"
+  },
+  {
+    "start": 381.52,
+    "duration": 3.84,
+    "text": "search results or grab real estate"
+  },
+  {
+    "start": 383.28,
+    "duration": 4.88,
+    "text": "listings. Just ask it in plain English."
+  },
+  {
+    "start": 385.36,
+    "duration": 5.119,
+    "text": "The agent calls OxyLabs, gets structured"
+  },
+  {
+    "start": 388.16,
+    "duration": 5.2,
+    "text": "data back, and reasons over it. And even"
+  },
+  {
+    "start": 390.479,
+    "duration": 4.801,
+    "text": "if you aren't a developer, OxyLabs plugs"
+  },
+  {
+    "start": 393.36,
+    "duration": 3.6,
+    "text": "straight into NA10. You can visually"
+  },
+  {
+    "start": 395.28,
+    "duration": 4.24,
+    "text": "build a workflow that scrapes Amazon"
+  },
+  {
+    "start": 396.96,
+    "duration": 5.44,
+    "text": "prices, sends them to an AI, and spits"
+  },
+  {
+    "start": 399.52,
+    "duration": 5.36,
+    "text": "out insights with zero code written by"
+  },
+  {
+    "start": 402.4,
+    "duration": 5.44,
+    "text": "you. And the best part is Oxyabs gives"
+  },
+  {
+    "start": 404.88,
+    "duration": 4.64,
+    "text": "up to 2,000 scrape results for free, so"
+  },
+  {
+    "start": 407.84,
+    "duration": 3.68,
+    "text": "you can test it yourself. So go to"
+  },
+  {
+    "start": 409.52,
+    "duration": 3.679,
+    "text": "oxyabs.io/david"
+  },
+  {
+    "start": 411.52,
+    "duration": 3.36,
+    "text": "for a free trial. Oh, and there is no"
+  },
+  {
+    "start": 413.199,
+    "duration": 4.72,
+    "text": "credit card required. And if you run out"
+  },
+  {
+    "start": 414.88,
+    "duration": 5.52,
+    "text": "of credits, use my code David for 20%"
+  },
+  {
+    "start": 417.919,
+    "duration": 4.161,
+    "text": "off all Oxyab plans. And thank you to"
+  },
+  {
+    "start": 420.4,
+    "duration": 3.6,
+    "text": "OxyLabs for sponsoring this video."
+  },
+  {
+    "start": 422.08,
+    "duration": 3.76,
+    "text": "Again, I need to stress auto research is"
+  },
+  {
+    "start": 424.0,
+    "duration": 4.16,
+    "text": "not just for machine learning. This"
+  },
+  {
+    "start": 425.84,
+    "duration": 4.72,
+    "text": "pattern works anywhere you can measure"
+  },
+  {
+    "start": 428.16,
+    "duration": 4.64,
+    "text": "an outcome, a clear outcome. And Kathy"
+  },
+  {
+    "start": 430.56,
+    "duration": 4.0,
+    "text": "said this himself. Any metric you care"
+  },
+  {
+    "start": 432.8,
+    "duration": 4.32,
+    "text": "about that is reasonably efficient to"
+  },
+  {
+    "start": 434.56,
+    "duration": 4.4,
+    "text": "evaluate can be auto researched. So you"
+  },
+  {
+    "start": 437.12,
+    "duration": 4.24,
+    "text": "need one file to edit, one scalar"
+  },
+  {
+    "start": 438.96,
+    "duration": 4.48,
+    "text": "metric, and a time box loop. If you can"
+  },
+  {
+    "start": 441.36,
+    "duration": 4.08,
+    "text": "score it, you can auto research it. Now"
+  },
+  {
+    "start": 443.44,
+    "duration": 3.759,
+    "text": "let's look at some practical valuable"
+  },
+  {
+    "start": 445.44,
+    "duration": 3.44,
+    "text": "use cases. First off, trading. You can"
+  },
+  {
+    "start": 447.199,
+    "duration": 3.761,
+    "text": "take the same order research loop, but"
+  },
+  {
+    "start": 448.88,
+    "duration": 4.0,
+    "text": "instead of improving an AI model, you"
+  },
+  {
+    "start": 450.96,
+    "duration": 4.48,
+    "text": "can point it on a trading strategy. The"
+  },
+  {
+    "start": 452.88,
+    "duration": 4.159,
+    "text": "agent tweaks your buy sell rules, tries"
+  },
+  {
+    "start": 455.44,
+    "duration": 3.92,
+    "text": "experiments based on years of market"
+  },
+  {
+    "start": 457.039,
+    "duration": 4.321,
+    "text": "data, and scores each experiment by its"
+  },
+  {
+    "start": 459.36,
+    "duration": 3.839,
+    "text": "sharp ratio, which is basically how good"
+  },
+  {
+    "start": 461.36,
+    "duration": 3.52,
+    "text": "are the returns to the risk. And it can"
+  },
+  {
+    "start": 463.199,
+    "duration": 4.161,
+    "text": "test hundreds of different trading"
+  },
+  {
+    "start": 464.88,
+    "duration": 4.08,
+    "text": "strategies to see which one has the best"
+  },
+  {
+    "start": 467.36,
+    "duration": 3.52,
+    "text": "returns. Here's another use case,"
+  },
+  {
+    "start": 468.96,
+    "duration": 4.0,
+    "text": "marketing. You can now apply auto"
+  },
+  {
+    "start": 470.88,
+    "duration": 4.56,
+    "text": "research to marketing with emails, ad"
+  },
+  {
+    "start": 472.96,
+    "duration": 4.72,
+    "text": "creatives, landing pages, automated AB"
+  },
+  {
+    "start": 475.44,
+    "duration": 4.879,
+    "text": "tests, headlines, thumbnails, YouTube"
+  },
+  {
+    "start": 477.68,
+    "duration": 4.799,
+    "text": "titles, any type of marketing. Eric Sue"
+  },
+  {
+    "start": 480.319,
+    "duration": 4.56,
+    "text": "put it the best. Most marketing teams"
+  },
+  {
+    "start": 482.479,
+    "duration": 5.28,
+    "text": "run 30 experiments per year. The next"
+  },
+  {
+    "start": 484.879,
+    "duration": 5.361,
+    "text": "generation will run 36,000,"
+  },
+  {
+    "start": 487.759,
+    "duration": 4.081,
+    "text": "aka roughly 100 per day. The agent will"
+  },
+  {
+    "start": 490.24,
+    "duration": 3.2,
+    "text": "modify the copy and measure the"
+  },
+  {
+    "start": 491.84,
+    "duration": 3.6,
+    "text": "conversions and decide whether to keep"
+  },
+  {
+    "start": 493.44,
+    "duration": 4.24,
+    "text": "this experiment or to discard it. The"
+  },
+  {
+    "start": 495.44,
+    "duration": 4.159,
+    "text": "exact same loop as before. Now before I"
+  },
+  {
+    "start": 497.68,
+    "duration": 4.0,
+    "text": "show you more use cases how auto"
+  },
+  {
+    "start": 499.599,
+    "duration": 4.481,
+    "text": "research can benefit your life, please"
+  },
+  {
+    "start": 501.68,
+    "duration": 4.079,
+    "text": "consider subscribing. 25% of you are"
+  },
+  {
+    "start": 504.08,
+    "duration": 3.679,
+    "text": "subscribed which means the vast majority"
+  },
+  {
+    "start": 505.759,
+    "duration": 3.921,
+    "text": "of you watching right now are not"
+  },
+  {
+    "start": 507.759,
+    "duration": 4.561,
+    "text": "subscribed. So if you want to see more"
+  },
+  {
+    "start": 509.68,
+    "duration": 5.12,
+    "text": "highquality AI content in your YouTube"
+  },
+  {
+    "start": 512.32,
+    "duration": 4.079,
+    "text": "recommended, please take two seconds, go"
+  },
+  {
+    "start": 514.8,
+    "duration": 3.599,
+    "text": "below the video and click the subscribe"
+  },
+  {
+    "start": 516.399,
+    "duration": 3.601,
+    "text": "button. It helps out more than you"
+  },
+  {
+    "start": 518.399,
+    "duration": 3.52,
+    "text": "think. So to all of you who just"
+  },
+  {
+    "start": 520.0,
+    "duration": 4.159,
+    "text": "subscribed, thank you. The next use case"
+  },
+  {
+    "start": 521.919,
+    "duration": 4.641,
+    "text": "is for developers. You can point auto"
+  },
+  {
+    "start": 524.159,
+    "duration": 4.721,
+    "text": "research at basically any codebase and"
+  },
+  {
+    "start": 526.56,
+    "duration": 4.399,
+    "text": "say make it faster. And people are also"
+  },
+  {
+    "start": 528.88,
+    "duration": 3.84,
+    "text": "using auto research to fine-tune open"
+  },
+  {
+    "start": 530.959,
+    "duration": 4.32,
+    "text": "source AI models so they run faster"
+  },
+  {
+    "start": 532.72,
+    "duration": 4.96,
+    "text": "locally on your laptop or phone. So"
+  },
+  {
+    "start": 535.279,
+    "duration": 4.081,
+    "text": "expect in the next 6 months insane"
+  },
+  {
+    "start": 537.68,
+    "duration": 3.68,
+    "text": "breakthroughs in terms of what is"
+  },
+  {
+    "start": 539.36,
+    "duration": 4.479,
+    "text": "possible to run on phone. I would even"
+  },
+  {
+    "start": 541.36,
+    "duration": 6.0,
+    "text": "say that we will have Sonet 4.6 quality"
+  },
+  {
+    "start": 543.839,
+    "duration": 5.281,
+    "text": "models runningable on iPhones in three"
+  },
+  {
+    "start": 547.36,
+    "duration": 3.28,
+    "text": "or four months. This is a prediction."
+  },
+  {
+    "start": 549.12,
+    "duration": 3.04,
+    "text": "Let's see if it's correct. Another use"
+  },
+  {
+    "start": 550.64,
+    "duration": 3.12,
+    "text": "case is prompt engineering. Auto"
+  },
+  {
+    "start": 552.16,
+    "duration": 3.119,
+    "text": "research can fine-tune the system"
+  },
+  {
+    "start": 553.76,
+    "duration": 3.759,
+    "text": "instructions behind all of your AI"
+  },
+  {
+    "start": 555.279,
+    "duration": 4.161,
+    "text": "agents. So Harrison Chase, the founder"
+  },
+  {
+    "start": 557.519,
+    "duration": 3.76,
+    "text": "of Langchain, which is a billiond dollar"
+  },
+  {
+    "start": 559.44,
+    "duration": 3.519,
+    "text": "company, said agents mess up because"
+  },
+  {
+    "start": 561.279,
+    "duration": 4.24,
+    "text": "they don't have the right context and"
+  },
+  {
+    "start": 562.959,
+    "duration": 5.041,
+    "text": "system prompts are part of that context."
+  },
+  {
+    "start": 565.519,
+    "duration": 4.32,
+    "text": "So order research can find new ways to"
+  },
+  {
+    "start": 568.0,
+    "duration": 3.68,
+    "text": "phrase things, better language, maybe"
+  },
+  {
+    "start": 569.839,
+    "duration": 3.761,
+    "text": "even different language, you know, maybe"
+  },
+  {
+    "start": 571.68,
+    "duration": 4.0,
+    "text": "instead of English, it can use Polish or"
+  },
+  {
+    "start": 573.6,
+    "duration": 4.72,
+    "text": "Czech or German, whatever. It can try"
+  },
+  {
+    "start": 575.68,
+    "duration": 5.52,
+    "text": "different levels like beginner, you"
+  },
+  {
+    "start": 578.32,
+    "duration": 5.519,
+    "text": "know, college level, PhD level to see"
+  },
+  {
+    "start": 581.2,
+    "duration": 4.48,
+    "text": "which prompt works the best for all of"
+  },
+  {
+    "start": 583.839,
+    "duration": 4.161,
+    "text": "your AI agents. So these are the three"
+  },
+  {
+    "start": 585.68,
+    "duration": 4.56,
+    "text": "conditions that decide whether your auto"
+  },
+  {
+    "start": 588.0,
+    "duration": 3.92,
+    "text": "research loop will be successful or will"
+  },
+  {
+    "start": 590.24,
+    "duration": 3.68,
+    "text": "be a failure. Number one, a clear"
+  },
+  {
+    "start": 591.92,
+    "duration": 3.599,
+    "text": "metric. One number, a clear direction"
+  },
+  {
+    "start": 593.92,
+    "duration": 3.919,
+    "text": "you want to go in. And number two, an"
+  },
+  {
+    "start": 595.519,
+    "duration": 4.801,
+    "text": "automated evaluation where there isn't a"
+  },
+  {
+    "start": 597.839,
+    "duration": 3.761,
+    "text": "human in the loop. Right? If you, the"
+  },
+  {
+    "start": 600.32,
+    "duration": 3.519,
+    "text": "human, need to be in the loop, it will"
+  },
+  {
+    "start": 601.6,
+    "duration": 4.0,
+    "text": "be so slow and it will not be auto"
+  },
+  {
+    "start": 603.839,
+    "duration": 3.281,
+    "text": "research. Sure, it still can be"
+  },
+  {
+    "start": 605.6,
+    "duration": 2.96,
+    "text": "research, but it will not be auto"
+  },
+  {
+    "start": 607.12,
+    "duration": 3.68,
+    "text": "research. It will not be running while"
+  },
+  {
+    "start": 608.56,
+    "duration": 4.88,
+    "text": "you sleep. And number three, there's one"
+  },
+  {
+    "start": 610.8,
+    "duration": 5.2,
+    "text": "file that the agent can change. Not two,"
+  },
+  {
+    "start": 613.44,
+    "duration": 4.48,
+    "text": "not zero, one file. And you need all of"
+  },
+  {
+    "start": 616.0,
+    "duration": 3.6,
+    "text": "these three conditions for auto research"
+  },
+  {
+    "start": 617.92,
+    "duration": 4.56,
+    "text": "to work. Now, here's where auto research"
+  },
+  {
+    "start": 619.6,
+    "duration": 5.2,
+    "text": "will fail. Brand design, UX, pricing,"
+  },
+  {
+    "start": 622.48,
+    "duration": 4.16,
+    "text": "anything where better is subjective."
+  },
+  {
+    "start": 624.8,
+    "duration": 3.44,
+    "text": "Now, for example, in pricing, you could"
+  },
+  {
+    "start": 626.64,
+    "duration": 3.36,
+    "text": "have it succeed if you have a large"
+  },
+  {
+    "start": 628.24,
+    "duration": 3.52,
+    "text": "volume of traffic to your pricing page"
+  },
+  {
+    "start": 630.0,
+    "duration": 4.16,
+    "text": "and you can quickly AB test different"
+  },
+  {
+    "start": 631.76,
+    "duration": 4.319,
+    "text": "pricing to see highest cash collected."
+  },
+  {
+    "start": 634.16,
+    "duration": 4.239,
+    "text": "But for most businesses, it will not be"
+  },
+  {
+    "start": 636.079,
+    "duration": 4.401,
+    "text": "effective, right? Because the quality of"
+  },
+  {
+    "start": 638.399,
+    "duration": 4.081,
+    "text": "that makes better is subjective or the"
+  },
+  {
+    "start": 640.48,
+    "duration": 4.08,
+    "text": "loop is too slow. The loop needs"
+  },
+  {
+    "start": 642.48,
+    "duration": 4.64,
+    "text": "objective metric. If the success is a"
+  },
+  {
+    "start": 644.56,
+    "duration": 4.32,
+    "text": "judgment call or a feeling, the agent"
+  },
+  {
+    "start": 647.12,
+    "duration": 3.6,
+    "text": "cannot tell what's working. So, it will"
+  },
+  {
+    "start": 648.88,
+    "duration": 3.44,
+    "text": "optimize in a random direction. Also, I"
+  },
+  {
+    "start": 650.72,
+    "duration": 3.359,
+    "text": "want to stress this again. If you give"
+  },
+  {
+    "start": 652.32,
+    "duration": 4.079,
+    "text": "it a bad metric, it will very"
+  },
+  {
+    "start": 654.079,
+    "duration": 4.561,
+    "text": "confidently optimize the wrong thing. So"
+  },
+  {
+    "start": 656.399,
+    "duration": 4.481,
+    "text": "here's Arj Karpathi's end vision. In the"
+  },
+  {
+    "start": 658.64,
+    "duration": 5.12,
+    "text": "early 2000s, there was a project set at"
+  },
+  {
+    "start": 660.88,
+    "duration": 5.12,
+    "text": "home that let anyone donate their spare"
+  },
+  {
+    "start": 663.76,
+    "duration": 4.48,
+    "text": "computer power to research for alien"
+  },
+  {
+    "start": 666.0,
+    "duration": 5.2,
+    "text": "life. And Arj Karpathi wants to do the"
+  },
+  {
+    "start": 668.24,
+    "duration": 4.96,
+    "text": "same model, the same idea, but for AI"
+  },
+  {
+    "start": 671.2,
+    "duration": 4.4,
+    "text": "research where we have millions of AI"
+  },
+  {
+    "start": 673.2,
+    "duration": 4.72,
+    "text": "agents distributed across thousands of"
+  },
+  {
+    "start": 675.6,
+    "duration": 4.56,
+    "text": "computers and you can actually allocate"
+  },
+  {
+    "start": 677.92,
+    "duration": 3.919,
+    "text": "where that research goes towards. All"
+  },
+  {
+    "start": 680.16,
+    "duration": 3.6,
+    "text": "right, so now let me show you how to"
+  },
+  {
+    "start": 681.839,
+    "duration": 4.401,
+    "text": "actually build your own order research"
+  },
+  {
+    "start": 683.76,
+    "duration": 4.16,
+    "text": "loop from scratch. Even if you're a"
+  },
+  {
+    "start": 686.24,
+    "duration": 3.2,
+    "text": "complete beginner, just stick with me"
+  },
+  {
+    "start": 687.92,
+    "duration": 4.88,
+    "text": "for the next five minutes and you'll be"
+  },
+  {
+    "start": 689.44,
+    "duration": 5.28,
+    "text": "ahead of 99.9% of people in AI who just"
+  },
+  {
+    "start": 692.8,
+    "duration": 3.599,
+    "text": "pay GBT subscription and they think"
+  },
+  {
+    "start": 694.72,
+    "duration": 3.44,
+    "text": "they're advanced. They cannot even dream"
+  },
+  {
+    "start": 696.399,
+    "duration": 3.281,
+    "text": "about having their own auto research."
+  },
+  {
+    "start": 698.16,
+    "duration": 3.84,
+    "text": "But you are like a couple of steps away"
+  },
+  {
+    "start": 699.68,
+    "duration": 3.92,
+    "text": "from having that. So log in. So first of"
+  },
+  {
+    "start": 702.0,
+    "duration": 3.36,
+    "text": "all, this is the GitHub repo. I'm going"
+  },
+  {
+    "start": 703.6,
+    "duration": 4.0,
+    "text": "to link it below the video. This is the"
+  },
+  {
+    "start": 705.36,
+    "duration": 3.52,
+    "text": "auto research repository from Karpathy."
+  },
+  {
+    "start": 707.6,
+    "duration": 3.52,
+    "text": "I'm going to start it as well because"
+  },
+  {
+    "start": 708.88,
+    "duration": 3.6,
+    "text": "it's a great project. Now, if you are"
+  },
+  {
+    "start": 711.12,
+    "duration": 3.52,
+    "text": "not familiar with GitHub, you don't need"
+  },
+  {
+    "start": 712.48,
+    "duration": 4.24,
+    "text": "to panic. You don't need to understand"
+  },
+  {
+    "start": 714.64,
+    "duration": 4.56,
+    "text": "much. This is just a way to store code."
+  },
+  {
+    "start": 716.72,
+    "duration": 3.76,
+    "text": "Okay? Efficient way to store coding"
+  },
+  {
+    "start": 719.2,
+    "duration": 2.96,
+    "text": "projects. That's all you need to"
+  },
+  {
+    "start": 720.48,
+    "duration": 4.0,
+    "text": "understand. You don't need to be a Git"
+  },
+  {
+    "start": 722.16,
+    "duration": 4.4,
+    "text": "expert, nothing like that. All we need"
+  },
+  {
+    "start": 724.48,
+    "duration": 4.08,
+    "text": "to do is click here on the code and"
+  },
+  {
+    "start": 726.56,
+    "duration": 4.24,
+    "text": "click copy here. That's it. Next, you"
+  },
+  {
+    "start": 728.56,
+    "duration": 3.44,
+    "text": "need an IDE. So, either VS Code or"
+  },
+  {
+    "start": 730.8,
+    "duration": 3.36,
+    "text": "cursor. I'm going to be using cursor"
+  },
+  {
+    "start": 732.0,
+    "duration": 3.68,
+    "text": "here. Just install an ID of some sort."
+  },
+  {
+    "start": 734.16,
+    "duration": 2.96,
+    "text": "And we're going to use a coding agent."
+  },
+  {
+    "start": 735.68,
+    "duration": 3.52,
+    "text": "I'm going to use cloth code. So, I'm"
+  },
+  {
+    "start": 737.12,
+    "duration": 4.159,
+    "text": "going to open an empty project here."
+  },
+  {
+    "start": 739.2,
+    "duration": 4.8,
+    "text": "Boom. Nothing in here. You can see on"
+  },
+  {
+    "start": 741.279,
+    "duration": 5.601,
+    "text": "the right, no files. And I'm going to"
+  },
+  {
+    "start": 744.0,
+    "duration": 5.04,
+    "text": "launch cloth dangerously skip"
+  },
+  {
+    "start": 746.88,
+    "duration": 4.8,
+    "text": "permissions. Boom. Enter. So, here it"
+  },
+  {
+    "start": 749.04,
+    "duration": 6.72,
+    "text": "is. CL code. Now, I'm going to say"
+  },
+  {
+    "start": 751.68,
+    "duration": 7.76,
+    "text": "create a new folder/or original in our"
+  },
+  {
+    "start": 755.76,
+    "duration": 6.4,
+    "text": "repo root level and in there clone this"
+  },
+  {
+    "start": 759.44,
+    "duration": 4.399,
+    "text": "GitHub repository. Boom. Paste it in."
+  },
+  {
+    "start": 762.16,
+    "duration": 3.44,
+    "text": "And again, Cloudcore will know what to"
+  },
+  {
+    "start": 763.839,
+    "duration": 3.601,
+    "text": "do exactly. So we will figure out okay"
+  },
+  {
+    "start": 765.6,
+    "duration": 3.44,
+    "text": "everything is empty and then it created"
+  },
+  {
+    "start": 767.44,
+    "duration": 2.959,
+    "text": "original folder and clone it in there."
+  },
+  {
+    "start": 769.04,
+    "duration": 2.799,
+    "text": "Now why did I want to do it? Well"
+  },
+  {
+    "start": 770.399,
+    "duration": 3.041,
+    "text": "because I want to create a separate"
+  },
+  {
+    "start": 771.839,
+    "duration": 4.321,
+    "text": "folder where we're going to build"
+  },
+  {
+    "start": 773.44,
+    "duration": 4.16,
+    "text": "something with auto research for us but"
+  },
+  {
+    "start": 776.16,
+    "duration": 3.84,
+    "text": "I also want to keep the original"
+  },
+  {
+    "start": 777.6,
+    "duration": 4.72,
+    "text": "repository here so that we can use it as"
+  },
+  {
+    "start": 780.0,
+    "duration": 6.079,
+    "text": "a reference. Next I'm going to say now"
+  },
+  {
+    "start": 782.32,
+    "duration": 7.199,
+    "text": "create slash website folder root level"
+  },
+  {
+    "start": 786.079,
+    "duration": 6.56,
+    "text": "and in there build the following project"
+  },
+  {
+    "start": 789.519,
+    "duration": 4.88,
+    "text": "XML text boom project. So I have"
+  },
+  {
+    "start": 792.639,
+    "duration": 3.76,
+    "text": "described a clear vision for a simple"
+  },
+  {
+    "start": 794.399,
+    "duration": 3.361,
+    "text": "web app and what I'm want to show you is"
+  },
+  {
+    "start": 796.399,
+    "duration": 3.361,
+    "text": "how you can use auto research to"
+  },
+  {
+    "start": 797.76,
+    "duration": 3.6,
+    "text": "optimize any website you have right"
+  },
+  {
+    "start": 799.76,
+    "duration": 4.079,
+    "text": "whether it's a personal website whether"
+  },
+  {
+    "start": 801.36,
+    "duration": 4.479,
+    "text": "it's your AI startup any type of website"
+  },
+  {
+    "start": 803.839,
+    "duration": 3.361,
+    "text": "to optimize the loading times or"
+  },
+  {
+    "start": 805.839,
+    "duration": 3.281,
+    "text": "anything else that you can measure but"
+  },
+  {
+    "start": 807.2,
+    "duration": 4.0,
+    "text": "loading loading times are very easy to"
+  },
+  {
+    "start": 809.12,
+    "duration": 4.719,
+    "text": "measure so they're a great candidate for"
+  },
+  {
+    "start": 811.2,
+    "duration": 5.04,
+    "text": "an auto research loop so I'm just having"
+  },
+  {
+    "start": 813.839,
+    "duration": 4.881,
+    "text": "cloth code with bypass all permissions"
+  },
+  {
+    "start": 816.24,
+    "duration": 4.0,
+    "text": "build this so that we can uh build our"
+  },
+  {
+    "start": 818.72,
+    "duration": 3.52,
+    "text": "own auto research loop and in fact while"
+  },
+  {
+    "start": 820.24,
+    "duration": 4.719,
+    "text": "this is running let me launch a Codeex"
+  },
+  {
+    "start": 822.24,
+    "duration": 4.08,
+    "text": "in YOLO mode. Boom. Let me put it here."
+  },
+  {
+    "start": 824.959,
+    "duration": 4.241,
+    "text": "So, I'm going to rename it so it's clear"
+  },
+  {
+    "start": 826.32,
+    "duration": 5.759,
+    "text": "for you guys what it's what. Codeex CLI."
+  },
+  {
+    "start": 829.2,
+    "duration": 5.52,
+    "text": "GBD 5.4 is actually really good at u"
+  },
+  {
+    "start": 832.079,
+    "duration": 5.041,
+    "text": "fixing and debugging, but cloth code"
+  },
+  {
+    "start": 834.72,
+    "duration": 4.16,
+    "text": "with Opus 4.6 is really incredible to"
+  },
+  {
+    "start": 837.12,
+    "duration": 2.959,
+    "text": "work with, especially with fast mode. I"
+  },
+  {
+    "start": 838.88,
+    "duration": 3.68,
+    "text": "know it costs a lot of money if you do"
+  },
+  {
+    "start": 840.079,
+    "duration": 4.481,
+    "text": "slashfast, but I highly recommend it."
+  },
+  {
+    "start": 842.56,
+    "duration": 4.32,
+    "text": "And I also highly recommend it inside of"
+  },
+  {
+    "start": 844.56,
+    "duration": 4.0,
+    "text": "u Codex. And keep it on high. Extra high"
+  },
+  {
+    "start": 846.88,
+    "duration": 4.8,
+    "text": "is usually overkill. So, for codex, I'm"
+  },
+  {
+    "start": 848.56,
+    "duration": 6.639,
+    "text": "going to say create a benchmark. MGS"
+  },
+  {
+    "start": 851.68,
+    "duration": 5.76,
+    "text": "file inside of / original folder where"
+  },
+  {
+    "start": 855.199,
+    "duration": 4.801,
+    "text": "it makes sense. Going to give it the"
+  },
+  {
+    "start": 857.44,
+    "duration": 4.16,
+    "text": "eval instructions. Hand hit enter. Okay."
+  },
+  {
+    "start": 860.0,
+    "duration": 4.399,
+    "text": "Actually, first I'm going to say read"
+  },
+  {
+    "start": 861.6,
+    "duration": 4.56,
+    "text": "the structure of the actually that's my"
+  },
+  {
+    "start": 864.399,
+    "duration": 4.24,
+    "text": "bad. It should be in the website here"
+  },
+  {
+    "start": 866.16,
+    "duration": 4.239,
+    "text": "website folder not original because uh"
+  },
+  {
+    "start": 868.639,
+    "duration": 4.801,
+    "text": "it should read the original which was"
+  },
+  {
+    "start": 870.399,
+    "duration": 6.081,
+    "text": "the original repo by Karpathi to"
+  },
+  {
+    "start": 873.44,
+    "duration": 5.519,
+    "text": "understand where the evil script should"
+  },
+  {
+    "start": 876.48,
+    "duration": 6.0,
+    "text": "be. Boom. So this is going to use"
+  },
+  {
+    "start": 878.959,
+    "duration": 6.24,
+    "text": "Puppeteer to test the speed locally of"
+  },
+  {
+    "start": 882.48,
+    "duration": 4.64,
+    "text": "this website. Um it we should have the"
+  },
+  {
+    "start": 885.199,
+    "duration": 3.76,
+    "text": "project running on local 3000. Let me"
+  },
+  {
+    "start": 887.12,
+    "duration": 4.0,
+    "text": "see. So basically I asked it to create a"
+  },
+  {
+    "start": 888.959,
+    "duration": 4.56,
+    "text": "simple portfolio website with express"
+  },
+  {
+    "start": 891.12,
+    "duration": 4.64,
+    "text": "and static files. So let's see what it"
+  },
+  {
+    "start": 893.519,
+    "duration": 5.12,
+    "text": "built. Uh here's what it looks like."
+  },
+  {
+    "start": 895.76,
+    "duration": 4.079,
+    "text": "Alex Morgan. Uh just a simple portfolio"
+  },
+  {
+    "start": 898.639,
+    "duration": 3.281,
+    "text": "website. Like you could see this"
+  },
+  {
+    "start": 899.839,
+    "duration": 3.36,
+    "text": "literally like 10 15 years ago. Every"
+  },
+  {
+    "start": 901.92,
+    "duration": 3.44,
+    "text": "website looked like this, right?"
+  },
+  {
+    "start": 903.199,
+    "duration": 4.64,
+    "text": "Everybody who like is new to HTML and"
+  },
+  {
+    "start": 905.36,
+    "duration": 3.919,
+    "text": "CSS would have stuff like this in high"
+  },
+  {
+    "start": 907.839,
+    "duration": 3.36,
+    "text": "school and think they're the best"
+  },
+  {
+    "start": 909.279,
+    "duration": 4.881,
+    "text": "website designer. I'm guilty of that as"
+  },
+  {
+    "start": 911.199,
+    "duration": 4.88,
+    "text": "well. But anyways, let's uh see whether"
+  },
+  {
+    "start": 914.16,
+    "duration": 3.6,
+    "text": "Codex finished this. Okay, it did. So,"
+  },
+  {
+    "start": 916.079,
+    "duration": 3.841,
+    "text": "we have the setup. So, now let's"
+  },
+  {
+    "start": 917.76,
+    "duration": 4.24,
+    "text": "understand the repo, right? Remember"
+  },
+  {
+    "start": 919.92,
+    "duration": 5.359,
+    "text": "there are the three main files program"
+  },
+  {
+    "start": 922.0,
+    "duration": 5.36,
+    "text": "MD, train py, and prepare. py. So, the"
+  },
+  {
+    "start": 925.279,
+    "duration": 4.24,
+    "text": "original programm looks like this from"
+  },
+  {
+    "start": 927.36,
+    "duration": 4.4,
+    "text": "Karpathy and he wrote this himself and"
+  },
+  {
+    "start": 929.519,
+    "duration": 3.841,
+    "text": "this is a very u useful instruction by"
+  },
+  {
+    "start": 931.76,
+    "duration": 4.319,
+    "text": "the way. Feel free to steal this prompt"
+  },
+  {
+    "start": 933.36,
+    "duration": 5.279,
+    "text": "into many of your agentic projects where"
+  },
+  {
+    "start": 936.079,
+    "duration": 4.88,
+    "text": "you want the agent to keep going forever"
+  },
+  {
+    "start": 938.639,
+    "duration": 4.161,
+    "text": "or as close to forever as possible, but"
+  },
+  {
+    "start": 940.959,
+    "duration": 3.44,
+    "text": "we need to kind of write our own. Okay,"
+  },
+  {
+    "start": 942.8,
+    "duration": 3.2,
+    "text": "so let's go back into cloud code and I'm"
+  },
+  {
+    "start": 944.399,
+    "duration": 3.921,
+    "text": "going to tell it what to do to see the"
+  },
+  {
+    "start": 946.0,
+    "duration": 5.12,
+    "text": "into the website folder and to install"
+  },
+  {
+    "start": 948.32,
+    "duration": 3.6,
+    "text": "puppeteer and run this uh baseline"
+  },
+  {
+    "start": 951.12,
+    "duration": 3.68,
+    "text": "script. We're [clears throat] going to"
+  },
+  {
+    "start": 951.92,
+    "duration": 6.0,
+    "text": "benchmark our website of our uh expert"
+  },
+  {
+    "start": 954.8,
+    "duration": 6.159,
+    "text": "Alex Morgan portfolio designer to see"
+  },
+  {
+    "start": 957.92,
+    "duration": 5.2,
+    "text": "how fast or slow this is and then we're"
+  },
+  {
+    "start": 960.959,
+    "duration": 4.401,
+    "text": "going to run auto research to optimize"
+  },
+  {
+    "start": 963.12,
+    "duration": 3.839,
+    "text": "the living out of it. Okay. Okay. Let's"
+  },
+  {
+    "start": 965.36,
+    "duration": 3.919,
+    "text": "see. Okay, we have the results. So,"
+  },
+  {
+    "start": 966.959,
+    "duration": 4.56,
+    "text": "Puppeteer ran and it closed the Chrome"
+  },
+  {
+    "start": 969.279,
+    "duration": 3.36,
+    "text": "faster than I could see it or ran it in"
+  },
+  {
+    "start": 971.519,
+    "duration": 4.481,
+    "text": "the background. But basically, we have"
+  },
+  {
+    "start": 972.639,
+    "duration": 5.521,
+    "text": "the medium load time 50 ms uh which is"
+  },
+  {
+    "start": 976.0,
+    "duration": 4.16,
+    "text": "uh not that bad. So, we'll see whether"
+  },
+  {
+    "start": 978.16,
+    "duration": 3.84,
+    "text": "auto research can can optimize this."
+  },
+  {
+    "start": 980.16,
+    "duration": 3.28,
+    "text": "Okay. So now the most important part of"
+  },
+  {
+    "start": 982.0,
+    "duration": 3.68,
+    "text": "any auto research loop is the"
+  },
+  {
+    "start": 983.44,
+    "duration": 4.48,
+    "text": "program.md. So I'm going to go into our"
+  },
+  {
+    "start": 985.68,
+    "duration": 6.8,
+    "text": "website folder create a new file"
+  },
+  {
+    "start": 987.92,
+    "duration": 6.719,
+    "text": "program.md and u this is the main file"
+  },
+  {
+    "start": 992.48,
+    "duration": 4.56,
+    "text": "and actually we can use u inspiration"
+  },
+  {
+    "start": 994.639,
+    "duration": 6.32,
+    "text": "from karpathy say like so read the"
+  },
+  {
+    "start": 997.04,
+    "duration": 7.919,
+    "text": "programm inside of / original and then"
+  },
+  {
+    "start": 1000.959,
+    "duration": 7.841,
+    "text": "build our new website/program.md"
+  },
+  {
+    "start": 1004.959,
+    "duration": 7.601,
+    "text": "file on top of that but relevant to our"
+  },
+  {
+    "start": 1008.8,
+    "duration": 5.92,
+    "text": "website speed benchmarking auto research"
+  },
+  {
+    "start": 1012.56,
+    "duration": 4.639,
+    "text": "objective. Okay, so we're going to"
+  },
+  {
+    "start": 1014.72,
+    "duration": 4.72,
+    "text": "borrow Andre Kafis from engineering that"
+  },
+  {
+    "start": 1017.199,
+    "duration": 4.08,
+    "text": "he optimized quite heavily for his own"
+  },
+  {
+    "start": 1019.44,
+    "duration": 5.119,
+    "text": "project and we're going to have clot"
+  },
+  {
+    "start": 1021.279,
+    "duration": 4.56,
+    "text": "code rewrite that into our own programm"
+  },
+  {
+    "start": 1024.559,
+    "duration": 2.721,
+    "text": "which is going to be relevant to our own"
+  },
+  {
+    "start": 1025.839,
+    "duration": 3.281,
+    "text": "project. So again feel free to steal"
+  },
+  {
+    "start": 1027.28,
+    "duration": 4.72,
+    "text": "this for whatever you want any business"
+  },
+  {
+    "start": 1029.12,
+    "duration": 4.719,
+    "text": "use case any marketing use case any make"
+  },
+  {
+    "start": 1032.0,
+    "duration": 3.52,
+    "text": "money use case anything where there's a"
+  },
+  {
+    "start": 1033.839,
+    "duration": 3.681,
+    "text": "clear metric you can create your own"
+  },
+  {
+    "start": 1035.52,
+    "duration": 4.799,
+    "text": "programm and boom just like that I use"
+  },
+  {
+    "start": 1037.52,
+    "duration": 4.799,
+    "text": "cloth code to write 128 lines of"
+  },
+  {
+    "start": 1040.319,
+    "duration": 4.161,
+    "text": "instructions and to adapt it to this"
+  },
+  {
+    "start": 1042.319,
+    "duration": 4.0,
+    "text": "project. So now the programm is highly"
+  },
+  {
+    "start": 1044.48,
+    "duration": 4.079,
+    "text": "relevant to this specific project. Okay."
+  },
+  {
+    "start": 1046.319,
+    "duration": 4.24,
+    "text": "So I'm going to say do this next. Give"
+  },
+  {
+    "start": 1048.559,
+    "duration": 5.681,
+    "text": "it a clear instruction of what I want"
+  },
+  {
+    "start": 1050.559,
+    "duration": 6.561,
+    "text": "cloud code to do to um stage this commit"
+  },
+  {
+    "start": 1054.24,
+    "duration": 5.2,
+    "text": "this as a baseline. So remember if an"
+  },
+  {
+    "start": 1057.12,
+    "duration": 4.96,
+    "text": "experiment is successful it commits the"
+  },
+  {
+    "start": 1059.44,
+    "duration": 4.96,
+    "text": "result into history tweak. If it's not"
+  },
+  {
+    "start": 1062.08,
+    "duration": 4.8,
+    "text": "it does get reset and try something"
+  },
+  {
+    "start": 1064.4,
+    "duration": 4.96,
+    "text": "else. Now I'm going to say read program."
+  },
+  {
+    "start": 1066.88,
+    "duration": 4.88,
+    "text": "MD run baseline benchmark first. Record"
+  },
+  {
+    "start": 1069.36,
+    "duration": 4.319,
+    "text": "results tsv then begin the experiment"
+  },
+  {
+    "start": 1071.76,
+    "duration": 3.039,
+    "text": "loop. Do not stop or ask me anything."
+  },
+  {
+    "start": 1073.679,
+    "duration": 2.88,
+    "text": "Just keep running experiments"
+  },
+  {
+    "start": 1074.799,
+    "duration": 4.801,
+    "text": "autonomously. And there we go. We have"
+  },
+  {
+    "start": 1076.559,
+    "duration": 4.721,
+    "text": "our first auto research loop running. Uh"
+  },
+  {
+    "start": 1079.6,
+    "duration": 3.199,
+    "text": "maybe I could have created a separate uh"
+  },
+  {
+    "start": 1081.28,
+    "duration": 3.2,
+    "text": "agent, you know, separate cloth coder"
+  },
+  {
+    "start": 1082.799,
+    "duration": 3.521,
+    "text": "codex. And obviously you can try"
+  },
+  {
+    "start": 1084.48,
+    "duration": 4.16,
+    "text": "different agents and see which you know"
+  },
+  {
+    "start": 1086.32,
+    "duration": 4.239,
+    "text": "which one performs the best. But uh as"
+  },
+  {
+    "start": 1088.64,
+    "duration": 3.36,
+    "text": "you can see it's not so look slightly"
+  },
+  {
+    "start": 1090.559,
+    "duration": 3.521,
+    "text": "worse. Looks like noise. Let me rerun to"
+  },
+  {
+    "start": 1092.0,
+    "duration": 3.52,
+    "text": "confirm. Still worse. Following protocol"
+  },
+  {
+    "start": 1094.08,
+    "duration": 3.28,
+    "text": "revert. Okay. Amazing. So it ran an"
+  },
+  {
+    "start": 1095.52,
+    "duration": 3.279,
+    "text": "experiment and the speed of the website"
+  },
+  {
+    "start": 1097.36,
+    "duration": 3.12,
+    "text": "was worse. So it's going to try"
+  },
+  {
+    "start": 1098.799,
+    "duration": 3.12,
+    "text": "something else. And this is the whole"
+  },
+  {
+    "start": 1100.48,
+    "duration": 3.28,
+    "text": "point of auto research. I'm not doing"
+  },
+  {
+    "start": 1101.919,
+    "duration": 3.041,
+    "text": "anything. My hands are up. And even if I"
+  },
+  {
+    "start": 1103.76,
+    "duration": 3.279,
+    "text": "was doing this, first of all, I would"
+  },
+  {
+    "start": 1104.96,
+    "duration": 3.839,
+    "text": "need to be a solid front-end developer."
+  },
+  {
+    "start": 1107.039,
+    "duration": 3.52,
+    "text": "And second of all, I couldn't do it so"
+  },
+  {
+    "start": 1108.799,
+    "duration": 3.201,
+    "text": "quickly, right? So, even if you are a"
+  },
+  {
+    "start": 1110.559,
+    "duration": 3.441,
+    "text": "great front end developer and you know"
+  },
+  {
+    "start": 1112.0,
+    "duration": 3.6,
+    "text": "how to optimize websites, you're still"
+  },
+  {
+    "start": 1114.0,
+    "duration": 3.28,
+    "text": "Okay, now it found an improvement."
+  },
+  {
+    "start": 1115.6,
+    "duration": 2.88,
+    "text": "You're still not going to beat an AI"
+  },
+  {
+    "start": 1117.28,
+    "duration": 2.639,
+    "text": "agent that can generate hundreds of"
+  },
+  {
+    "start": 1118.48,
+    "duration": 3.68,
+    "text": "tokens per second. So, it found an"
+  },
+  {
+    "start": 1119.919,
+    "duration": 4.321,
+    "text": "improvement. Look at it. 33 milliseconds"
+  },
+  {
+    "start": 1122.16,
+    "duration": 4.639,
+    "text": "instead of 50. So, we're already down"
+  },
+  {
+    "start": 1124.24,
+    "duration": 4.559,
+    "text": "34% in a matter of less than a minute."
+  },
+  {
+    "start": 1126.799,
+    "duration": 4.0,
+    "text": "This is the power of our research. Okay."
+  },
+  {
+    "start": 1128.799,
+    "duration": 4.561,
+    "text": "And look at this. Another one. 28"
+  },
+  {
+    "start": 1130.799,
+    "duration": 4.401,
+    "text": "milliseconds. Another 15% improvement in"
+  },
+  {
+    "start": 1133.36,
+    "duration": 3.28,
+    "text": "a matter of 2 or 3 minutes, guys. Yeah,"
+  },
+  {
+    "start": 1135.2,
+    "duration": 3.04,
+    "text": "auto research is insane and I have a"
+  },
+  {
+    "start": 1136.64,
+    "duration": 3.2,
+    "text": "feeling that this is not the last video"
+  },
+  {
+    "start": 1138.24,
+    "duration": 3.12,
+    "text": "I'm going to make on auto research. So"
+  },
+  {
+    "start": 1139.84,
+    "duration": 3.6,
+    "text": "again, if you want me to make more"
+  },
+  {
+    "start": 1141.36,
+    "duration": 3.84,
+    "text": "content on auto research, make sure to"
+  },
+  {
+    "start": 1143.44,
+    "duration": 3.68,
+    "text": "subscribe. And if you are someone who's"
+  },
+  {
+    "start": 1145.2,
+    "duration": 3.599,
+    "text": "building his own AI startup, you want to"
+  },
+  {
+    "start": 1147.12,
+    "duration": 3.28,
+    "text": "build a real AI business, then listen up"
+  },
+  {
+    "start": 1148.799,
+    "duration": 4.0,
+    "text": "because in my accelerator, we work"
+  },
+  {
+    "start": 1150.4,
+    "duration": 4.24,
+    "text": "closely with a handful of founders for 6"
+  },
+  {
+    "start": 1152.799,
+    "duration": 3.521,
+    "text": "months to help them scale aggressively."
+  },
+  {
+    "start": 1154.64,
+    "duration": 4.48,
+    "text": "And in fact, for the rest of March, we"
+  },
+  {
+    "start": 1156.32,
+    "duration": 4.64,
+    "text": "are offering free idea validation calls."
+  },
+  {
+    "start": 1159.12,
+    "duration": 3.36,
+    "text": "So, if you have an AI app you want to"
+  },
+  {
+    "start": 1160.96,
+    "duration": 3.599,
+    "text": "build and you want to turn it into a"
+  },
+  {
+    "start": 1162.48,
+    "duration": 3.439,
+    "text": "real profitable business, then make sure"
+  },
+  {
+    "start": 1164.559,
+    "duration": 2.641,
+    "text": "to click the second link in the"
+  },
+  {
+    "start": 1165.919,
+    "duration": 3.281,
+    "text": "description, which will take you to the"
+  },
+  {
+    "start": 1167.2,
+    "duration": 4.16,
+    "text": "landing page to see if you qualify for a"
+  },
+  {
+    "start": 1169.2,
+    "duration": 4.16,
+    "text": "free idea validation call. But again,"
+  },
+  {
+    "start": 1171.36,
+    "duration": 3.679,
+    "text": "this is only for serious founders who"
+  },
+  {
+    "start": 1173.36,
+    "duration": 2.96,
+    "text": "actually want to build a real AI"
+  },
+  {
+    "start": 1175.039,
+    "duration": 2.561,
+    "text": "business. That being said, thank you"
+  },
+  {
+    "start": 1176.32,
+    "duration": 3.52,
+    "text": "guys for watching. I'm going to let this"
+  },
+  {
+    "start": 1177.6,
+    "duration": 4.8,
+    "text": "auto research loop run for a bit. We're"
+  },
+  {
+    "start": 1179.84,
+    "duration": 5.04,
+    "text": "already on 25 milliseconds. That's"
+  },
+  {
+    "start": 1182.4,
+    "duration": 4.32,
+    "text": "crazy. Already half in a matter of four"
+  },
+  {
+    "start": 1184.88,
+    "duration": 3.6,
+    "text": "minutes. Let's see where this gets. And"
+  },
+  {
+    "start": 1186.72,
+    "duration": 3.12,
+    "text": "uh yeah, I'm going to update you on"
+  },
+  {
+    "start": 1188.48,
+    "duration": 5.36,
+    "text": "Twitter, so make sure to follow me on"
+  },
+  {
+    "start": 1189.84,
+    "duration": 4.0,
+    "text": "Twitter and have a great productive"
+  }
+]

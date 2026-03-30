@@ -1,0 +1,569 @@
+[00000.08] My name is David Andre and this is the
+[00002.00] clearest explanation of auto research
+[00004.00] you're going to find on the internet. So
+[00006.16] what is auto research? It's an open-
+[00008.08] source project by Andre Karpathy that
+[00010.48] lets AI improve itself autonomously. You
+[00013.04] have an AI agent that runs experiments
+[00015.20] automatically and it keeps what works
+[00016.96] and throws away everything that doesn't.
+[00018.88] So in this video I'm going to explain
+[00020.48] how auto research actually works, how
+[00022.80] you can use it in your own life and
+[00024.40] business because there are a lot of
+[00025.68] implications and how you can build your
+[00027.92] very first auto research loop. So, if
+[00030.00] you really want to be on the cutting
+[00031.44] edge of AI, make sure to watch until the
+[00033.60] end. First off, who is Andre Kapathy?
+[00035.92] He's one of the most legendary AI
+[00037.68] researchers of all time. He's one of the
+[00039.52] OpenAI co-founders, and he's the main
+[00041.68] person behind Tesla autopilot. Oh, yeah.
+[00044.24] And he's also the guy who invented the
+[00046.08] term VIP coding. Plus, he has
+[00048.08] contributed a lot to the open-source
+[00050.32] community, especially in AI. And yes,
+[00052.72] most importantly, he was born in
+[00054.40] Czechoslovakia. However, this video is
+[00056.40] about one of his contributions and that
+[00058.56] is auto research. Karpathi had a
+[00060.64] training script for the GPD2 model that
+[00063.12] he's been optimizing for many months.
+[00064.96] And then he realized why am I doing
+[00066.80] this? Why not just have an AI agent run
+[00069.36] different experiments in a loop to
+[00071.36] figure out what's the best way to
+[00072.72] optimize this model? And this is the
+[00074.56] core idea. Give AI one file, one metric,
+[00078.16] and let it run hundreds if not thousands
+[00080.64] of experiments by itself while you sleep
+[00083.28] and watch it improve. And yes, at the
+[00085.12] end of the video, I'll show you how you
+[00086.88] can build your first order research
+[00088.72] loop. And yes, you can do this even if
+[00091.04] you are a complete beginner. Now, let's
+[00092.56] talk about the prepare. py file because
+[00094.64] it's essential to understand this. The
+[00096.16] agent cannot touch prepare. So that it
+[00099.12] can't cheat the eal you set for it.
+[00101.12] Without this limitation, it could
+[00102.48] rewrite the scoring function to fake its
+[00104.72] results. So basically, the prepare py
+[00107.12] file defines what better means. Now, of
+[00110.00] course, if you set the wrong metric,
+[00111.60] you'll get the wrong results. So here's
+[00113.04] a nice graphic that visualizes the loop.
+[00115.68] First the agent comes up with a
+[00117.44] hypothesis, right? A theory of what it's
+[00119.92] going to improve, what experiment it
+[00121.76] could run. Then it modifies the code.
+[00123.68] You train it for around 5 minutes. Then
+[00125.44] it runs the evaluation to see if it's
+[00127.76] good or if it's not good. If it wants to
+[00129.44] keep it, it will just commit it to your
+[00130.96] git history. If it's bad and if it
+[00133.20] worsens the results, it will do git
+[00135.04] reset and repeat the whole loop over and
+[00137.60] over and over as many times as you want.
+[00140.40] you know [laughter] depending on how
+[00141.76] many dollars you want to spend or tokens
+[00143.68] and yeah this is auto research basically
+[00145.20] in a single image. So if you start it
+[00146.80] right before going to bed it can run
+[00148.72] roughly 100 experiments overnight. Now
+[00151.60] by giving it a fixed time budget you
+[00153.84] make every experiment directly
+[00155.12] comparable because let's say you're
+[00156.24] hiring for your company. If you have one
+[00158.24] applicant and you give him seven days to
+[00160.88] complete a task and the other one only
+[00162.96] has seven minutes then obviously the one
+[00164.88] who does seven days on average will do
+[00167.60] better. So you want to make sure this is
+[00169.44] the same in AI agents. That way the
+[00171.04] agent can't cheat just by training
+[00173.12] longer or by training better ideas. Only
+[00175.28] the raw idea wins with the same time
+[00177.60] allocated. But if you think that order
+[00179.44] research only applies to the training of
+[00181.52] AI models, you are badly mistaken. This
+[00184.16] has massive implications across every
+[00186.32] domain of your life or business. You can
+[00188.16] build a recursive self-improving loop
+[00190.56] for nearly anything that can be
+[00192.64] measured. Thanks to AI agents, soon
+[00194.48] enough the execution of any work or task
+[00197.28] will become basically free. However,
+[00199.20] what will become valuable is knowing
+[00201.76] what to measure, picking the right
+[00203.52] metric, and setting the right
+[00205.12] constraints. This is the skill that is
+[00207.44] going to make millionaires in the
+[00208.88] future. And by the way, this is the
+[00210.32] clearest example of what AI agents
+[00212.56] actually look like in practice. Not just
+[00214.48] chat bots, but real autonomous loops
+[00217.12] that do meaningful work for companies or
+[00220.08] individuals. And if you reason about the
+[00221.68] state of AI from first principles, you
+[00223.92] realize that this has been the end goal
+[00226.32] all along. Andre Karpathy predicts that
+[00228.80] all LLM frontier labs will do this. They
+[00231.52] will run some sort of auto research.
+[00233.60] This is the final boss battle. And if
+[00235.20] you think about it, this is literally
+[00236.48] what [clears throat] recursive
+[00237.84] self-improvement will look like. And the
+[00239.68] funny thing is that right now the AI
+[00241.84] labs like OpenAI Enthropic Gemini are
+[00244.16] spending tens of millions of dollars on
+[00246.24] researchers, all of which are trying to
+[00248.16] build this. Yet Karpafei made it
+[00250.48] completely open source. Now to
+[00252.16] understand order research, you must
+[00253.76] understand its free file architecture.
+[00256.16] First you have program.mmd. This is the
+[00258.32] most important file. This is the human
+[00260.56] setting the goal, the constraints and
+[00262.16] the rules for the agent. Then you have
+[00264.24] the train. py file. This is the one file
+[00266.72] that the agent can actually change. And
+[00268.80] this could be anything by the way. Code,
+[00270.96] some config, a prompt, some math
+[00273.20] equation, literally anything you want to
+[00275.28] optimize. And then you have prepared.
+[00276.96] py. This is the metric and the
+[00278.72] evaluation script. The agent cannot
+[00280.96] touch this. Absolutely never. Because
+[00283.20] this is what measures the result. And by
+[00285.20] the way, there are several tech
+[00286.72] billionaires who are going crazy over
+[00288.08] this such as the CEO of Shopify and the
+[00291.04] CEO of Stripe because these guys realize
+[00293.36] that this is not just about training AI
+[00295.36] models. And this is perhaps the biggest
+[00296.88] misconception about auto research.
+[00298.96] People think that it's just about
+[00300.80] optimizing of machine learning, right?
+[00302.88] Because this is what Karpathi used as
+[00304.48] example. But if you actually pay
+[00306.40] attention and if you think about it a
+[00308.24] little bit more, you realize that as
+[00309.84] long as you have a clear metric and you
+[00311.60] can run these experiments, this could be
+[00313.28] used in so many different ways in
+[00315.04] marketing, in business, in testing new
+[00316.72] products, in trading strategies, in
+[00318.96] personal life, in weather forecast,
+[00321.28] literally hundreds of possible domains.
+[00323.20] You can build these auto research loops
+[00325.04] that don't have any human in the loop,
+[00326.96] but instead swarm of AI agents running
+[00329.12] experiments, discarding what doesn't
+[00330.88] work, and keeping what works. And as
+[00332.40] Kafi says here, we might be in the early
+[00335.20] stages of the singularity. Now, every AI
+[00337.44] workflow has the same bottleneck,
+[00339.04] getting fresh real world data. You can
+[00341.20] build the most sophisticated AI agent,
+[00342.88] but if it can't see what's actually on
+[00345.12] the web right now, it's flying blind.
+[00347.20] That's where Oxyabs comes in. The Oxyabs
+[00349.92] web scraper API lets you pull structured
+[00352.32] data from basically any website. This
+[00354.24] could be Amazon product listings, Google
+[00356.08] search results, real estate listings,
+[00358.32] all through a single API call. It
+[00360.40] handles proxy rotation, capture solving,
+[00362.96] and JavaScript rendering, so you don't
+[00365.04] have to do that yourself. But here's
+[00366.40] what makes it interesting for us AI
+[00368.32] developers. Oxyabs has an official MCP
+[00370.96] that you can connect directly to cursor
+[00372.80] or cloth code in a matter of a minute,
+[00374.72] so that your AI agent gets live web
+[00377.28] scraping superpowers. Say you need to
+[00379.36] pull competitors pricing or scrape
+[00381.52] search results or grab real estate
+[00383.28] listings. Just ask it in plain English.
+[00385.36] The agent calls OxyLabs, gets structured
+[00388.16] data back, and reasons over it. And even
+[00390.48] if you aren't a developer, OxyLabs plugs
+[00393.36] straight into NA10. You can visually
+[00395.28] build a workflow that scrapes Amazon
+[00396.96] prices, sends them to an AI, and spits
+[00399.52] out insights with zero code written by
+[00402.40] you. And the best part is Oxyabs gives
+[00404.88] up to 2,000 scrape results for free, so
+[00407.84] you can test it yourself. So go to
+[00409.52] oxyabs.io/david
+[00411.52] for a free trial. Oh, and there is no
+[00413.20] credit card required. And if you run out
+[00414.88] of credits, use my code David for 20%
+[00417.92] off all Oxyab plans. And thank you to
+[00420.40] OxyLabs for sponsoring this video.
+[00422.08] Again, I need to stress auto research is
+[00424.00] not just for machine learning. This
+[00425.84] pattern works anywhere you can measure
+[00428.16] an outcome, a clear outcome. And Kathy
+[00430.56] said this himself. Any metric you care
+[00432.80] about that is reasonably efficient to
+[00434.56] evaluate can be auto researched. So you
+[00437.12] need one file to edit, one scalar
+[00438.96] metric, and a time box loop. If you can
+[00441.36] score it, you can auto research it. Now
+[00443.44] let's look at some practical valuable
+[00445.44] use cases. First off, trading. You can
+[00447.20] take the same order research loop, but
+[00448.88] instead of improving an AI model, you
+[00450.96] can point it on a trading strategy. The
+[00452.88] agent tweaks your buy sell rules, tries
+[00455.44] experiments based on years of market
+[00457.04] data, and scores each experiment by its
+[00459.36] sharp ratio, which is basically how good
+[00461.36] are the returns to the risk. And it can
+[00463.20] test hundreds of different trading
+[00464.88] strategies to see which one has the best
+[00467.36] returns. Here's another use case,
+[00468.96] marketing. You can now apply auto
+[00470.88] research to marketing with emails, ad
+[00472.96] creatives, landing pages, automated AB
+[00475.44] tests, headlines, thumbnails, YouTube
+[00477.68] titles, any type of marketing. Eric Sue
+[00480.32] put it the best. Most marketing teams
+[00482.48] run 30 experiments per year. The next
+[00484.88] generation will run 36,000,
+[00487.76] aka roughly 100 per day. The agent will
+[00490.24] modify the copy and measure the
+[00491.84] conversions and decide whether to keep
+[00493.44] this experiment or to discard it. The
+[00495.44] exact same loop as before. Now before I
+[00497.68] show you more use cases how auto
+[00499.60] research can benefit your life, please
+[00501.68] consider subscribing. 25% of you are
+[00504.08] subscribed which means the vast majority
+[00505.76] of you watching right now are not
+[00507.76] subscribed. So if you want to see more
+[00509.68] highquality AI content in your YouTube
+[00512.32] recommended, please take two seconds, go
+[00514.80] below the video and click the subscribe
+[00516.40] button. It helps out more than you
+[00518.40] think. So to all of you who just
+[00520.00] subscribed, thank you. The next use case
+[00521.92] is for developers. You can point auto
+[00524.16] research at basically any codebase and
+[00526.56] say make it faster. And people are also
+[00528.88] using auto research to fine-tune open
+[00530.96] source AI models so they run faster
+[00532.72] locally on your laptop or phone. So
+[00535.28] expect in the next 6 months insane
+[00537.68] breakthroughs in terms of what is
+[00539.36] possible to run on phone. I would even
+[00541.36] say that we will have Sonet 4.6 quality
+[00543.84] models runningable on iPhones in three
+[00547.36] or four months. This is a prediction.
+[00549.12] Let's see if it's correct. Another use
+[00550.64] case is prompt engineering. Auto
+[00552.16] research can fine-tune the system
+[00553.76] instructions behind all of your AI
+[00555.28] agents. So Harrison Chase, the founder
+[00557.52] of Langchain, which is a billiond dollar
+[00559.44] company, said agents mess up because
+[00561.28] they don't have the right context and
+[00562.96] system prompts are part of that context.
+[00565.52] So order research can find new ways to
+[00568.00] phrase things, better language, maybe
+[00569.84] even different language, you know, maybe
+[00571.68] instead of English, it can use Polish or
+[00573.60] Czech or German, whatever. It can try
+[00575.68] different levels like beginner, you
+[00578.32] know, college level, PhD level to see
+[00581.20] which prompt works the best for all of
+[00583.84] your AI agents. So these are the three
+[00585.68] conditions that decide whether your auto
+[00588.00] research loop will be successful or will
+[00590.24] be a failure. Number one, a clear
+[00591.92] metric. One number, a clear direction
+[00593.92] you want to go in. And number two, an
+[00595.52] automated evaluation where there isn't a
+[00597.84] human in the loop. Right? If you, the
+[00600.32] human, need to be in the loop, it will
+[00601.60] be so slow and it will not be auto
+[00603.84] research. Sure, it still can be
+[00605.60] research, but it will not be auto
+[00607.12] research. It will not be running while
+[00608.56] you sleep. And number three, there's one
+[00610.80] file that the agent can change. Not two,
+[00613.44] not zero, one file. And you need all of
+[00616.00] these three conditions for auto research
+[00617.92] to work. Now, here's where auto research
+[00619.60] will fail. Brand design, UX, pricing,
+[00622.48] anything where better is subjective.
+[00624.80] Now, for example, in pricing, you could
+[00626.64] have it succeed if you have a large
+[00628.24] volume of traffic to your pricing page
+[00630.00] and you can quickly AB test different
+[00631.76] pricing to see highest cash collected.
+[00634.16] But for most businesses, it will not be
+[00636.08] effective, right? Because the quality of
+[00638.40] that makes better is subjective or the
+[00640.48] loop is too slow. The loop needs
+[00642.48] objective metric. If the success is a
+[00644.56] judgment call or a feeling, the agent
+[00647.12] cannot tell what's working. So, it will
+[00648.88] optimize in a random direction. Also, I
+[00650.72] want to stress this again. If you give
+[00652.32] it a bad metric, it will very
+[00654.08] confidently optimize the wrong thing. So
+[00656.40] here's Arj Karpathi's end vision. In the
+[00658.64] early 2000s, there was a project set at
+[00660.88] home that let anyone donate their spare
+[00663.76] computer power to research for alien
+[00666.00] life. And Arj Karpathi wants to do the
+[00668.24] same model, the same idea, but for AI
+[00671.20] research where we have millions of AI
+[00673.20] agents distributed across thousands of
+[00675.60] computers and you can actually allocate
+[00677.92] where that research goes towards. All
+[00680.16] right, so now let me show you how to
+[00681.84] actually build your own order research
+[00683.76] loop from scratch. Even if you're a
+[00686.24] complete beginner, just stick with me
+[00687.92] for the next five minutes and you'll be
+[00689.44] ahead of 99.9% of people in AI who just
+[00692.80] pay GBT subscription and they think
+[00694.72] they're advanced. They cannot even dream
+[00696.40] about having their own auto research.
+[00698.16] But you are like a couple of steps away
+[00699.68] from having that. So log in. So first of
+[00702.00] all, this is the GitHub repo. I'm going
+[00703.60] to link it below the video. This is the
+[00705.36] auto research repository from Karpathy.
+[00707.60] I'm going to start it as well because
+[00708.88] it's a great project. Now, if you are
+[00711.12] not familiar with GitHub, you don't need
+[00712.48] to panic. You don't need to understand
+[00714.64] much. This is just a way to store code.
+[00716.72] Okay? Efficient way to store coding
+[00719.20] projects. That's all you need to
+[00720.48] understand. You don't need to be a Git
+[00722.16] expert, nothing like that. All we need
+[00724.48] to do is click here on the code and
+[00726.56] click copy here. That's it. Next, you
+[00728.56] need an IDE. So, either VS Code or
+[00730.80] cursor. I'm going to be using cursor
+[00732.00] here. Just install an ID of some sort.
+[00734.16] And we're going to use a coding agent.
+[00735.68] I'm going to use cloth code. So, I'm
+[00737.12] going to open an empty project here.
+[00739.20] Boom. Nothing in here. You can see on
+[00741.28] the right, no files. And I'm going to
+[00744.00] launch cloth dangerously skip
+[00746.88] permissions. Boom. Enter. So, here it
+[00749.04] is. CL code. Now, I'm going to say
+[00751.68] create a new folder/or original in our
+[00755.76] repo root level and in there clone this
+[00759.44] GitHub repository. Boom. Paste it in.
+[00762.16] And again, Cloudcore will know what to
+[00763.84] do exactly. So we will figure out okay
+[00765.60] everything is empty and then it created
+[00767.44] original folder and clone it in there.
+[00769.04] Now why did I want to do it? Well
+[00770.40] because I want to create a separate
+[00771.84] folder where we're going to build
+[00773.44] something with auto research for us but
+[00776.16] I also want to keep the original
+[00777.60] repository here so that we can use it as
+[00780.00] a reference. Next I'm going to say now
+[00782.32] create slash website folder root level
+[00786.08] and in there build the following project
+[00789.52] XML text boom project. So I have
+[00792.64] described a clear vision for a simple
+[00794.40] web app and what I'm want to show you is
+[00796.40] how you can use auto research to
+[00797.76] optimize any website you have right
+[00799.76] whether it's a personal website whether
+[00801.36] it's your AI startup any type of website
+[00803.84] to optimize the loading times or
+[00805.84] anything else that you can measure but
+[00807.20] loading loading times are very easy to
+[00809.12] measure so they're a great candidate for
+[00811.20] an auto research loop so I'm just having
+[00813.84] cloth code with bypass all permissions
+[00816.24] build this so that we can uh build our
+[00818.72] own auto research loop and in fact while
+[00820.24] this is running let me launch a Codeex
+[00822.24] in YOLO mode. Boom. Let me put it here.
+[00824.96] So, I'm going to rename it so it's clear
+[00826.32] for you guys what it's what. Codeex CLI.
+[00829.20] GBD 5.4 is actually really good at u
+[00832.08] fixing and debugging, but cloth code
+[00834.72] with Opus 4.6 is really incredible to
+[00837.12] work with, especially with fast mode. I
+[00838.88] know it costs a lot of money if you do
+[00840.08] slashfast, but I highly recommend it.
+[00842.56] And I also highly recommend it inside of
+[00844.56] u Codex. And keep it on high. Extra high
+[00846.88] is usually overkill. So, for codex, I'm
+[00848.56] going to say create a benchmark. MGS
+[00851.68] file inside of / original folder where
+[00855.20] it makes sense. Going to give it the
+[00857.44] eval instructions. Hand hit enter. Okay.
+[00860.00] Actually, first I'm going to say read
+[00861.60] the structure of the actually that's my
+[00864.40] bad. It should be in the website here
+[00866.16] website folder not original because uh
+[00868.64] it should read the original which was
+[00870.40] the original repo by Karpathi to
+[00873.44] understand where the evil script should
+[00876.48] be. Boom. So this is going to use
+[00878.96] Puppeteer to test the speed locally of
+[00882.48] this website. Um it we should have the
+[00885.20] project running on local 3000. Let me
+[00887.12] see. So basically I asked it to create a
+[00888.96] simple portfolio website with express
+[00891.12] and static files. So let's see what it
+[00893.52] built. Uh here's what it looks like.
+[00895.76] Alex Morgan. Uh just a simple portfolio
+[00898.64] website. Like you could see this
+[00899.84] literally like 10 15 years ago. Every
+[00901.92] website looked like this, right?
+[00903.20] Everybody who like is new to HTML and
+[00905.36] CSS would have stuff like this in high
+[00907.84] school and think they're the best
+[00909.28] website designer. I'm guilty of that as
+[00911.20] well. But anyways, let's uh see whether
+[00914.16] Codex finished this. Okay, it did. So,
+[00916.08] we have the setup. So, now let's
+[00917.76] understand the repo, right? Remember
+[00919.92] there are the three main files program
+[00922.00] MD, train py, and prepare. py. So, the
+[00925.28] original programm looks like this from
+[00927.36] Karpathy and he wrote this himself and
+[00929.52] this is a very u useful instruction by
+[00931.76] the way. Feel free to steal this prompt
+[00933.36] into many of your agentic projects where
+[00936.08] you want the agent to keep going forever
+[00938.64] or as close to forever as possible, but
+[00940.96] we need to kind of write our own. Okay,
+[00942.80] so let's go back into cloud code and I'm
+[00944.40] going to tell it what to do to see the
+[00946.00] into the website folder and to install
+[00948.32] puppeteer and run this uh baseline
+[00951.12] script. We're [clears throat] going to
+[00951.92] benchmark our website of our uh expert
+[00954.80] Alex Morgan portfolio designer to see
+[00957.92] how fast or slow this is and then we're
+[00960.96] going to run auto research to optimize
+[00963.12] the living out of it. Okay. Okay. Let's
+[00965.36] see. Okay, we have the results. So,
+[00966.96] Puppeteer ran and it closed the Chrome
+[00969.28] faster than I could see it or ran it in
+[00971.52] the background. But basically, we have
+[00972.64] the medium load time 50 ms uh which is
+[00976.00] uh not that bad. So, we'll see whether
+[00978.16] auto research can can optimize this.
+[00980.16] Okay. So now the most important part of
+[00982.00] any auto research loop is the
+[00983.44] program.md. So I'm going to go into our
+[00985.68] website folder create a new file
+[00987.92] program.md and u this is the main file
+[00992.48] and actually we can use u inspiration
+[00994.64] from karpathy say like so read the
+[00997.04] programm inside of / original and then
+[01000.96] build our new website/program.md
+[01004.96] file on top of that but relevant to our
+[01008.80] website speed benchmarking auto research
+[01012.56] objective. Okay, so we're going to
+[01014.72] borrow Andre Kafis from engineering that
+[01017.20] he optimized quite heavily for his own
+[01019.44] project and we're going to have clot
+[01021.28] code rewrite that into our own programm
+[01024.56] which is going to be relevant to our own
+[01025.84] project. So again feel free to steal
+[01027.28] this for whatever you want any business
+[01029.12] use case any marketing use case any make
+[01032.00] money use case anything where there's a
+[01033.84] clear metric you can create your own
+[01035.52] programm and boom just like that I use
+[01037.52] cloth code to write 128 lines of
+[01040.32] instructions and to adapt it to this
+[01042.32] project. So now the programm is highly
+[01044.48] relevant to this specific project. Okay.
+[01046.32] So I'm going to say do this next. Give
+[01048.56] it a clear instruction of what I want
+[01050.56] cloud code to do to um stage this commit
+[01054.24] this as a baseline. So remember if an
+[01057.12] experiment is successful it commits the
+[01059.44] result into history tweak. If it's not
+[01062.08] it does get reset and try something
+[01064.40] else. Now I'm going to say read program.
+[01066.88] MD run baseline benchmark first. Record
+[01069.36] results tsv then begin the experiment
+[01071.76] loop. Do not stop or ask me anything.
+[01073.68] Just keep running experiments
+[01074.80] autonomously. And there we go. We have
+[01076.56] our first auto research loop running. Uh
+[01079.60] maybe I could have created a separate uh
+[01081.28] agent, you know, separate cloth coder
+[01082.80] codex. And obviously you can try
+[01084.48] different agents and see which you know
+[01086.32] which one performs the best. But uh as
+[01088.64] you can see it's not so look slightly
+[01090.56] worse. Looks like noise. Let me rerun to
+[01092.00] confirm. Still worse. Following protocol
+[01094.08] revert. Okay. Amazing. So it ran an
+[01095.52] experiment and the speed of the website
+[01097.36] was worse. So it's going to try
+[01098.80] something else. And this is the whole
+[01100.48] point of auto research. I'm not doing
+[01101.92] anything. My hands are up. And even if I
+[01103.76] was doing this, first of all, I would
+[01104.96] need to be a solid front-end developer.
+[01107.04] And second of all, I couldn't do it so
+[01108.80] quickly, right? So, even if you are a
+[01110.56] great front end developer and you know
+[01112.00] how to optimize websites, you're still
+[01114.00] Okay, now it found an improvement.
+[01115.60] You're still not going to beat an AI
+[01117.28] agent that can generate hundreds of
+[01118.48] tokens per second. So, it found an
+[01119.92] improvement. Look at it. 33 milliseconds
+[01122.16] instead of 50. So, we're already down
+[01124.24] 34% in a matter of less than a minute.
+[01126.80] This is the power of our research. Okay.
+[01128.80] And look at this. Another one. 28
+[01130.80] milliseconds. Another 15% improvement in
+[01133.36] a matter of 2 or 3 minutes, guys. Yeah,
+[01135.20] auto research is insane and I have a
+[01136.64] feeling that this is not the last video
+[01138.24] I'm going to make on auto research. So
+[01139.84] again, if you want me to make more
+[01141.36] content on auto research, make sure to
+[01143.44] subscribe. And if you are someone who's
+[01145.20] building his own AI startup, you want to
+[01147.12] build a real AI business, then listen up
+[01148.80] because in my accelerator, we work
+[01150.40] closely with a handful of founders for 6
+[01152.80] months to help them scale aggressively.
+[01154.64] And in fact, for the rest of March, we
+[01156.32] are offering free idea validation calls.
+[01159.12] So, if you have an AI app you want to
+[01160.96] build and you want to turn it into a
+[01162.48] real profitable business, then make sure
+[01164.56] to click the second link in the
+[01165.92] description, which will take you to the
+[01167.20] landing page to see if you qualify for a
+[01169.20] free idea validation call. But again,
+[01171.36] this is only for serious founders who
+[01173.36] actually want to build a real AI
+[01175.04] business. That being said, thank you
+[01176.32] guys for watching. I'm going to let this
+[01177.60] auto research loop run for a bit. We're
+[01179.84] already on 25 milliseconds. That's
+[01182.40] crazy. Already half in a matter of four
+[01184.88] minutes. Let's see where this gets. And
+[01186.72] uh yeah, I'm going to update you on
+[01188.48] Twitter, so make sure to follow me on
+[01189.84] Twitter and have a great productive

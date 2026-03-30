@@ -1,0 +1,86 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - text: Adapted Resource
+        - heading "AutoResearch, translated for veterinary websites and growth systems." [level=1] [ref=e6]
+        - paragraph [ref=e7]:
+          - text: This page adapts the ideas from David Ondrej's YouTube video,
+          - link "The only AutoResearch tutorial you'll ever need" [ref=e8] [cursor=pointer]:
+            - /url: https://youtu.be/uBWuKh1nZ2Y
+          - text: ", into a practical Veterinary Business Institute version for practice owners, marketing teams, and operators."
+        - generic [ref=e9]:
+          - link "Back to Homepage" [ref=e10] [cursor=pointer]:
+            - /url: /
+          - link "Book a Visibility Audit" [ref=e11] [cursor=pointer]:
+            - /url: https://www.veterinarybusinessinstitute.com/msm/ryan/
+      - complementary [ref=e12]:
+        - generic [ref=e13]: Source Theme
+        - heading "What the original video explains" [level=2] [ref=e14]
+        - paragraph [ref=e15]: AutoResearch is an experiment loop where an AI agent keeps testing changes against a fixed metric, keeps what works, and discards what does not.
+        - paragraph [ref=e16]: The video's main point is that once the benchmark is stable, AI can run a far higher volume of iterations than a human operator can do manually.
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - text: What It Means for VBI
+        - heading "Stop treating optimization like a one-time redesign." [level=2] [ref=e20]
+        - paragraph [ref=e21]: "The most useful takeaway for veterinary businesses is not the specific AI stack from the video. It is the operating model: pick one business outcome, define it cleanly, and let structured experiments improve that outcome over time."
+        - paragraph [ref=e22]: For a veterinary practice, that might mean improving the speed of a homepage, raising form-conversion rates on a new-patient landing page, increasing the click-through rate of local SEO service pages, or tightening client education content so more visitors take the next step.
+      - generic [ref=e23]:
+        - generic [ref=e24]: Core Loop
+        - list [ref=e25]:
+          - listitem [ref=e26]: Set the goal. Define one measurable outcome such as faster load time, higher consultation submissions, or better local SEO click-through.
+          - listitem [ref=e27]: Freeze the benchmark. Protect the script, rubric, or reporting method that decides whether a change is actually better.
+          - listitem [ref=e28]: Let the agent propose experiments. The system forms a hypothesis, changes the allowed area, and runs a controlled test.
+          - listitem [ref=e29]: Score every run against the same baseline. If the result improves the metric, keep it. If not, discard it and continue.
+          - listitem [ref=e30]: Repeat until the returns flatten. The power is not one perfect experiment, but dozens or hundreds of fast iterations.
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]: Veterinary Use Cases
+        - heading "Where this idea becomes useful on a real veterinary website." [level=2] [ref=e35]
+      - generic [ref=e36]:
+        - article [ref=e37]:
+          - generic [ref=e38]: Use Case
+          - heading "Website speed and conversion" [level=3] [ref=e39]
+          - paragraph [ref=e40]: Use an AI experiment loop to improve page speed, tighten layouts, and test which landing page variations create more appointment requests or audit submissions.
+        - article [ref=e41]:
+          - generic [ref=e42]: Use Case
+          - heading "Local SEO page refinement" [level=3] [ref=e43]
+          - paragraph [ref=e44]: Iterate on service pages, headings, metadata, and internal links against a fixed ranking or click-through metric instead of guessing which copy changes matter.
+        - article [ref=e45]:
+          - generic [ref=e46]: Use Case
+          - heading "Client education systems" [level=3] [ref=e47]
+          - paragraph [ref=e48]: Experiment with email flows, FAQ structures, and downloadable guides to see what improves engagement, repeat visits, and higher-value treatment acceptance.
+        - article [ref=e49]:
+          - generic [ref=e50]: Use Case
+          - heading "Recruiting and employer branding" [level=3] [ref=e51]
+          - paragraph [ref=e52]: Test recruiting page messaging, career-path copy, and culture positioning to improve candidate quality and response rates for veterinary hiring.
+    - generic [ref=e54]:
+      - generic [ref=e55]:
+        - text: Guardrails
+        - heading "What to lock down before an AI loop starts changing your site." [level=2] [ref=e56]
+        - paragraph [ref=e57]: One of the strongest points in the original tutorial is that the evaluation script cannot move. If the agent can change the scoring system, it can fake success.
+        - paragraph [ref=e58]: For veterinary marketing and operations, that means protecting the measurement layer first. Keep the benchmark stable, then let the experiments run inside a narrow lane.
+      - generic [ref=e59]:
+        - generic [ref=e60]: Before You Run It
+        - list [ref=e61]:
+          - listitem [ref=e62]: Pick one metric that clearly defines success before the loop starts.
+          - listitem [ref=e63]: Lock the evaluation method so the agent cannot rewrite the rules.
+          - listitem [ref=e64]: "Limit what the agent can change at first: one page, one prompt, or one experiment file."
+          - listitem [ref=e65]: Run against a baseline and store every result so improvements stay comparable.
+          - listitem [ref=e66]: Keep winners, revert losers, and avoid subjective judgments during the loop.
+    - generic [ref=e68]:
+      - generic [ref=e69]:
+        - text: Starter Brief
+        - heading "How VBI would frame a first AutoResearch-style website experiment." [level=2] [ref=e70]
+        - paragraph [ref=e71]: "Objective: improve the performance of a veterinary landing page that currently gets traffic but underperforms on consultation requests."
+        - paragraph [ref=e72]: "Fixed metric: consultation form completion rate, with page-speed score as a secondary quality threshold."
+        - paragraph [ref=e73]: "Allowed changes: hero copy, CTA wording, layout compression, proof blocks, FAQ ordering, and non-critical asset loading."
+        - paragraph [ref=e74]: "Protected layer: analytics events, conversion definition, baseline benchmark script, and reporting output."
+      - generic [ref=e75]:
+        - generic [ref=e76]: Practical VBI Translation
+        - heading "What this becomes in plain business terms" [level=2] [ref=e77]
+        - paragraph [ref=e78]: Instead of asking, "What redesign do we think looks better?" you ask, "Which controlled changes consistently produce more qualified consultations, faster pages, and better user behavior?"
+        - paragraph [ref=e79]: That shift from taste to measured iteration is the real value of the tutorial.
+  - button "Open Next.js Dev Tools" [ref=e85] [cursor=pointer]:
+    - img [ref=e86]
+  - alert [ref=e89]

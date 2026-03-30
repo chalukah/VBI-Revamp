@@ -1,0 +1,231 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - 'link "Latest Podcast Episode 103: Strategic Relief Integration for High-Performance Veterinary Staffing" [ref=e5] [cursor=pointer]':
+          - /url: https://www.veterinarybusinessinstitute.com/strategic-relief-integration-building-profitable-high-performance-veterinary-staffing-models-in-todays-market/
+          - generic [ref=e6]: Latest Podcast
+          - generic [ref=e7]: "Episode 103: Strategic Relief Integration for High-Performance Veterinary Staffing"
+        - link "Featured Webinar Replay Strengthening modern veterinary clinics through culture, technology, client care, and marketing" [ref=e8] [cursor=pointer]:
+          - /url: https://www.veterinarybusinessinstitute.com/webinar-archive/
+          - generic [ref=e9]: Featured Webinar Replay
+          - generic [ref=e10]: Strengthening modern veterinary clinics through culture, technology, client care, and marketing
+    - navigation [ref=e11]:
+      - generic [ref=e12]:
+        - link "Veterinary Business Institute home" [ref=e13] [cursor=pointer]:
+          - /url: "#home"
+          - img "Veterinary Business Institute" [ref=e14]
+        - button "Toggle navigation" [ref=e15] [cursor=pointer]
+    - main [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - generic [ref=e24]: For Veterinary Leaders Ready to Grow
+            - paragraph [ref=e25]: Podcast, panels, and practical strategy for real-world veterinary growth.
+            - heading "The Insights to Grow Your Practice." [level=1] [ref=e26]:
+              - text: The Insights to Grow
+              - emphasis [ref=e27]: Your Practice.
+            - paragraph [ref=e28]: Veterinary Business Institute brings together podcast conversations, webinar replays, and growth-focused guidance for veterinarians building stronger teams, healthier margins, better systems, and a more resilient future.
+            - generic [ref=e29]:
+              - link "Listen to Episode 103" [ref=e30] [cursor=pointer]:
+                - /url: https://www.veterinarybusinessinstitute.com/strategic-relief-integration-building-profitable-high-performance-veterinary-staffing-models-in-todays-market/
+              - link "Explore Webinar Archive" [ref=e31] [cursor=pointer]:
+                - /url: https://www.veterinarybusinessinstitute.com/webinar-archive/
+            - generic [ref=e32]:
+              - generic [ref=e33]: 100+ podcast episodes
+              - generic [ref=e34]: Leadership and culture insights
+              - generic [ref=e35]: Marketing strategy for veterinary practices
+          - generic [ref=e36]:
+            - figure [ref=e38]:
+              - img "Veterinary professionals in discussion" [ref=e39]
+            - generic [ref=e40]:
+              - text: Featured Learning Track
+              - strong [ref=e41]: Practice growth, retention, marketing, and resilience
+            - generic [ref=e42]:
+              - generic [ref=e43]: ★★★★★
+              - text: Trusted growth conversations for veterinary teams
+        - generic [ref=e45]:
+          - generic [ref=e46]: Practice Growth•
+          - generic [ref=e47]: Leadership•
+          - generic [ref=e48]: Team Culture•
+          - generic [ref=e49]: Staffing•
+          - generic [ref=e50]: Client Experience•
+          - generic [ref=e51]: Technology•
+          - generic [ref=e52]: Marketing•
+          - generic [ref=e53]: Financial Resilience•
+          - generic [ref=e54]: Practice Continuity•
+          - generic [ref=e55]: Practice Growth•
+          - generic [ref=e56]: Leadership•
+          - generic [ref=e57]: Team Culture•
+          - generic [ref=e58]: Staffing•
+          - generic [ref=e59]: Client Experience•
+          - generic [ref=e60]: Technology•
+          - generic [ref=e61]: Marketing•
+          - generic [ref=e62]: Financial Resilience•
+          - generic [ref=e63]: Practice Continuity•
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - text: About Veterinary Business Institute
+          - heading "Built for veterinarians who want a stronger business, not just a busier schedule." [level=2] [ref=e67]
+          - paragraph [ref=e68]: Veterinary Business Institute is centered on veterinary business education and professional development. Its content is designed to help practice leaders improve operations, strengthen culture, and make smarter growth decisions with practical, real-world guidance.
+          - paragraph [ref=e69]: The platform brings together podcast interviews, webinars, marketing insight, and expert-led conversations so veterinarians can sharpen leadership, streamline systems, and build practices that are profitable, resilient, and people-first.
+          - generic [ref=e70]:
+            - article [ref=e71]:
+              - strong [ref=e72]: 100+
+              - text: Podcast episodes shaping modern veterinary leadership
+            - article [ref=e73]:
+              - strong [ref=e74]: "5"
+              - text: Core growth pillars in the featured webinar replay
+            - article [ref=e75]:
+              - strong [ref=e76]: "1"
+              - text: "Clear goal: help veterinary practices build a bigger future"
+        - img "Veterinary care and leadership in practice" [ref=e78]
+      - generic [ref=e80]:
+        - generic [ref=e81]:
+          - generic [ref=e82]: What VBI Covers
+          - heading "Growth guidance across the parts of a veterinary practice that matter most." [level=2] [ref=e83]
+        - generic [ref=e84]:
+          - article [ref=e85]:
+            - generic [ref=e86]: "01"
+            - heading "Leadership and Team Culture" [level=3] [ref=e87]
+            - paragraph [ref=e88]: Learn how stronger communication, retention systems, and people-first leadership create healthier teams and more stable practices.
+          - article [ref=e89]:
+            - generic [ref=e90]: "02"
+            - heading "Operational and Staffing Strategy" [level=3] [ref=e91]
+            - paragraph [ref=e92]: Explore better workflows, relief staffing models, onboarding processes, and practical ways to keep practice operations flexible and sustainable.
+          - article [ref=e93]:
+            - generic [ref=e94]: "03"
+            - heading "Marketing and Digital Visibility" [level=3] [ref=e95]
+            - paragraph [ref=e96]: Turn educational content into visibility with local search strategy, positioning, client education, and messaging that attracts the right pet owners.
+          - article [ref=e97]:
+            - generic [ref=e98]: "04"
+            - heading "Technology and Client Experience" [level=3] [ref=e99]
+            - paragraph [ref=e100]: Adopt the right tools, reduce friction, improve record-keeping, and deliver more consistent, high-quality client experiences without adding operational chaos.
+      - generic [ref=e102]:
+        - article [ref=e103]:
+          - generic [ref=e104]:
+            - generic [ref=e105]: Featured Episode
+            - generic [ref=e106]: Published March 26, 2026
+          - generic [ref=e107]:
+            - img "Episode 103 podcast artwork" [ref=e108]
+            - generic [ref=e109]:
+              - 'heading "Strategic Relief Integration: Building Profitable, High-Performance Veterinary Staffing Models in Today’s Market" [level=2] [ref=e110]'
+              - paragraph [ref=e111]: Episode 103 looks at how relief veterinarians are becoming a more strategic part of modern practice growth. The conversation focuses on staffing continuity, relationship-based relief networks, smarter onboarding, and building a more stable clinical schedule.
+              - list [ref=e112]:
+                - listitem [ref=e113]: Build relationship-based relief networks instead of one-off scheduling.
+                - listitem [ref=e114]: Use relief strategically to grow caseload before full-time hiring.
+                - listitem [ref=e115]: Prioritize onboarding, feedback, and culture to retain relief support.
+                - listitem [ref=e116]: Know your numbers and stay flexible on compensation strategy.
+              - generic [ref=e117]:
+                - link "Listen Now" [ref=e118] [cursor=pointer]:
+                  - /url: https://www.veterinarybusinessinstitute.com/strategic-relief-integration-building-profitable-high-performance-veterinary-staffing-models-in-todays-market/
+                - link "Browse the Podcast" [ref=e119] [cursor=pointer]:
+                  - /url: https://www.veterinarybusinessinstitute.com/podcast-show/
+        - complementary [ref=e120]:
+          - text: Your Co-Host
+          - generic [ref=e121]:
+            - img "Naren Arulrajah" [ref=e122]
+            - generic [ref=e123]:
+              - heading "Naren Arulrajah" [level=3] [ref=e124]
+              - paragraph [ref=e125]: Founder of the Veterinary Business Podcast, veterinary marketing consultant, and CEO of Ekwa Marketing.
+              - paragraph [ref=e126]: Naren has spent more than a decade helping veterinary practice owners grow with better digital visibility, stronger systems, and sharper business strategy. His work on VBI is focused on helping practices build a bigger future for their teams, families, and communities.
+          - generic [ref=e127]:
+            - generic [ref=e128]: Listen on
+            - generic [ref=e129]:
+              - link "Spotify" [ref=e130] [cursor=pointer]:
+                - /url: https://open.spotify.com/show/5F1cmzekwcb8UbFO4OL5pu
+              - link "Apple Podcasts" [ref=e131] [cursor=pointer]:
+                - /url: https://podcasts.apple.com/us/podcast/veterinary-business-podcast/id1712053291
+              - link "YouTube Music" [ref=e132] [cursor=pointer]:
+                - /url: https://music.youtube.com/playlist?list=PLA-bPmn73IK4XAn6w-iPWWVmg_B8do7AC
+      - generic [ref=e134]:
+        - generic [ref=e135]:
+          - generic [ref=e136]: Resource Hub
+          - heading "Use the platform the way modern veterinary teams actually learn." [level=2] [ref=e137]
+        - generic [ref=e138]:
+          - link "Podcast Archive Catch up on the full Veterinary Business Podcast library Browse recent episodes covering staffing, leadership, growth, AI, technology, and operational decision-making." [ref=e139] [cursor=pointer]:
+            - /url: https://www.veterinarybusinessinstitute.com/podcast-show/
+            - generic [ref=e140]: Podcast Archive
+            - heading "Catch up on the full Veterinary Business Podcast library" [level=3] [ref=e141]
+            - paragraph [ref=e142]: Browse recent episodes covering staffing, leadership, growth, AI, technology, and operational decision-making.
+          - link "Replay Library Watch summit and webinar sessions on demand Review archived sessions on culture, communication, technology, client care, marketing, and future-ready practice strategy." [ref=e143] [cursor=pointer]:
+            - /url: https://www.veterinarybusinessinstitute.com/webinar-archive/
+            - generic [ref=e144]: Replay Library
+            - heading "Watch summit and webinar sessions on demand" [level=3] [ref=e145]
+            - paragraph [ref=e146]: Review archived sessions on culture, communication, technology, client care, marketing, and future-ready practice strategy.
+          - link "Marketing Connect education with practical visibility strategy See how marketing, local presence, and client education fit into the wider veterinary growth picture." [ref=e147] [cursor=pointer]:
+            - /url: https://www.veterinarybusinessinstitute.com/marketing/
+            - generic [ref=e148]: Marketing
+            - heading "Connect education with practical visibility strategy" [level=3] [ref=e149]
+            - paragraph [ref=e150]: See how marketing, local presence, and client education fit into the wider veterinary growth picture.
+          - link "Digital Audit Analyze your digital marketing with a practice-specific review Use the complimentary visibility audit to understand your online presence, local SEO, and competitive opportunities." [ref=e151] [cursor=pointer]:
+            - /url: https://www.veterinarybusinessinstitute.com/msm/ryan/
+            - generic [ref=e152]: Digital Audit
+            - heading "Analyze your digital marketing with a practice-specific review" [level=3] [ref=e153]
+            - paragraph [ref=e154]: Use the complimentary visibility audit to understand your online presence, local SEO, and competitive opportunities.
+      - generic [ref=e156]:
+        - generic [ref=e157]:
+          - text: Ready to Build a Future-Ready Practice?
+          - heading "Turn VBI insight into a clearer growth plan for your veterinary business." [level=2] [ref=e158]
+          - paragraph [ref=e159]: Start with the podcast, review the webinar archive, or book a digital visibility audit to see where stronger marketing and better business systems can unlock the next stage of growth.
+        - generic [ref=e160]:
+          - link "Book a Visibility Audit" [ref=e161] [cursor=pointer]:
+            - /url: https://www.veterinarybusinessinstitute.com/msm/ryan/
+          - link "Contact the Team" [ref=e162] [cursor=pointer]:
+            - /url: https://www.veterinarybusinessinstitute.com/contact-us/
+    - contentinfo [ref=e163]:
+      - generic [ref=e164]:
+        - generic [ref=e165]:
+          - img "Veterinary Business Institute" [ref=e166]
+          - paragraph [ref=e167]: Veterinary Business Institute is a resource hub for veterinarians focused on business growth, leadership, operations, culture, client experience, and digital visibility.
+        - generic [ref=e168]:
+          - heading "Contact" [level=3] [ref=e169]
+          - list [ref=e170]:
+            - listitem [ref=e171]:
+              - link "(833) 523-1845" [ref=e172] [cursor=pointer]:
+                - /url: tel:+18335231845
+            - listitem [ref=e173]:
+              - link "(213) 325-1745" [ref=e174] [cursor=pointer]:
+                - /url: tel:+12133251745
+            - listitem [ref=e175]:
+              - link "team@veterinarybusinessinstitute.com" [ref=e176] [cursor=pointer]:
+                - /url: mailto:team@veterinarybusinessinstitute.com
+            - listitem [ref=e177]: 303, Pinetree Way Mississauga, Ontario L5G 2R4 Canada
+        - generic [ref=e178]:
+          - heading "Explore" [level=3] [ref=e179]
+          - list [ref=e180]:
+            - listitem [ref=e181]:
+              - link "About Us" [ref=e182] [cursor=pointer]:
+                - /url: https://www.veterinarybusinessinstitute.com/about-us/
+            - listitem [ref=e183]:
+              - link "Podcast Show" [ref=e184] [cursor=pointer]:
+                - /url: https://www.veterinarybusinessinstitute.com/podcast-show/
+            - listitem [ref=e185]:
+              - link "Summits and Webinars" [ref=e186] [cursor=pointer]:
+                - /url: https://www.veterinarybusinessinstitute.com/webinar-archive/
+            - listitem [ref=e187]:
+              - link "Marketing" [ref=e188] [cursor=pointer]:
+                - /url: https://www.veterinarybusinessinstitute.com/marketing/
+        - generic [ref=e189]:
+          - heading "Follow" [level=3] [ref=e190]
+          - list [ref=e191]:
+            - listitem [ref=e192]:
+              - link "Facebook" [ref=e193] [cursor=pointer]:
+                - /url: https://www.facebook.com/profile.php?id=100094602681699
+            - listitem [ref=e194]:
+              - link "LinkedIn" [ref=e195] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/veterinary-business-podcast/?viewAsMember=true
+            - listitem [ref=e196]:
+              - link "Instagram" [ref=e197] [cursor=pointer]:
+                - /url: https://www.instagram.com/veterinarybusinesspodcast/
+            - listitem [ref=e198]:
+              - link "YouTube" [ref=e199] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCVesVVBLy84s5Jm6tVigGyg
+      - generic [ref=e200]:
+        - generic [ref=e201]: © 2026 Veterinary Business Institute. All rights reserved.
+        - generic [ref=e202]:
+          - link "Privacy Policy" [ref=e203] [cursor=pointer]:
+            - /url: https://www.veterinarybusinessinstitute.com/privacy-policy/
+          - link "Accessibility Statement" [ref=e204] [cursor=pointer]:
+            - /url: https://www.veterinarybusinessinstitute.com/accessibility-statement/
+  - alert [ref=e205]

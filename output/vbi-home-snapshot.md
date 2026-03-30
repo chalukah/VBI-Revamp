@@ -1,0 +1,210 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: Latest Podcast
+      - 'link "Strategic Relief Integration: Building Profitable, High-Performance Veterinary Staffing Models in Today’s Market" [ref=e9] [cursor=pointer]':
+        - /url: https://www.veterinarybusinessinstitute.com/strategic-relief-integration-building-profitable-high-performance-veterinary-staffing-models-in-todays-market/
+    - generic [ref=e11]:
+      - generic [ref=e12]: Our Next Event
+      - link "Shaping Future-Ready Veterinary Practices Through Strategic Planning, Culture, Retention, Financial Resilience, Marketing and Practice Continuity" [ref=e15] [cursor=pointer]:
+        - /url: https://us02web.zoom.us/webinar/register/2117700998938/WN_9VptgULmRsSdJNEY5VAocg#/registration
+  - banner [ref=e16]:
+    - generic [ref=e17]:
+      - link "Veterinary Business Podcast" [ref=e18] [cursor=pointer]:
+        - /url: https://www.veterinarybusinessinstitute.com/
+        - img "Veterinary Business Podcast" [ref=e19]
+      - text:  
+      - navigation [ref=e20]:
+        - list [ref=e21]:
+          - listitem [ref=e22]:
+            - link "About Us" [ref=e23] [cursor=pointer]:
+              - /url: https://www.veterinarybusinessinstitute.com/about-us/
+          - listitem [ref=e24]:
+            - link "Podcast" [ref=e25] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e26]:
+            - link "Events" [ref=e27] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e28]:
+            - link "Marketing" [ref=e29] [cursor=pointer]:
+              - /url: https://www.veterinarybusinessinstitute.com/marketing/
+          - listitem [ref=e30]:
+            - link "Contact" [ref=e31] [cursor=pointer]:
+              - /url: https://www.veterinarybusinessinstitute.com/contact-us/
+          - listitem [ref=e32]:
+            - link "Analyze Your Digital Marketing " [ref=e33] [cursor=pointer]:
+              - /url: https://www.veterinarybusinessinstitute.com/msm/ryan/
+              - text: Analyze Your Digital Marketing
+              - generic: 
+  - main [ref=e34]:
+    - generic [ref=e36]:
+      - generic [ref=e37]: Veterinary Business Podcast
+      - generic [ref=e38]: Your Path to a Thriving Veterinary Practice
+      - link "Listen Now" [ref=e40] [cursor=pointer]:
+        - /url: "#"
+    - generic [ref=e44]:
+      - generic [ref=e47]:
+        - heading "Who we are" [level=2] [ref=e48]
+        - generic [ref=e49]: Welcome to the Veterinary Business Podcast, a leading platform for veterinary business education and professional development dedicated to empowering veterinarians with the knowledge and skills to excel in their careers.
+        - generic [ref=e50]: Join us as we dive into engaging conversations, insightful interviews, and expert advice from leaders in the field of veterinary medicine.
+        - generic [ref=e51]: In each episode, we will explore a wide range of topics, including practice management, financial planning, marketing strategies, team development, client communication, and much more. Our aim is to provide you with actionable insights and inspiration that you can apply directly to your veterinary practice.
+        - generic [ref=e52]: Stay tuned for thought-provoking discussions with industry experts, success stories from fellow veterinarians, and valuable tips and tricks to enhance your business acumen. Whether you are looking to expand your practice, improve profitability, or create a better work-life balance, the Veterinary Business Podcast is here to support you every step of the way.
+      - generic [ref=e57]:
+        - heading "Here's What we got for you" [level=2] [ref=e58]
+        - generic [ref=e59]: Our comprehensive educational programs are designed to address the unique challenges faced by veterinarians in today's rapidly evolving industry. Whether you are a recent graduate looking to gain practical business skills or an experienced practitioner seeking to enhance your leadership abilities, our experts' guidance and resources are tailored to meet your specific needs.
+        - generic [ref=e60]: Through a combination of online resources, podcasts, webinars, and networking opportunities, we provide veterinarians with valuable insights into various aspects of running a successful veterinary practice. Our expert instructors, who are industry leaders and experienced professionals, share their expertise on topics such as practice management, financial planning, marketing strategies, client communication, and team building.
+        - generic [ref=e61]: Join our community of dedicated veterinary professionals and take your veterinary business to new heights. Explore our range of educational resources, connect with like-minded individuals, and stay up to date with the latest industry trends. Together, we can shape the future of veterinary medicine and make a lasting impact on the lives of animals and their owners.
+    - generic [ref=e65]:
+      - heading "Trending Podcasts" [level=2] [ref=e66]
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - generic [ref=e70]: Coming Soon
+          - link "The Role of Telemedicine in Veterinary Practice" [ref=e72] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e73]: Telemedicine has revolutionized the field of veterinary practice by providing innovative solutions to enhance animal healthcare delivery. This technology-driven approach allows veterinarians to remotely diagnose, treat, and monitor animals, breaking down geographical barriers and improving access to veterinary care.
+        - generic [ref=e74]:
+          - generic [ref=e76]: Coming Soon
+          - link "The Power of Networking in Veterinary Business" [ref=e78] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e79]: One of the significant advantages of networking in the veterinary business is the potential for referrals. By connecting with other veterinarians, specialists, and professionals in related fields, veterinarians can establish a referral network. This network can lead to an increased flow of clients and patients, as well as mutual support in providing comprehensive care.
+        - generic [ref=e80]:
+          - generic [ref=e82]: Coming Soon
+          - link "Effective Time Management for Busy Veterinarians" [ref=e84] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e85]: Utilizing scheduling tools, such as digital calendars or task management apps, can significantly aid in organizing appointments, surgeries, and follow-ups. By allocating specific time slots for each task, veterinarians can avoid double bookings and improve overall efficiency.
+        - generic [ref=e86]:
+          - generic [ref=e88]: Coming Soon
+          - link "Improving Veterinary Clinic Workflow and Patient Care" [ref=e90] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e91]: Implementing standardized protocols and procedures is essential for consistent and efficient patient care. Establishing clear guidelines for routine examinations, diagnostic procedures, surgeries, and post-operative care helps ensure that all staff members follow a unified approach.
+        - generic [ref=e92]:
+          - generic [ref=e94]: Coming Soon
+          - link "Emerging Trends in Veterinary Medicine" [ref=e96] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e97]: Data analytics and artificial intelligence are revolutionizing veterinary diagnostics and decision-making. Machine learning algorithms analyze medical data, improving accuracy and guiding treatment recommendations. This trend enhances diagnostics, optimizes treatment plans, and advances evidence-based veterinary medicine.
+        - generic [ref=e98]:
+          - generic [ref=e100]: Coming Soon
+          - 'link "Success Stories: How Veterinarians Built Thriving Practices" [ref=e102] [cursor=pointer]':
+            - /url: "#"
+          - generic [ref=e103]: Building a thriving veterinary practice is a testament to the dedication, skill, and entrepreneurial spirit of veterinarians. These success stories highlight the strategies and principles employed by veterinary professionals who have achieved remarkable growth and established flourishing practices.
+    - generic [ref=e105]:
+      - heading "Our Co-Host" [level=2] [ref=e106]
+      - generic [ref=e107]: Join us on this exciting journey of learning, growth, and collective brilliance as we elevate the field of veterinary medicine to new heights.
+      - generic [ref=e108]:
+        - generic [ref=e109]:
+          - img "Naren Arulrajah" [ref=e110]
+          - generic [ref=e111]:
+            - heading "Naren Arulrajah" [level=4] [ref=e112]
+            - generic [ref=e113]:
+              - generic [ref=e114]: Founder of the Veterinary Business Podcast
+              - generic [ref=e115]: Co-Host of the Veterinary Business Podcast
+              - generic [ref=e116]: Veterinary Marketing Consultant
+              - generic [ref=e117]: CEO of Ekwa Marketing
+        - generic [ref=e118]:
+          - paragraph [ref=e119]: Naren Arulrajah is an entrepreneurial visionary who is committed to serving others. He firmly believes that success is a result of this dedication.
+          - paragraph [ref=e120]:
+            - text: Naren is the CEO and Founder of Ekwa Marketing (
+            - link "www.ekwa.com" [ref=e121] [cursor=pointer]:
+              - /url: http://www.ekwa.com
+            - text: ). He leads a team of over 250 professionals and drives the company's goal of assisting doctors in dominating Google and achieving success in digital marketing. Ekwa caters to a wide range of healthcare professionals who operate in private practices, such as veterinarians, dentists, dermatologists, plastic surgeons, ophthalmologists, OB-GYNs, and med-spa owners. Ekwa's services are tailored to meet their specific needs and requirements. One of the most impressive achievements of Ekwa is its exceptional client retention rate, with 95% of clients choosing to stay with the company year after year.
+          - paragraph [ref=e122]:
+            - text: Naren is not just the person behind Ekwa Marketing – his knowledge and experience go beyond that. He has helped veterinary practice owners throughout the United States grow their startups into practices worth millions of dollars. Naren's expertise in digital marketing and entrepreneurship has made him a valuable asset to doctors globally. His commitment to the veterinary and medical community has been crucial to his achievements. In line with this principle, he established the Veterinary Business Podcast (
+            - link "www.veterinarybusinessinstitute.com" [ref=e123] [cursor=pointer]:
+              - /url: http://www.veterinarybusinessinstitute.com
+            - text: ) with other prominent figures in the field. The podcast seeks to support doctors by offering valuable insights into achieving professional, personal, and financial success.
+          - paragraph [ref=e124]: Aside from being a consultant and speaker, Naren is an accomplished author and innovator. Recognizing his leadership and initiative, he was honored with the 2014 Leadership Initiative Award by AceTech Ontario.
+          - paragraph [ref=e125]: Furthermore, Naren's passion extends to the Veterinary Business Podcast series. He perceives this platform as not only a tool for professional advancement but also as a way to promote personal success for veterinarians who frequently neglect their personal lives while striving for professional success.
+          - paragraph [ref=e126]: Naren's entrepreneurial journey is guided by the principles of service and excellence. He firmly believes that understanding failure is essential to appreciating success. He acknowledges that success is not achieved in isolation, which is why he strives to make a positive impact not only on individuals but also on their relationships.
+          - paragraph [ref=e127]: Naren's exceptional vision is the direct result of his extensive work alongside esteemed veterinarians for over a decade. Working closely with them, he has gained profound insights into the specific challenges they face in their work and personal lives. Because of this realization, he was inspired to create and launch the Veterinary Business Podcast.
+          - paragraph [ref=e128]: "The Veterinary Business Podcast has a clear goal: to assist veterinarians in building a bigger future. Naren's mission is to encourage personal growth among veterinarians, improve the well-being of their families, strengthen their teams, and positively impact their community."
+    - generic [ref=e133]:
+      - heading "Inspiring Lessons in Veterinary Practice Success" [level=2] [ref=e134]
+      - paragraph [ref=e135]: Successful veterinarians have a simple strategy for outstanding growth. They continuously draw inspiration from other people’s journeys, learning from their mistakes and victories, and create their own unique path based on their ever-improving learning curve.
+      - paragraph [ref=e136]: The Veterinary Business Podcast brings you the stories, experiences, insights, and tips from some of the brightest and most successful minds in the veterinary field. Simply listen to our powerful selection of podcasts – and unlock your potential for spectacular growth in your veterinary practice.
+      - paragraph [ref=e137]: The Veterinary Business Podcast presents to you the opportunity to grow exponentially in your veterinary practice and achieve success and fulfillment beyond your best expectations.
+    - generic [ref=e139]:
+      - heading "Subscribe to Our Newsletter" [level=2] [ref=e140]
+      - iframe [ref=e142]:
+        - main [ref=f1e3]:
+          - generic [ref=f1e4]: Enter your email here*
+          - textbox "Enter your email here*" [ref=f1e6]
+          - button "Subscribe" [ref=f1e9] [cursor=pointer]
+  - contentinfo [ref=e143]:
+    - generic [ref=e145]:
+      - generic [ref=e146]:
+        - generic [ref=e148]:
+          - heading "Have a question?" [level=4] [ref=e149]
+          - table [ref=e150]:
+            - rowgroup [ref=e151]:
+              - row " (833) 523-1845" [ref=e152]:
+                - cell "" [ref=e153]:
+                  - generic [ref=e154]: 
+                - cell "(833) 523-1845" [ref=e155]:
+                  - paragraph [ref=e156]:
+                    - link "(833) 523-1845" [ref=e157] [cursor=pointer]:
+                      - /url: tel:+18335231845
+              - row "(213) 325-1745" [ref=e158]:
+                - cell "(213) 325-1745" [ref=e159]:
+                  - paragraph [ref=e160]:
+                    - link "(213) 325-1745" [ref=e161] [cursor=pointer]:
+                      - /url: tel:+12133251745
+              - row " team@veterinarybusinessinstitute.com" [ref=e162]:
+                - cell "" [ref=e163]:
+                  - generic [ref=e164]: 
+                - cell "team@veterinarybusinessinstitute.com" [ref=e165]:
+                  - paragraph [ref=e166]:
+                    - link "team@veterinarybusinessinstitute.com" [ref=e167] [cursor=pointer]:
+                      - /url: mailto:team@veterinarybusinessinstitute.com
+        - generic [ref=e169]:
+          - heading "More information on Ekwa Marketing" [level=4] [ref=e170]
+          - list [ref=e171]:
+            - listitem [ref=e172]:
+              - link "About" [ref=e173] [cursor=pointer]:
+                - /url: https://www.ekwa.com/
+            - listitem [ref=e174]:
+              - link "Ekwa Marketing Services" [ref=e175] [cursor=pointer]:
+                - /url: https://www.ekwa.com/services.html
+            - listitem [ref=e176]:
+              - link "10,000+ Positive Reviews" [ref=e177] [cursor=pointer]:
+                - /url: https://www.ekwa.com/reviews/
+            - listitem [ref=e178]:
+              - link "Design Gallery" [ref=e179] [cursor=pointer]:
+                - /url: https://www.ekwa.com/design-gallery/index.html
+        - generic [ref=e181]:
+          - heading "Follow" [level=4] [ref=e182]
+          - generic [ref=e183]:
+            - link "" [ref=e184] [cursor=pointer]:
+              - /url: https://www.facebook.com/profile.php?id=100094602681699
+              - generic [ref=e185]: 
+            - link "" [ref=e186] [cursor=pointer]:
+              - /url: https://twitter.com/Veterinary90731
+              - generic [ref=e187]: 
+            - link "" [ref=e188] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/veterinary-business-podcast/?viewAsMember=true
+              - generic [ref=e189]: 
+            - link "" [ref=e190] [cursor=pointer]:
+              - /url: https://www.instagram.com/veterinarybusinesspodcast/
+              - generic [ref=e191]: 
+            - link "" [ref=e192] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UCVesVVBLy84s5Jm6tVigGyg
+              - generic [ref=e193]: 
+            - link "" [ref=e194] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@veterinary_podcast
+              - generic [ref=e195]: 
+            - link "" [ref=e196] [cursor=pointer]:
+              - /url: https://www.reddit.com/user/Vet_Business_Podcast/
+              - generic [ref=e197]: 
+          - heading "Email" [level=4] [ref=e198]
+          - paragraph [ref=e199]:
+            - link "contactus@veterinarybusinessinstitute.com" [ref=e200] [cursor=pointer]:
+              - /url: mailto:contactus@lessinsurancedependence.com
+      - generic [ref=e201]: 303, Pinetree Way Mississauga, Ontario L5G 2R4 Canada
+    - generic [ref=e202]:
+      - text: © 2026
+      - strong [ref=e203]: Veterinary Business Institute
+      - text: . All Rights Reserved.
+      - link "Privacy Policy" [ref=e204] [cursor=pointer]:
+        - /url: https://www.veterinarybusinessinstitute.com/privacy-policy/
+      - text: "|"
+      - link "Accessibility Statement" [ref=e205] [cursor=pointer]:
+        - /url: https://www.veterinarybusinessinstitute.com/accessibility-statement/
