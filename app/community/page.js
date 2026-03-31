@@ -5,7 +5,9 @@ import {
   contactDetails,
   episodes,
   eventPanels,
+  focusAreas,
   hosts,
+  listeningPlatforms,
   socialLinks,
   webinars,
 } from "../lib/site-data";
@@ -86,9 +88,90 @@ export default function CommunityPage() {
   const featuredReplay = webinars[0];
   const featuredHost = hosts[0];
   const contactEmail = contactDetails[2].label;
+  const streamCards = [
+    {
+      label: "Latest Podcast",
+      meta: `Episode ${featuredEpisode.number} · ${featuredEpisode.date}`,
+      title: featuredEpisode.title,
+      body: featuredEpisode.summary,
+      href: featuredEpisode.href,
+      cta: "Listen Now",
+      image: featuredEpisode.image,
+    },
+    {
+      label: "Latest Panel",
+      meta: `${featuredPanel.date} · ${featuredPanel.category}`,
+      title: featuredPanel.title,
+      body: featuredPanel.summary,
+      href: featuredPanel.href,
+      cta: "Watch Panel",
+      image: featuredPanel.image,
+    },
+    {
+      label: "Latest Replay",
+      meta: featuredReplay.date,
+      title: featuredReplay.title,
+      body: featuredReplay.summary,
+      href: featuredReplay.href,
+      cta: "Watch Replay",
+      image: featuredReplay.image,
+    },
+  ];
+  const hubRoutes = [
+    {
+      label: "Events and Panels",
+      title: "Browse fresh conversations without hunting through the archive.",
+      body: "Use the event route for timely leadership, culture, marketing, and operations discussions that still feel current.",
+      href: "/events",
+      cta: "Explore Panels",
+    },
+    {
+      label: "Resource Library",
+      title: "Give your team practical next steps after the content spark.",
+      body: "Move from interesting ideas into repeatable actions through resources, downloads, and related routes across the platform.",
+      href: "/resources",
+      cta: "Explore Resources",
+    },
+    {
+      label: "Marketing Support",
+      title: "Turn education into action when the practice needs growth help.",
+      body: "The hub should not trap people in content forever. It should make the audit-first marketing path visible when the time is right.",
+      href: "/marketing",
+      cta: "Explore Marketing",
+    },
+    {
+      label: "Guest and Speaker",
+      title: "Keep the platform open to better voices and stronger collaborations.",
+      body: "Invite VBI into events, suggest a guest angle, or create a stronger partnership around veterinary business education.",
+      href: "/guest-speaker",
+      cta: "Start a Conversation",
+    },
+  ];
 
   return (
     <>
+      <section className={styles.newsStrip}>
+        <div className={`container ${styles.newsStripInner}`}>
+          <div className={styles.newsIntro}>
+            <span className="eyebrow text-accent">What's New in the Hub</span>
+            <h2>The latest VBI signals, without the scattered experience.</h2>
+          </div>
+
+          <div className={styles.newsCards}>
+            <a className={styles.newsCard} href={featuredEpisode.href} target="_blank" rel="noreferrer">
+              <span className="card-label">Latest Podcast</span>
+              <strong>{featuredEpisode.title}</strong>
+              <p>{featuredEpisode.date}</p>
+            </a>
+            <a className={styles.newsCard} href={featuredPanel.href} target="_blank" rel="noreferrer">
+              <span className="card-label">Latest Event Panel</span>
+              <strong>{featuredPanel.title}</strong>
+              <p>{featuredPanel.date}</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="page-hero">
         <div className={`container hero-grid ${styles.heroGrid}`}>
           <div className="hero-copy">
@@ -104,12 +187,12 @@ export default function CommunityPage() {
               to that flow.
             </p>
             <div className="button-row">
-              <a className="button button-primary" href="#join-hub">
-                Join the Hub
-              </a>
-              <Link className="button button-secondary" href="/podcast">
-                Start with the Podcast
+              <Link className="button button-primary" href="/community/forum">
+                Enter Member Portal
               </Link>
+              <a className="button button-secondary" href="#join-hub">
+                Sign Up for Access
+              </a>
             </div>
           </div>
 
@@ -155,6 +238,16 @@ export default function CommunityPage() {
         </div>
       </section>
 
+      <section className={styles.topicTapeSection} aria-label="Hub topics">
+        <div className={styles.topicTape}>
+          {[...focusAreas, ...focusAreas].map((item, index) => (
+            <span className={styles.topicChip} key={`${item.title}-${index}`}>
+              {item.title}
+            </span>
+          ))}
+        </div>
+      </section>
+
       <section className="section section-muted" id="join-hub">
         <div className={`container ${styles.topJoinGrid}`}>
           <CommunityJoinForm
@@ -175,6 +268,34 @@ export default function CommunityPage() {
               <li>Build a stronger VBI relationship before a bigger marketing or strategy decision.</li>
             </ul>
           </article>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="section-heading">
+            <span className="eyebrow text-accent">Featured Streams</span>
+            <h2>The hub should make the freshest VBI content impossible to miss.</h2>
+            <p>
+              The reference page works because it gives visitors obvious current entry points.
+              This version does the same with the strongest podcast, panel, and replay paths in
+              the VBI ecosystem.
+            </p>
+          </div>
+          <div className={styles.streamGrid}>
+            {streamCards.map((item) => (
+              <a className={`card ${styles.streamCard}`} href={item.href} key={item.title} target="_blank" rel="noreferrer">
+                <img alt={item.title} className={styles.streamImage} src={item.image} />
+                <div className={styles.streamBody}>
+                  <span className="card-label">{item.label}</span>
+                  <p className={styles.streamMeta}>{item.meta}</p>
+                  <h3>{item.title}</h3>
+                  <p>{item.body}</p>
+                  <span className={styles.streamCta}>{item.cta} →</span>
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -245,6 +366,59 @@ export default function CommunityPage() {
         </div>
       </section>
 
+      <section className="section section-muted">
+        <div className={`container ${styles.hostGrid}`}>
+          <article className={`card ${styles.hostCard}`}>
+            <div className={styles.hostHeader}>
+              <img alt={featuredHost.name} className={styles.hostImage} src={featuredHost.image} />
+              <div>
+                <span className="eyebrow text-accent">Lead Voice</span>
+                <h2>{featuredHost.name}</h2>
+                <p className={styles.hostRole}>{featuredHost.role}</p>
+              </div>
+            </div>
+            <p className={styles.hostBody}>{featuredHost.body}</p>
+            <p className={styles.hostBody}>
+              Each episode, panel, and replay works better when the hub reminds visitors who is
+              leading the conversation and why the platform exists in the first place.
+            </p>
+            <div className={styles.socialRow}>
+              {socialLinks.map((item) => (
+                <a href={item.href} key={item.label} target="_blank" rel="noreferrer">
+                  {item.label}
+                </a>
+              ))}
+            </div>
+          </article>
+
+          <article className={`card ${styles.platformCard}`}>
+            <span className="eyebrow text-accent">Listen Anywhere</span>
+            <h2>Keep the podcast reachable from the hub.</h2>
+            <p>
+              One of the missing reference details was distribution context. The hub should make
+              the main listening platforms visible instead of assuming visitors will search for
+              them on their own.
+            </p>
+            <div className={styles.platformList}>
+              {listeningPlatforms.map((item) => (
+                <a className={styles.platformItem} href={item.href} key={item.label} target="_blank" rel="noreferrer">
+                  <strong>{item.label}</strong>
+                  <span>Open the VBI podcast feed</span>
+                </a>
+              ))}
+            </div>
+            <div className="button-row">
+              <Link className="button button-secondary" href="/podcast">
+                All Episodes
+              </Link>
+              <Link className="button button-primary" href="/guest-speaker">
+                Be a Guest
+              </Link>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section className="section section-dark">
         <div className={`container ${styles.joinGrid}`}>
           <article className={`card card-dark ${styles.joinCard}`}>
@@ -299,14 +473,32 @@ export default function CommunityPage() {
               The community hub gives VBI a place to keep those ideas circulating between episodes,
               replays, and the next practical decision inside the practice.
             </p>
-            <div className={styles.socialRow}>
-              {socialLinks.map((item) => (
-                <a href={item.href} key={item.label} target="_blank" rel="noreferrer">
-                  {item.label}
-                </a>
-              ))}
-            </div>
           </aside>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="section-heading">
+            <span className="eyebrow text-accent">Practice-Ready Routes</span>
+            <h2>Add the practical detail layer the reference page uses so the hub feels complete.</h2>
+            <p>
+              The community page should not end at inspiration. These routes give visitors a more
+              concrete way to continue based on what they need next.
+            </p>
+          </div>
+          <div className="grid-two">
+            {hubRoutes.map((item) => (
+              <article className={`card route-card ${styles.routeCard}`} key={item.title}>
+                <span className="card-label">{item.label}</span>
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+                <Link className={styles.routeLink} href={item.href}>
+                  {item.cta} →
+                </Link>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 

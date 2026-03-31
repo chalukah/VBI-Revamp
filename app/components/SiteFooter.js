@@ -9,6 +9,7 @@ import {
   socialLinks,
   topBarItems,
 } from "../lib/site-data";
+import TrustBadges from "./TrustBadges";
 
 export default function SiteFooter() {
   const year = new Date().getFullYear();
@@ -44,6 +45,7 @@ export default function SiteFooter() {
             Veterinary Business Institute is a resource hub for veterinarians focused on business
             growth, leadership, operations, culture, client experience, and digital visibility.
           </p>
+          <TrustBadges />
         </div>
 
         <div>
@@ -91,16 +93,8 @@ export default function SiteFooter() {
               {item.label}
             </a>
           ))}
-          <a href="https://www.veterinarybusinessinstitute.com/privacy-policy/" target="_blank" rel="noreferrer">
-            Privacy Policy
-          </a>
-          <a
-            href="https://www.veterinarybusinessinstitute.com/accessibility-statement/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Accessibility Statement
-          </a>
+          <Link href="/privacy-policy">Privacy Policy</Link>
+          <Link href="/terms-of-service">Terms of Service</Link>
         </div>
       </div>
     </footer>

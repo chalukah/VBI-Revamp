@@ -9,7 +9,7 @@ const isGithubPages = process.env.GITHUB_PAGES === "true";
 const basePath = isGithubPages ? `/${repoSlug}` : "";
 
 const nextConfig = {
-  output: isGithubPages ? "export" : undefined,
+  output: "export",
   basePath,
   assetPrefix: basePath || undefined,
   trailingSlash: isGithubPages,

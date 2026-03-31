@@ -40,11 +40,11 @@ export default function WebinarsPage() {
               stronger summaries, clearer priorities, and an easier path into related VBI content.
             </p>
             <div className="button-row">
-              <a className="button button-primary" href={featuredReplay.href} target="_blank" rel="noreferrer">
+              <Link className="button button-primary" href="/webinars/registration">
+                Register for Next Live Session
+              </Link>
+              <a className="button button-secondary" href={featuredReplay.href} target="_blank" rel="noreferrer">
                 Watch Featured Replay
-              </a>
-              <a className="button button-secondary" href={webinarArchiveLink} target="_blank" rel="noreferrer">
-                Open Live Archive
               </a>
             </div>
           </div>

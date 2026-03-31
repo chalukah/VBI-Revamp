@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ContactForm from "../components/ContactForm";
 import { withBasePath } from "../lib/base-path";
 import { auditLink, contactAddress, contactDetails, contactReasons, socialLinks } from "../lib/site-data";
 
@@ -42,17 +43,17 @@ export default function ContactPage() {
               speaking opportunities, and strategy inquiries tied to practice growth.
             </p>
             <div className="button-row">
-              <a className="button button-primary" href={auditLink} target="_blank" rel="noreferrer">
+              <a className="button button-secondary" href={auditLink} target="_blank" rel="noreferrer">
                 Book a Strategy Meeting
               </a>
               <a className="button button-secondary" href="mailto:team@veterinarybusinessinstitute.com">
-                Email the Team
+                Email Directly
               </a>
             </div>
           </div>
 
-          <div className="image-frame">
-            <img src={withBasePath("/assets/inspiring-lessons.jpg")} alt="Veterinary team members in conversation" />
+          <div style={{ position: "relative", zIndex: 10 }}>
+            <ContactForm />
           </div>
         </div>
       </section>

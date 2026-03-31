@@ -37,9 +37,15 @@ export const headerNavigation = [
         description:
           "Read how veterinary owners, managers, and teams describe the value of the podcast, panels, and education hub.",
       },
+      {
+        label: "Upcoming Webinars",
+        href: "/webinars/registration",
+        description: "Register for the next live VBI masterclass or panel session.",
+      },
     ],
   },
   { type: "link", label: "Podcast", href: "/podcast" },
+  { type: "link", label: "Blog", href: "/blog" },
   {
     type: "group",
     label: "Resources",
@@ -54,16 +60,41 @@ export const headerNavigation = [
           "Invite VBI to speak, suggest a guest conversation, or explore collaborative educational programming.",
       },
       {
-        label: "Community",
+        label: "Community Sign Up",
         href: "/community",
         description:
           "Stay connected with VBI through recurring content, updates, and shared learning shaped for veterinary teams.",
+      },
+      {
+        label: "Client KPI Dashboard (Mockup)",
+        href: "/dashboard",
+        description: "A private interface mock for tracking practice growth, retention, and visibility metrics.",
+      },
+      {
+        label: "Member Forum (Portal)",
+        href: "/community/forum",
+        description: "A private discussion board for veterinary practice owners and managers to share SOPs and guidance.",
+      },
+      {
+        label: "Newsletter",
+        href: "/newsletter",
+        description: "Get a weekly summary of the best veterinary business advice from our podcast and coaching sessions.",
       },
       {
         label: "Marketing",
         href: "/marketing",
         description:
           "Move from content into action with the audit-first marketing offer built for veterinary practice growth.",
+      },
+      {
+        label: "Knowledge Base / FAQ",
+        href: "/resources/faq",
+        description: "Answers to common questions about VBI coaching, events, and marketing.",
+      },
+      {
+        label: "Free Downloads Hub",
+        href: "/resources/hub",
+        description: "Access our collection of veterinary practice SOPs, templates, and lead magnets.",
       },
     ],
   },
@@ -75,9 +106,11 @@ export const footerExploreLinks = [
   { label: "Events", href: "/events" },
   { label: "Reviews", href: "/reviews" },
   { label: "Podcast", href: "/podcast" },
+  { label: "Blog", href: "/blog" },
   { label: "Resources", href: "/resources" },
   { label: "Guest / Speaker", href: "/guest-speaker" },
   { label: "Community", href: "/community" },
+  { label: "Newsletter", href: "/newsletter" },
   { label: "Webinars", href: "/webinars" },
   { label: "Marketing", href: "/marketing" },
   { label: "Contact Us", href: "/contact" },
@@ -119,6 +152,8 @@ export const footerResourceLinks = [
   { label: "Webinar Archive", href: webinarArchiveLink },
   { label: "Marketing Audit", href: auditLink },
   { label: "Ekwa Marketing", href: "https://www.ekwa.com/" },
+  { label: "Knowledge Base (FAQ)", href: "/resources/faq" },
+  { label: "Free Downloads Hub", href: "/resources/hub" },
 ];
 
 export const listeningPlatforms = [

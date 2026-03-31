@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SpeakerApplicationForm from "../components/SpeakerApplicationForm";
 import { withBasePath } from "../lib/base-path";
 import { auditLink, contactDetails } from "../lib/site-data";
 
@@ -62,6 +63,21 @@ export default function GuestSpeakerPage() {
               <p>{item.body}</p>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="section" id="application-form" style={{ backgroundColor: "var(--background-muted)" }}>
+        <div className="container">
+          <div className="section-heading" style={{ maxWidth: "600px" }}>
+            <span className="eyebrow text-accent">Apply to Speak</span>
+            <h2>Submit a formal application.</h2>
+            <p className="hero-lead" style={{ marginTop: "1rem" }}>
+              Our editorial team actively reviews submissions for our Podcast and recurring webinar series.
+            </p>
+          </div>
+          <div style={{ maxWidth: "800px", margin: "0 auto" }}>
+             <SpeakerApplicationForm />
+          </div>
         </div>
       </section>
 

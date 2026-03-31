@@ -1,7 +1,10 @@
 import { Cormorant_Garamond, IBM_Plex_Mono, Manrope } from "next/font/google";
 import { basePath } from "./lib/base-path";
-import SiteFooter from "./components/SiteFooter";
 import SiteHeader from "./components/SiteHeader";
+import SiteFooter from "./components/SiteFooter";
+import CookieBanner from "./components/CookieBanner";
+import ExitIntentPopup from "./components/ExitIntentPopup";
+import ChatWidget from "./components/ChatWidget";
 import {
   contactAddress,
   contactDetails,
@@ -80,9 +83,61 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  // Replace G-XXXXXXXXXX with your actual GA4 Measurement ID
+  const gaId = "G-XXXXXXXXXX"; 
+
   return (
     <html lang="en">
+      <head>
+        {/* Replace GTM-XXXXXXX with your actual Google Tag Manager ID */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-XXXXXXX');
+            `,
+          }}
+        />
+        {/* Replace G-XXXXXXXXXX with your actual GA4 Measurement ID */}
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
+        <script
+          dangerouslySetInnerHTML={{
+             __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${gaId}', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
+        {/* Replace XXXXXXX with your Hotjar or MS Clarity tracking ID */}
+        <script
+          dangerouslySetInnerHTML={{
+             __html: `
+              (function(h,o,t,j,a,r){
+                  h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                  h._hjSettings={hjid:XXXXXXX,hjsv:6};
+                  a=o.getElementsByTagName('head')[0];
+                  r=o.createElement('script');r.async=1;
+                  r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                  a.appendChild(r);
+              })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+            `,
+          }}
+        />
+      </head>
       <body className={`${manrope.variable} ${cormorant.variable} ${plexMono.variable}`}>
+        {/* Google Tag Manager (noscript) */}
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+          }}
+        />
         <div className="site-shell">
           <script
             type="application/ld+json"
@@ -97,6 +152,9 @@ export default function RootLayout({ children }) {
           <SiteHeader />
           <main className="site-main">{children}</main>
           <SiteFooter />
+          <CookieBanner />
+          <ExitIntentPopup />
+          <ChatWidget />
         </div>
       </body>
     </html>

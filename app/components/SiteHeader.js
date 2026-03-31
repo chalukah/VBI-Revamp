@@ -40,7 +40,7 @@ export default function SiteHeader() {
         </div>
       </header>
 
-      <nav className="nav">
+      <nav className="nav" style={{ position: "sticky", top: 0, zIndex: 50, backgroundColor: "var(--paper)" }}>
         <div className="container nav-row">
           <div className="nav-shell w-full">
             <div className="grid min-h-[66px] grid-cols-[auto_1fr] items-center gap-4 min-[980px]:grid-cols-[auto_1fr_auto] min-[980px]:gap-8">

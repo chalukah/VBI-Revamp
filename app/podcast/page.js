@@ -110,6 +110,29 @@ export default function PodcastPage() {
         </div>
       </section>
 
+      <section className="section" style={{ backgroundColor: "var(--background-muted)" }}>
+        <div className="container" style={{ textAlign: "center", maxWidth: "800px" }}>
+          <span className="eyebrow text-accent">Deep Search</span>
+          <h2>AI-Powered Transcript Search</h2>
+          <p className="muted-text" style={{ marginTop: "1rem" }}>
+            Looking for a specific conversation about "associate compensation" or "SOPs"? 
+            Search across our entire podcast transcript library.
+          </p>
+          <div style={{ display: "flex", gap: "1rem", marginTop: "2rem", flexWrap: "wrap", justifyContent: "center" }}>
+            <input 
+              type="text" 
+              placeholder="e.g. 'client retention strategy'" 
+              style={{ flexGrow: 1, padding: "1rem", borderRadius: "8px", border: "1px solid var(--border)", minWidth: "300px", maxWidth: "500px" }}
+              disabled
+            />
+            <Link className="button button-primary" href="/contact">
+              Ask About Transcript Search
+            </Link>
+          </div>
+          <p style={{ fontSize: "0.8rem", color: "var(--ink-400)", marginTop: "1rem" }}>(Requires Backend Database Integration)</p>
+        </div>
+      </section>
+
       <section className="section section-muted">
         <div className="container">
           <div className="section-heading">
