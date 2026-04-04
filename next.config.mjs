@@ -9,6 +9,7 @@ const isGithubPages = process.env.GITHUB_PAGES === "true";
 const basePath = isGithubPages ? `/${repoSlug}` : "";
 
 const nextConfig = {
+  allowedDevOrigins: ['192.168.1.6'],
   output: "export",
   basePath,
   assetPrefix: basePath || undefined,

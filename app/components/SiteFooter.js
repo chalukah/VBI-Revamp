@@ -17,30 +17,31 @@ export default function SiteFooter() {
   return (
     <footer className="footer">
       <div className="container footer-cta-band">
-        <div className="footer-cta-copy">
-          <span className="eyebrow text-accent">Stay Connected</span>
-          <h2>Stay connected with the content, conversations, and strategy that move veterinary practices forward.</h2>
-          <p>
-            Start with the latest podcast conversation or event panel, then move into webinar replays
-            and marketing strategy when your practice is ready for the next step.
-          </p>
-        </div>
-        <div className="footer-cta-actions">
-          <a className="button button-primary" href={topBarItems[0].href} target="_blank" rel="noreferrer">
+        <span className="footer-cta-eyebrow">Stay Connected</span>
+        <h2 className="footer-cta-heading">
+          Your next step starts here.
+        </h2>
+        <p className="footer-cta-sub">
+          Explore the latest podcast, catch up on event panels, or book your
+          free marketing strategy session.
+        </p>
+        <div className="footer-cta-buttons">
+          <a className="footer-cta-btn footer-cta-btn-primary" href={topBarItems[0].href} target="_blank" rel="noreferrer">
+            <span className="footer-cta-btn-icon">&#9654;</span>
             Latest Podcast
           </a>
-          <a className="button button-secondary" href={topBarItems[1].href} target="_blank" rel="noreferrer">
+          <a className="footer-cta-btn" href={topBarItems[1].href} target="_blank" rel="noreferrer">
             Latest Event Panel
           </a>
-          <a className="button button-secondary" href={auditLink} target="_blank" rel="noreferrer">
-            Book the Audit
-          </a>
+          <Link className="footer-cta-btn" href="/consultation">
+            Free Strategy Call
+          </Link>
         </div>
       </div>
 
       <div className="container footer-grid">
         <div className="footer-brand">
-          <img src={withBasePath("/assets/logo.svg")} alt="Veterinary Business Institute" />
+          <img src={withBasePath("/assets/logo-white.svg")} alt="Veterinary Business Institute" />
           <p>
             Veterinary Business Institute is a resource hub for veterinarians focused on business
             growth, leadership, operations, culture, client experience, and digital visibility.

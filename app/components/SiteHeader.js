@@ -1,8 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Menu, X, ChevronRight } from "lucide-react";
+import AttractButton from "./AttractButton";
 import { withBasePath } from "../lib/base-path";
 import { headerNavigation, topBarItems } from "../lib/site-data";
 import { cn } from "../../lib/utils";
@@ -19,16 +21,33 @@ import {
 
 export default function SiteHeader() {
   const pathname = usePathname();
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [sheetOpen, setSheetOpen] = useState(false);
   const [openMobileGroup, setOpenMobileGroup] = useState(null);
+  const sheetRef = useRef(null);
 
+  // Close on route change
   useEffect(() => {
-    setMenuOpen(false);
+    setSheetOpen(false);
     setOpenMobileGroup(null);
   }, [pathname]);
 
+  // Lock body scroll when sheet open
+  useEffect(() => {
+    document.body.style.overflow = sheetOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [sheetOpen]);
+
+  // Close on Escape
+  useEffect(() => {
+    if (!sheetOpen) return;
+    function onKey(e) { if (e.key === "Escape") setSheetOpen(false); }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [sheetOpen]);
+
   return (
     <>
+      {/* ── Top Bar ── */}
       <header className="topbar">
         <div className="container topbar-grid">
           {topBarItems.map((item) => (
@@ -40,20 +59,27 @@ export default function SiteHeader() {
         </div>
       </header>
 
-      <nav className="nav" style={{ position: "sticky", top: 0, zIndex: 50, backgroundColor: "var(--paper)" }}>
+      {/* ── Sticky Nav ── */}
+      <nav className="nav" aria-label="Site navigation">
         <div className="container nav-row">
           <div className="nav-shell w-full">
-            <div className="grid min-h-[66px] grid-cols-[auto_1fr] items-center gap-4 min-[980px]:grid-cols-[auto_1fr_auto] min-[980px]:gap-8">
+            <div className="nav-inner-grid">
+
+              {/* Logo */}
               <Link className="brand shrink-0" href="/" aria-label="Veterinary Business Institute home">
                 <img src={withBasePath("/assets/logo.svg")} alt="Veterinary Business Institute" />
               </Link>
 
-              <NavigationMenu className="nav-menu-root hidden min-[980px]:flex min-[980px]:justify-center" aria-label="Main">
+              {/* Desktop Nav */}
+              <div className="nav-desktop-only">
+              <NavigationMenu
+                className="nav-menu-root"
+                aria-label="Main"
+              >
                 <NavigationMenuList className="nav-menu-list">
                   {headerNavigation.map((item) => {
                     if (item.type === "link") {
                       const isActive = pathname === item.href;
-
                       return (
                         <NavigationMenuItem key={item.href}>
                           <NavigationMenuLink
@@ -68,16 +94,11 @@ export default function SiteHeader() {
                       );
                     }
 
-                    const isActive = pathname === item.href || item.items.some((child) => pathname === child.href);
-
+                    const isActive = pathname === item.href || item.items.some((c) => pathname === c.href);
                     return (
                       <NavigationMenuItem key={item.label}>
                         <NavigationMenuTrigger
-                          className={cn(
-                            navigationMenuTriggerStyle(),
-                            "nav-menu-trigger",
-                            isActive && "is-active"
-                          )}
+                          className={cn(navigationMenuTriggerStyle(), "nav-menu-trigger", isActive && "is-active")}
                         >
                           {item.label}
                         </NavigationMenuTrigger>
@@ -91,7 +112,6 @@ export default function SiteHeader() {
                             <div className="nav-dropdown-list">
                               {item.items.map((child) => {
                                 const childActive = pathname === child.href;
-
                                 return (
                                   <Link
                                     className={cn("nav-dropdown-item", childActive && "is-active")}
@@ -112,9 +132,11 @@ export default function SiteHeader() {
                 </NavigationMenuList>
                 <NavigationMenuIndicator className="nav-menu-indicator" />
               </NavigationMenu>
+              </div>
 
+              {/* Desktop CTA */}
               <Link
-                className="button button-primary button-compact nav-cta hidden min-[980px]:inline-flex min-[980px]:whitespace-nowrap"
+                className="button button-primary button-compact nav-cta nav-desktop-only"
                 href="/contact"
               >
                 <span aria-hidden="true" className="nav-cta-fill" />
@@ -122,99 +144,139 @@ export default function SiteHeader() {
                 <span aria-hidden="true" className="nav-cta-icon">&rarr;</span>
               </Link>
 
+              {/* Mobile hamburger */}
               <button
-                className="menu-toggle ml-auto inline-flex min-[980px]:hidden"
+                className="vbi-menu-toggle nav-mobile-only"
                 type="button"
-                aria-expanded={menuOpen}
-                aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
-                onClick={() => setMenuOpen((open) => !open)}
+                aria-expanded={sheetOpen}
+                aria-label={sheetOpen ? "Close menu" : "Open menu"}
+                onClick={() => setSheetOpen(true)}
               >
-                <span />
-                <span />
-                <span />
+                <Menu size={22} strokeWidth={2} />
               </button>
             </div>
           </div>
         </div>
-
-        <div className={cn("container min-[980px]:hidden", !menuOpen && "hidden")}>
-          <div className="mt-3 rounded-[24px] border border-[var(--border)] bg-white/95 p-5 shadow-[0_24px_60px_rgba(16,35,32,0.12)] backdrop-blur-xl">
-            <div className="flex flex-col gap-2">
-              {headerNavigation.map((item) => {
-                if (item.type === "link") {
-                  const isActive = pathname === item.href;
-
-                  return (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      aria-current={isActive ? "page" : undefined}
-                      className={cn(
-                        "rounded-2xl px-4 py-3 text-base font-semibold text-[var(--ink-700)] transition-colors",
-                        isActive && "bg-[rgba(47,107,69,0.12)] text-[var(--teal-500)]"
-                      )}
-                    >
-                      {item.label}
-                    </Link>
-                  );
-                }
-
-                const isOpen = openMobileGroup === item.label;
-                const isActive = pathname === item.href || item.items.some((child) => pathname === child.href);
-
-                return (
-                  <div className="mobile-nav-group" key={item.label}>
-                    <div className="mobile-nav-row">
-                      <Link
-                        href={item.href}
-                        aria-current={pathname === item.href ? "page" : undefined}
-                        className={cn("mobile-nav-link", isActive && "is-active")}
-                      >
-                        {item.label}
-                      </Link>
-                      <button
-                        className="mobile-nav-toggle"
-                        type="button"
-                        aria-expanded={isOpen}
-                        aria-label={isOpen ? `Collapse ${item.label}` : `Expand ${item.label}`}
-                        onClick={() => setOpenMobileGroup((current) => (current === item.label ? null : item.label))}
-                      >
-                        <span className={cn("mobile-nav-chevron", isOpen && "is-open")} />
-                      </button>
-                    </div>
-
-                    {isOpen ? (
-                      <div className="mobile-nav-children">
-                        {item.items.map((child) => {
-                          const childActive = pathname === child.href;
-
-                          return (
-                            <Link
-                              key={child.href}
-                              href={child.href}
-                              aria-current={childActive ? "page" : undefined}
-                              className={cn("mobile-nav-child", childActive && "is-active")}
-                            >
-                              {child.label}
-                            </Link>
-                          );
-                        })}
-                      </div>
-                    ) : null}
-                  </div>
-                );
-              })}
-
-              <Link className="button button-primary nav-cta mt-2" href="/contact">
-                <span aria-hidden="true" className="nav-cta-fill" />
-                <span className="nav-cta-label">Contact Now</span>
-                <span aria-hidden="true" className="nav-cta-icon">&rarr;</span>
-              </Link>
-            </div>
-          </div>
-        </div>
       </nav>
+
+      {/* ── Mobile Sheet ── */}
+      {/* Backdrop */}
+      <div
+        className={cn("vbi-sheet-backdrop", sheetOpen && "is-open")}
+        aria-hidden="true"
+        onClick={() => setSheetOpen(false)}
+      />
+
+      {/* Drawer panel */}
+      <div
+        ref={sheetRef}
+        className={cn("vbi-sheet", sheetOpen && "is-open")}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Navigation menu"
+      >
+        {/* Sheet header */}
+        <div className="vbi-sheet-head">
+          <Link href="/" className="brand" onClick={() => setSheetOpen(false)}>
+            <img src={withBasePath("/assets/logo.svg")} alt="Veterinary Business Institute" style={{ width: 160 }} />
+          </Link>
+          <button
+            className="vbi-sheet-close"
+            onClick={() => setSheetOpen(false)}
+            aria-label="Close menu"
+          >
+            <X size={20} strokeWidth={2} />
+          </button>
+        </div>
+
+        <div className="vbi-sheet-divider" />
+
+        {/* Nav links */}
+        <nav className="vbi-sheet-nav">
+          {headerNavigation.map((item) => {
+            if (item.type === "link") {
+              const isActive = pathname === item.href;
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  aria-current={isActive ? "page" : undefined}
+                  className={cn("vbi-sheet-link", isActive && "is-active")}
+                  onClick={() => setSheetOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              );
+            }
+
+            const isOpen = openMobileGroup === item.label;
+            const isActive = pathname === item.href || item.items.some((c) => pathname === c.href);
+
+            return (
+              <div className="vbi-sheet-group" key={item.label}>
+                <button
+                  className={cn("vbi-sheet-group-trigger", isActive && "is-active")}
+                  type="button"
+                  aria-expanded={isOpen}
+                  onClick={() => setOpenMobileGroup((cur) => (cur === item.label ? null : item.label))}
+                >
+                  <span>{item.label}</span>
+                  <ChevronRight
+                    size={16}
+                    strokeWidth={2.5}
+                    className={cn("vbi-sheet-chevron", isOpen && "is-open")}
+                  />
+                </button>
+
+                <div className={cn("vbi-sheet-children", isOpen && "is-open")}>
+                  <div className="vbi-sheet-children-inner">
+                    <Link
+                      href={item.href}
+                      className="vbi-sheet-child vbi-sheet-child-feature"
+                      onClick={() => setSheetOpen(false)}
+                    >
+                      {item.label} Overview
+                    </Link>
+                    {item.items.map((child) => {
+                      const childActive = pathname === child.href;
+                      return (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          aria-current={childActive ? "page" : undefined}
+                          className={cn("vbi-sheet-child", childActive && "is-active")}
+                          onClick={() => setSheetOpen(false)}
+                        >
+                          <span>{child.label}</span>
+                          {child.description && <p>{child.description}</p>}
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </nav>
+
+        {/* Sheet footer CTA */}
+        <div className="vbi-sheet-footer">
+          <Link
+            className="button button-primary w-full"
+            href="/contact"
+            onClick={() => setSheetOpen(false)}
+          >
+            Contact Now &rarr;
+          </Link>
+          <AttractButton
+            href="/consultation"
+            className="w-full"
+            onClick={() => setSheetOpen(false)}
+          >
+            Free Strategy Call
+          </AttractButton>
+        </div>
+      </div>
     </>
   );
 }
-

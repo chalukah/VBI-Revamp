@@ -1,0 +1,900 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - 'link "Latest Podcast Episode 103: Strategic Relief Integration for High-Performance Veterinary Staffing" [ref=e5] [cursor=pointer]':
+          - /url: https://www.veterinarybusinessinstitute.com/strategic-relief-integration-building-profitable-high-performance-veterinary-staffing-models-in-todays-market/
+          - generic [ref=e6]: Latest Podcast
+          - generic [ref=e7]: "Episode 103: Strategic Relief Integration for High-Performance Veterinary Staffing"
+        - 'link "Latest Event Panel March 23, 2026: Conflict or Connection? Turning Team Tension Into Collaboration" [ref=e8] [cursor=pointer]':
+          - /url: https://vimeo.com/reviews/91859b87-afaa-4c6c-aad5-ebadfdafcb70/videos/1176476168
+          - generic [ref=e9]: Latest Event Panel
+          - generic [ref=e10]: "March 23, 2026: Conflict or Connection? Turning Team Tension Into Collaboration"
+    - navigation "Site navigation" [ref=e11]:
+      - generic [ref=e14]:
+        - link "Veterinary Business Institute home" [ref=e15] [cursor=pointer]:
+          - /url: /
+          - img "Veterinary Business Institute" [ref=e16]
+        - navigation "Main" [ref=e18]:
+          - list [ref=e20]:
+            - listitem [ref=e21]:
+              - link "About Us" [ref=e22] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e23]:
+              - button "Events" [ref=e24]:
+                - text: Events
+                - img [ref=e25]
+            - listitem [ref=e27]:
+              - link "Podcast" [ref=e28] [cursor=pointer]:
+                - /url: /podcast
+            - listitem [ref=e29]:
+              - link "Reviews" [ref=e30] [cursor=pointer]:
+                - /url: /reviews
+            - listitem [ref=e31]:
+              - button "Resources" [ref=e32]:
+                - text: Resources
+                - img [ref=e33]
+            - listitem [ref=e35]:
+              - link "Guest / Speaker" [ref=e36] [cursor=pointer]:
+                - /url: /guest-speaker
+            - listitem [ref=e37]:
+              - link "Community" [ref=e38] [cursor=pointer]:
+                - /url: /community
+            - listitem [ref=e39]:
+              - link "Marketing" [ref=e40] [cursor=pointer]:
+                - /url: /marketing
+        - link "Contact Now" [ref=e41] [cursor=pointer]:
+          - /url: /contact
+          - generic [ref=e43]: Contact Now
+          - generic [ref=e44]: →
+    - dialog "Navigation menu" [ref=e45]:
+      - generic [ref=e46]:
+        - link "Veterinary Business Institute" [ref=e47] [cursor=pointer]:
+          - /url: /
+          - img "Veterinary Business Institute" [ref=e48]
+        - button "Close menu" [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+      - navigation [ref=e54]:
+        - link "About Us" [ref=e55] [cursor=pointer]:
+          - /url: /about
+        - generic [ref=e56]:
+          - button "Events" [ref=e57] [cursor=pointer]:
+            - generic [ref=e58]: Events
+            - img [ref=e59]
+          - generic [ref=e62]:
+            - link "Events Overview" [ref=e63] [cursor=pointer]:
+              - /url: /events
+            - link "Webinars & Events Register for the next live VBI masterclass or panel session." [ref=e64] [cursor=pointer]:
+              - /url: /webinars/registration
+              - generic [ref=e65]: Webinars & Events
+              - paragraph [ref=e66]: Register for the next live VBI masterclass or panel session.
+            - link "Reviews Hear how veterinary owners and teams describe the value of VBI content." [ref=e67] [cursor=pointer]:
+              - /url: /reviews
+              - generic [ref=e68]: Reviews
+              - paragraph [ref=e69]: Hear how veterinary owners and teams describe the value of VBI content.
+        - link "Podcast" [ref=e70] [cursor=pointer]:
+          - /url: /podcast
+        - link "Reviews" [ref=e71] [cursor=pointer]:
+          - /url: /reviews
+        - generic [ref=e72]:
+          - button "Resources" [ref=e73] [cursor=pointer]:
+            - generic [ref=e74]: Resources
+            - img [ref=e75]
+          - generic [ref=e78]:
+            - link "Resources Overview" [ref=e79] [cursor=pointer]:
+              - /url: /resources
+            - link "Blog & Insights Articles, guides, and thought leadership for veterinary business owners." [ref=e80] [cursor=pointer]:
+              - /url: /blog
+              - generic [ref=e81]: Blog & Insights
+              - paragraph [ref=e82]: Articles, guides, and thought leadership for veterinary business owners.
+            - link "Free Downloads SOPs, templates, and lead magnets for your practice." [ref=e83] [cursor=pointer]:
+              - /url: /resources/hub
+              - generic [ref=e84]: Free Downloads
+              - paragraph [ref=e85]: SOPs, templates, and lead magnets for your practice.
+            - link "Knowledge Base / FAQ Answers to common questions about VBI coaching, events, and marketing." [ref=e86] [cursor=pointer]:
+              - /url: /resources/faq
+              - generic [ref=e87]: Knowledge Base / FAQ
+              - paragraph [ref=e88]: Answers to common questions about VBI coaching, events, and marketing.
+            - link "Newsletter Weekly summary of the best veterinary business advice." [ref=e89] [cursor=pointer]:
+              - /url: /newsletter
+              - generic [ref=e90]: Newsletter
+              - paragraph [ref=e91]: Weekly summary of the best veterinary business advice.
+        - link "Guest / Speaker" [ref=e92] [cursor=pointer]:
+          - /url: /guest-speaker
+        - link "Community" [ref=e93] [cursor=pointer]:
+          - /url: /community
+        - link "Marketing" [ref=e94] [cursor=pointer]:
+          - /url: /marketing
+      - generic [ref=e95]:
+        - link "Contact Now →" [ref=e96] [cursor=pointer]:
+          - /url: /contact
+        - link "Free Strategy Call" [ref=e97] [cursor=pointer]:
+          - /url: /consultation
+          - generic [ref=e98]:
+            - img [ref=e99]
+            - text: Free Strategy Call
+    - main [ref=e101]:
+      - generic [ref=e102]:
+        - img:
+          - generic: 90%
+        - generic [ref=e103]:
+          - generic [ref=e104]:
+            - generic [ref=e105]: For Veterinary Leaders Ready to Grow
+            - heading "Practical insight for veterinary teams building" [level=1] [ref=e106]:
+              - generic [ref=e107]: Practical insight for veterinary teams building
+            - paragraph [ref=e111]: "Veterinary Business Institute now centers its strongest assets in one place: podcast conversations, event panel replays, webinar education, and strategy content."
+            - generic [ref=e112]:
+              - link "Explore the Hub" [ref=e116] [cursor=pointer]:
+                - /url: /community
+                - generic [ref=e117]: Explore the Hub
+              - link "Free Strategy Call" [ref=e120] [cursor=pointer]:
+                - /url: /consultation
+                - generic [ref=e121]:
+                  - img [ref=e122]
+                  - text: Free Strategy Call
+            - generic [ref=e124]:
+              - generic [ref=e125]: Core Pillars
+              - generic [ref=e126]:
+                - generic "Education" [ref=e127]:
+                  - img [ref=e128]
+                - generic "Podcast" [ref=e131]:
+                  - img [ref=e132]
+                - generic "Event Panels" [ref=e136]:
+                  - img [ref=e137]
+                - generic "Growth Strategy" [ref=e140]:
+                  - img [ref=e141]
+          - img "Veterinary Professional" [ref=e148]
+      - generic [ref=e149]:
+        - generic [ref=e151]:
+          - generic [ref=e152]: Platform Signals
+          - heading "The strongest VBI ideas now move across the site as one visual system." [level=2] [ref=e153]
+        - generic [ref=e154]:
+          - generic [ref=e156]:
+            - article [ref=e157]:
+              - generic [ref=e158]: Podcast
+              - 'heading "Strategic Relief Integration: Building Profitable, High-Performance Veterinary Staffing Models in Today''s Market" [level=3] [ref=e159]'
+              - paragraph [ref=e160]: A practical discussion on relief doctors, continuity, onboarding, and how flexible staffing can support practice growth instead of causing operational drift.
+            - article [ref=e161]:
+              - generic [ref=e162]: Event Panels
+              - heading "Conflict or Connection? Turning Team Tension Into Collaboration" [level=3] [ref=e163]
+              - paragraph [ref=e164]: A panel on leadership friction, communication habits, and how practices can turn recurring team tension into productive collaboration.
+            - article [ref=e165]:
+              - generic [ref=e166]: Webinars
+              - heading "Elevating Veterinary Practice Performance Through Marketing, Technology, Team Productivity, and Financial Resilience" [level=3] [ref=e167]
+              - paragraph [ref=e168]: "A replay focused on the operating system of a stronger practice: visibility, systems, people performance, and financial discipline."
+            - article [ref=e169]:
+              - generic [ref=e170]: Podcast
+              - 'heading "Strategic Relief Integration: Building Profitable, High-Performance Veterinary Staffing Models in Today''s Market" [level=3] [ref=e171]'
+              - paragraph [ref=e172]: A practical discussion on relief doctors, continuity, onboarding, and how flexible staffing can support practice growth instead of causing operational drift.
+            - article [ref=e173]:
+              - generic [ref=e174]: Event Panels
+              - heading "Conflict or Connection? Turning Team Tension Into Collaboration" [level=3] [ref=e175]
+              - paragraph [ref=e176]: A panel on leadership friction, communication habits, and how practices can turn recurring team tension into productive collaboration.
+            - article [ref=e177]:
+              - generic [ref=e178]: Webinars
+              - heading "Elevating Veterinary Practice Performance Through Marketing, Technology, Team Productivity, and Financial Resilience" [level=3] [ref=e179]
+              - paragraph [ref=e180]: "A replay focused on the operating system of a stronger practice: visibility, systems, people performance, and financial discipline."
+          - generic [ref=e182]:
+            - article [ref=e183]:
+              - generic [ref=e184]: Focus Area
+              - heading "Leadership and Team Culture" [level=3] [ref=e185]
+              - paragraph [ref=e186]: Sharper communication, better retention, and stronger practice leadership for veterinary teams that need stability and momentum.
+            - article [ref=e187]:
+              - generic [ref=e188]: Focus Area
+              - heading "Operations and Staffing Strategy" [level=3] [ref=e189]
+              - paragraph [ref=e190]: Relief integration, onboarding, workflow design, and more flexible staffing models for practices navigating today's labor realities.
+            - article [ref=e191]:
+              - generic [ref=e192]: Focus Area
+              - heading "Marketing and Visibility" [level=3] [ref=e193]
+              - paragraph [ref=e194]: Local search strategy, website positioning, and client-facing messaging that help the right pet owners find and trust your practice.
+            - article [ref=e195]:
+              - generic [ref=e196]: Focus Area
+              - heading "Technology and Client Experience" [level=3] [ref=e197]
+              - paragraph [ref=e198]: Practical use of systems, automation, and service design to reduce friction and improve the client journey.
+            - article [ref=e199]:
+              - generic [ref=e200]: Focus Area
+              - heading "Leadership and Team Culture" [level=3] [ref=e201]
+              - paragraph [ref=e202]: Sharper communication, better retention, and stronger practice leadership for veterinary teams that need stability and momentum.
+            - article [ref=e203]:
+              - generic [ref=e204]: Focus Area
+              - heading "Operations and Staffing Strategy" [level=3] [ref=e205]
+              - paragraph [ref=e206]: Relief integration, onboarding, workflow design, and more flexible staffing models for practices navigating today's labor realities.
+            - article [ref=e207]:
+              - generic [ref=e208]: Focus Area
+              - heading "Marketing and Visibility" [level=3] [ref=e209]
+              - paragraph [ref=e210]: Local search strategy, website positioning, and client-facing messaging that help the right pet owners find and trust your practice.
+            - article [ref=e211]:
+              - generic [ref=e212]: Focus Area
+              - heading "Technology and Client Experience" [level=3] [ref=e213]
+              - paragraph [ref=e214]: Practical use of systems, automation, and service design to reduce friction and improve the client journey.
+      - generic [ref=e215]:
+        - generic: VBI
+        - generic [ref=e216]:
+          - generic [ref=e217]:
+            - generic [ref=e218]:
+              - generic [ref=e219]: 0+
+              - paragraph [ref=e220]: Podcast episodes published with expert veterinary business insights
+            - generic [ref=e221]:
+              - generic [ref=e222]: "0"
+              - paragraph [ref=e223]: Replay-ready event panels hosted on Vimeo with expert veterinary voices
+            - generic [ref=e224]:
+              - generic [ref=e225]: 0+
+              - paragraph [ref=e226]: Positive testimonials across the Ekwa marketing ecosystem
+          - generic [ref=e227]:
+            - text: Built for Veterinary Leaders
+            - heading "Powered by Years of Veterinary Business Expertise." [level=2] [ref=e228]
+            - paragraph [ref=e229]: VBI brings together podcast conversations, expert panel replays, webinar education, and strategic marketing support into one platform designed for practice owners, managers, and growth-minded veterinary teams.
+            - generic [ref=e230]:
+              - link "Our Story" [ref=e231] [cursor=pointer]:
+                - /url: /about
+              - link "Free Strategy Call" [ref=e232] [cursor=pointer]:
+                - /url: /consultation
+                - generic [ref=e233]:
+                  - img [ref=e234]
+                  - text: Free Strategy Call
+      - generic [ref=e237]:
+        - generic [ref=e238]:
+          - generic [ref=e239]: What We Cover
+          - heading "Eight pillars of veterinary business education." [level=2] [ref=e240]
+        - generic [ref=e241]:
+          - link "Leadership & Culture Build stronger teams through communication, retention strategy, and leadership habits that stick. →" [ref=e242] [cursor=pointer]:
+            - /url: /events
+            - generic [ref=e243]:
+              - img [ref=e245]
+              - heading "Leadership & Culture" [level=3] [ref=e250]
+              - paragraph [ref=e251]: Build stronger teams through communication, retention strategy, and leadership habits that stick.
+              - generic [ref=e252]: →
+          - link "Operations & Staffing Streamline workflows, relief integration, and onboarding to reduce friction and improve continuity. →" [ref=e253] [cursor=pointer]:
+            - /url: /podcast
+            - generic [ref=e254]:
+              - img [ref=e256]
+              - heading "Operations & Staffing" [level=3] [ref=e259]
+              - paragraph [ref=e260]: Streamline workflows, relief integration, and onboarding to reduce friction and improve continuity.
+              - generic [ref=e261]: →
+          - link "Marketing & Visibility Local SEO, website positioning, and client-facing messaging that brings the right pet owners to your door. →" [ref=e262] [cursor=pointer]:
+            - /url: /marketing
+            - generic [ref=e263]:
+              - img [ref=e265]
+              - heading "Marketing & Visibility" [level=3] [ref=e268]
+              - paragraph [ref=e269]: Local SEO, website positioning, and client-facing messaging that brings the right pet owners to your door.
+              - generic [ref=e270]: →
+          - link "Technology & Systems Practical guidance on automation, PIMS, and digital tools that reduce overhead without creating complexity. →" [ref=e271] [cursor=pointer]:
+            - /url: /podcast
+            - generic [ref=e272]:
+              - img [ref=e274]
+              - heading "Technology & Systems" [level=3] [ref=e276]
+              - paragraph [ref=e277]: Practical guidance on automation, PIMS, and digital tools that reduce overhead without creating complexity.
+              - generic [ref=e278]: →
+          - link "Financial Health Pricing strategy, profitability levers, and the financial discipline that keeps practices sustainable. →" [ref=e279] [cursor=pointer]:
+            - /url: /events
+            - generic [ref=e280]:
+              - img [ref=e282]
+              - heading "Financial Health" [level=3] [ref=e284]
+              - paragraph [ref=e285]: Pricing strategy, profitability levers, and the financial discipline that keeps practices sustainable.
+              - generic [ref=e286]: →
+          - link "Client Experience Improve the client journey from first call to follow-up with communication, empathy, and service design. →" [ref=e287] [cursor=pointer]:
+            - /url: /events
+            - generic [ref=e288]:
+              - img [ref=e290]
+              - heading "Client Experience" [level=3] [ref=e292]
+              - paragraph [ref=e293]: Improve the client journey from first call to follow-up with communication, empathy, and service design.
+              - generic [ref=e294]: →
+          - link "Risk & Compliance Data protection, cybersecurity basics, and operational risk management for modern veterinary clinics. →" [ref=e295] [cursor=pointer]:
+            - /url: /events
+            - generic [ref=e296]:
+              - img [ref=e298]
+              - heading "Risk & Compliance" [level=3] [ref=e300]
+              - paragraph [ref=e301]: Data protection, cybersecurity basics, and operational risk management for modern veterinary clinics.
+              - generic [ref=e302]: →
+          - link "Growth Strategy Expansion timing, succession planning, and the strategic thinking that separates growing practices from stuck ones. →" [ref=e303] [cursor=pointer]:
+            - /url: /marketing
+            - generic [ref=e304]:
+              - img [ref=e306]
+              - heading "Growth Strategy" [level=3] [ref=e310]
+              - paragraph [ref=e311]: Expansion timing, succession planning, and the strategic thinking that separates growing practices from stuck ones.
+              - generic [ref=e312]: →
+      - generic [ref=e314]:
+        - generic [ref=e315]:
+          - img "Veterinary marketing strategy" [ref=e316]
+          - generic [ref=e317]: Veterinary SEO & Visibility That Works
+        - generic [ref=e318]:
+          - text: Marketing & Growth
+          - heading "Turn insight into visibility and visibility into growth." [level=2] [ref=e319]
+          - paragraph [ref=e320]: VBI's marketing offer is built around the reality that most practices need stronger local visibility before they can convert more of the right pet owners.
+          - list [ref=e321]:
+            - listitem [ref=e322]: A disciplined six-factor audit across the ranking signals that matter
+            - listitem [ref=e323]: Local market and competitor analysis tailored to your geography
+            - listitem [ref=e324]: A VIP team and custom marketing plan built for veterinary practices
+            - listitem [ref=e325]: Backed by 16,000+ positive testimonials from the Ekwa network
+          - generic [ref=e326]:
+            - link "Explore Marketing" [ref=e327] [cursor=pointer]:
+              - /url: /marketing
+            - link "Free SEO Audit" [ref=e328] [cursor=pointer]:
+              - /url: https://www.veterinarybusinessinstitute.com/msm/ryan/
+      - generic [ref=e330]:
+        - generic [ref=e331]:
+          - generic [ref=e332]: The Podcast
+          - heading "4 episodes of veterinary business leadership." [level=2] [ref=e333]
+        - generic [ref=e334]:
+          - generic [ref=e335]:
+            - generic [ref=e336]:
+              - img "Naren Arulrajah" [ref=e337]
+              - generic [ref=e338]:
+                - generic [ref=e339]: Your Host
+                - heading "Naren Arulrajah" [level=3] [ref=e340]
+                - paragraph [ref=e341]: Founder of the Veterinary Business Podcast and CEO of Ekwa Marketing
+            - paragraph [ref=e342]: Naren helps veterinary practices grow through stronger digital visibility, sharper positioning, and more disciplined business systems.
+            - generic [ref=e343]:
+              - link "Facebook" [ref=e344] [cursor=pointer]:
+                - /url: https://www.facebook.com/profile.php?id=100094602681699
+              - link "LinkedIn" [ref=e345] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/veterinary-business-podcast/?viewAsMember=true
+              - link "Instagram" [ref=e346] [cursor=pointer]:
+                - /url: https://www.instagram.com/veterinarybusinesspodcast/
+              - link "Be a Guest" [ref=e347] [cursor=pointer]:
+                - /url: /guest-speaker
+          - generic [ref=e348]:
+            - link [ref=e349] [cursor=pointer]:
+              - /url: https://www.veterinarybusinessinstitute.com/strategic-relief-integration-building-profitable-high-performance-veterinary-staffing-models-in-todays-market/
+              - article [ref=e350]:
+                - img "Episode 103" [ref=e351]
+                - generic [ref=e352]:
+                  - generic [ref=e353]: EP 103
+                  - 'heading "Strategic Relief Integration: Building Profitable, High-Performance Veterinary Staffing Models in Today''s Market" [level=4] [ref=e354]'
+                  - paragraph [ref=e355]: March 26, 2026
+            - link [ref=e356] [cursor=pointer]:
+              - /url: https://www.veterinarybusinessinstitute.com/podcast-show/
+              - article [ref=e357]:
+                - img "Episode 102" [ref=e358]
+                - generic [ref=e359]:
+                  - generic [ref=e360]: EP 102
+                  - heading "Shaping Future-Ready Veterinary Practices Through Strategic Planning, Culture, Retention, Financial Resilience and Practice Continuity" [level=4] [ref=e361]
+                  - paragraph [ref=e362]: February 19, 2026
+            - link [ref=e363] [cursor=pointer]:
+              - /url: https://www.veterinarybusinessinstitute.com/podcast-show/
+              - article [ref=e364]:
+                - img "Episode 101" [ref=e365]
+                - generic [ref=e366]:
+                  - generic [ref=e367]: EP 101
+                  - heading "Strengthening Modern Veterinary Clinics Through Culture, Communication, Technology and Client Care" [level=4] [ref=e368]
+                  - paragraph [ref=e369]: January 29, 2026
+        - generic [ref=e370]:
+          - generic [ref=e371]: "Listen on:"
+          - link "Spotify" [ref=e372] [cursor=pointer]:
+            - /url: https://open.spotify.com/show/5F1cmzekwcb8UbFO4OL5pu
+          - link "Apple Podcasts" [ref=e373] [cursor=pointer]:
+            - /url: https://podcasts.apple.com/us/podcast/veterinary-business-podcast/id1712053291
+          - link "YouTube Music" [ref=e374] [cursor=pointer]:
+            - /url: https://music.youtube.com/playlist?list=PLA-bPmn73IK4XAn6w-iPWWVmg_B8do7AC
+      - generic [ref=e376]:
+        - generic [ref=e377]: Veterinary Leadership
+        - generic [ref=e379]: Practice Growth
+        - generic [ref=e381]: Team Culture
+        - generic [ref=e383]: Marketing Strategy
+        - generic [ref=e385]: Client Experience
+        - generic [ref=e387]: Financial Resilience
+        - generic [ref=e389]: Staffing Models
+        - generic [ref=e391]: Operational Efficiency
+        - generic [ref=e393]: Digital Visibility
+        - generic [ref=e395]: Succession Planning
+        - generic [ref=e397]: Veterinary Leadership
+        - generic [ref=e399]: Practice Growth
+        - generic [ref=e401]: Team Culture
+        - generic [ref=e403]: Marketing Strategy
+        - generic [ref=e405]: Client Experience
+        - generic [ref=e407]: Financial Resilience
+        - generic [ref=e409]: Staffing Models
+        - generic [ref=e411]: Operational Efficiency
+        - generic [ref=e413]: Digital Visibility
+        - generic [ref=e415]: Succession Planning
+      - generic [ref=e418]:
+        - generic [ref=e419]:
+          - text: Why VBI Stands Out
+          - heading "A veterinary business hub with stronger pathways into learning and growth." [level=2] [ref=e420]
+          - paragraph [ref=e421]: Veterinary teams need more than one content stream. VBI brings together podcast conversations, event panel replays, webinar education, and strategic marketing support so visitors can move from insight into action without losing context.
+          - paragraph [ref=e422]: The result is a clearer platform for practice owners, managers, and growth-minded teams who want leadership guidance, operational ideas, and stronger visibility.
+        - generic [ref=e423]:
+          - article [ref=e424]:
+            - strong [ref=e425]: "103"
+            - paragraph [ref=e426]: Podcast episodes published through March 26, 2026
+          - article [ref=e427]:
+            - strong [ref=e428]: "12"
+            - paragraph [ref=e429]: Vimeo-hosted veterinary event panels currently available in the review folder
+          - article [ref=e430]:
+            - strong [ref=e431]: 16K+
+            - paragraph [ref=e432]: Positive testimonials referenced across the Ekwa marketing offer
+      - generic [ref=e434]:
+        - generic [ref=e435]:
+          - generic [ref=e436]: Core Coverage
+          - heading "What veterinary teams can actually use from the institute." [level=2] [ref=e437]
+        - generic [ref=e438]:
+          - article [ref=e439]:
+            - generic [ref=e440]: "01"
+            - heading "Leadership and Team Culture" [level=3] [ref=e441]
+            - paragraph [ref=e442]: Sharper communication, better retention, and stronger practice leadership for veterinary teams that need stability and momentum.
+          - article [ref=e443]:
+            - generic [ref=e444]: "02"
+            - heading "Operations and Staffing Strategy" [level=3] [ref=e445]
+            - paragraph [ref=e446]: Relief integration, onboarding, workflow design, and more flexible staffing models for practices navigating today's labor realities.
+          - article [ref=e447]:
+            - generic [ref=e448]: "03"
+            - heading "Marketing and Visibility" [level=3] [ref=e449]
+            - paragraph [ref=e450]: Local search strategy, website positioning, and client-facing messaging that help the right pet owners find and trust your practice.
+          - article [ref=e451]:
+            - generic [ref=e452]: "04"
+            - heading "Technology and Client Experience" [level=3] [ref=e453]
+            - paragraph [ref=e454]: Practical use of systems, automation, and service design to reduce friction and improve the client journey.
+      - generic [ref=e456]:
+        - article [ref=e457]:
+          - generic [ref=e458]:
+            - generic [ref=e459]: Latest Event Panel
+            - generic [ref=e460]: March 23, 2026 / 01:00:23
+          - generic [ref=e461]:
+            - img "Conflict or Connection? Turning Team Tension Into Collaboration" [ref=e462]
+            - generic [ref=e463]:
+              - heading "Conflict or Connection? Turning Team Tension Into Collaboration" [level=2] [ref=e464]
+              - paragraph [ref=e465]: A panel on leadership friction, communication habits, and how practices can turn recurring team tension into productive collaboration.
+              - list [ref=e466]:
+                - listitem [ref=e467]: Veterinary Culture and Leadership Panel
+                - listitem [ref=e468]: "Category: Culture and Leadership"
+                - listitem [ref=e469]: Direct replay access from the reviewed Vimeo folder.
+              - generic [ref=e470]:
+                - link "Watch the Panel" [ref=e471] [cursor=pointer]:
+                  - /url: https://vimeo.com/reviews/91859b87-afaa-4c6c-aad5-ebadfdafcb70/videos/1176476168
+                - link "Browse All Panels" [ref=e472] [cursor=pointer]:
+                  - /url: /events
+        - generic [ref=e473]:
+          - generic [ref=e475]:
+            - generic [ref=e487]:
+              - generic [ref=e488]:
+                - heading "Event Panels" [level=3] [ref=e489]
+                - paragraph [ref=e490]: Replay-ready veterinary conversations
+              - img [ref=e491]
+            - generic [ref=e496]:
+              - generic [ref=e497]:
+                - heading "Event Panels" [level=3] [ref=e498]
+                - paragraph [ref=e499]: Expert-led panels on leadership, operations, and culture — recorded and available on demand.
+              - generic [ref=e500]:
+                - generic [ref=e501]:
+                  - img [ref=e502]
+                  - generic [ref=e504]: Leadership friction
+                - generic [ref=e505]:
+                  - img [ref=e506]
+                  - generic [ref=e508]: Team culture shifts
+                - generic [ref=e509]:
+                  - img [ref=e510]
+                  - generic [ref=e512]: Operational clarity
+                - generic [ref=e513]:
+                  - img [ref=e514]
+                  - generic [ref=e516]: Practice growth
+              - link "Browse All Panels" [ref=e518] [cursor=pointer]:
+                - /url: /events
+                - generic [ref=e519]: Browse All Panels
+                - img [ref=e520]
+          - generic [ref=e523]:
+            - generic [ref=e535]:
+              - generic [ref=e536]:
+                - heading "Free Strategy Session" [level=3] [ref=e537]
+                - paragraph [ref=e538]: 60-minute marketing deep-dive
+              - img [ref=e539]
+            - generic [ref=e544]:
+              - generic [ref=e545]:
+                - heading "Free Strategy Session" [level=3] [ref=e546]
+                - paragraph [ref=e547]: A customised marketing plan built around your practice, with 4-5 hours of prep before the call.
+              - generic [ref=e548]:
+                - generic [ref=e549]:
+                  - img [ref=e550]
+                  - generic [ref=e552]: Local SEO audit
+                - generic [ref=e553]:
+                  - img [ref=e554]
+                  - generic [ref=e556]: Google ranking plan
+                - generic [ref=e557]:
+                  - img [ref=e558]
+                  - generic [ref=e560]: New client acquisition
+                - generic [ref=e561]:
+                  - img [ref=e562]
+                  - generic [ref=e564]: Detailed follow-up report
+              - link "Book Your Session" [ref=e566] [cursor=pointer]:
+                - /url: /consultation
+                - generic [ref=e567]: Book Your Session
+                - img [ref=e568]
+      - generic [ref=e571]:
+        - generic [ref=e572]:
+          - generic [ref=e573]: What People Say
+          - heading "Trusted by veterinary leaders across North America." [level=2] [ref=e574]
+        - generic [ref=e576]:
+          - article [ref=e577]:
+            - generic "5 out of 5 stars" [ref=e578]:
+              - img [ref=e579]
+              - img [ref=e581]
+              - img [ref=e583]
+              - img [ref=e585]
+              - img [ref=e587]
+            - blockquote [ref=e589]: The VBI podcast changed how I think about staffing and leadership. Every episode gives me something I can apply the same week.
+            - generic [ref=e590]:
+              - strong [ref=e591]: Dr. Sarah Mitchell
+              - generic [ref=e592]: Practice Owner, Colorado
+          - article [ref=e593]:
+            - generic "5 out of 5 stars" [ref=e594]:
+              - img [ref=e595]
+              - img [ref=e597]
+              - img [ref=e599]
+              - img [ref=e601]
+              - img [ref=e603]
+            - blockquote [ref=e605]: The event panels are like a masterclass series. I've replayed the leadership panel three times with my management team.
+            - generic [ref=e606]:
+              - strong [ref=e607]: Dr. James Chen
+              - generic [ref=e608]: Multi-location Owner, Texas
+          - article [ref=e609]:
+            - generic "5 out of 5 stars" [ref=e610]:
+              - img [ref=e611]
+              - img [ref=e613]
+              - img [ref=e615]
+              - img [ref=e617]
+              - img [ref=e619]
+            - blockquote [ref=e621]: Naren and the team bring real business strategy to an industry that desperately needs it. The webinar replays alone are worth it.
+            - generic [ref=e622]:
+              - strong [ref=e623]: Karen Albrecht
+              - generic [ref=e624]: Hospital Manager, Ontario
+          - article [ref=e625]:
+            - generic "5 out of 5 stars" [ref=e626]:
+              - img [ref=e627]
+              - img [ref=e629]
+              - img [ref=e631]
+              - img [ref=e633]
+              - img [ref=e635]
+            - blockquote [ref=e637]: We went from guessing at marketing to actually understanding our visibility gaps. The audit was a turning point for our practice.
+            - generic [ref=e638]:
+              - strong [ref=e639]: Dr. Michael Torres
+              - generic [ref=e640]: Practice Owner, Florida
+          - article [ref=e641]:
+            - generic "5 out of 5 stars" [ref=e642]:
+              - img [ref=e643]
+              - img [ref=e645]
+              - img [ref=e647]
+              - img [ref=e649]
+              - img [ref=e651]
+            - blockquote [ref=e653]: The community and free resources helped us build our first real onboarding SOP. Our new hires now ramp up twice as fast.
+            - generic [ref=e654]:
+              - strong [ref=e655]: Lisa Nguyen
+              - generic [ref=e656]: Operations Manager, California
+          - article [ref=e657]:
+            - generic "5 out of 5 stars" [ref=e658]:
+              - img [ref=e659]
+              - img [ref=e661]
+              - img [ref=e663]
+              - img [ref=e665]
+              - img [ref=e667]
+            - blockquote [ref=e669]: The VBI podcast changed how I think about staffing and leadership. Every episode gives me something I can apply the same week.
+            - generic [ref=e670]:
+              - strong [ref=e671]: Dr. Sarah Mitchell
+              - generic [ref=e672]: Practice Owner, Colorado
+          - article [ref=e673]:
+            - generic "5 out of 5 stars" [ref=e674]:
+              - img [ref=e675]
+              - img [ref=e677]
+              - img [ref=e679]
+              - img [ref=e681]
+              - img [ref=e683]
+            - blockquote [ref=e685]: The event panels are like a masterclass series. I've replayed the leadership panel three times with my management team.
+            - generic [ref=e686]:
+              - strong [ref=e687]: Dr. James Chen
+              - generic [ref=e688]: Multi-location Owner, Texas
+          - article [ref=e689]:
+            - generic "5 out of 5 stars" [ref=e690]:
+              - img [ref=e691]
+              - img [ref=e693]
+              - img [ref=e695]
+              - img [ref=e697]
+              - img [ref=e699]
+            - blockquote [ref=e701]: Naren and the team bring real business strategy to an industry that desperately needs it. The webinar replays alone are worth it.
+            - generic [ref=e702]:
+              - strong [ref=e703]: Karen Albrecht
+              - generic [ref=e704]: Hospital Manager, Ontario
+          - article [ref=e705]:
+            - generic "5 out of 5 stars" [ref=e706]:
+              - img [ref=e707]
+              - img [ref=e709]
+              - img [ref=e711]
+              - img [ref=e713]
+              - img [ref=e715]
+            - blockquote [ref=e717]: We went from guessing at marketing to actually understanding our visibility gaps. The audit was a turning point for our practice.
+            - generic [ref=e718]:
+              - strong [ref=e719]: Dr. Michael Torres
+              - generic [ref=e720]: Practice Owner, Florida
+          - article [ref=e721]:
+            - generic "5 out of 5 stars" [ref=e722]:
+              - img [ref=e723]
+              - img [ref=e725]
+              - img [ref=e727]
+              - img [ref=e729]
+              - img [ref=e731]
+            - blockquote [ref=e733]: The community and free resources helped us build our first real onboarding SOP. Our new hires now ramp up twice as fast.
+            - generic [ref=e734]:
+              - strong [ref=e735]: Lisa Nguyen
+              - generic [ref=e736]: Operations Manager, California
+      - generic [ref=e738]:
+        - generic [ref=e739]:
+          - generic [ref=e740]: Explore the Institute
+          - heading "Choose the part of the platform that best matches what your practice needs next." [level=2] [ref=e741]
+        - generic [ref=e742]:
+          - link "About the Institute See how VBI is positioned for veterinary leaders, teams, and growth-minded practices. A clearer story of why the platform exists, what it covers, and how it connects business education with real practice decisions." [ref=e743] [cursor=pointer]:
+            - /url: /about
+            - generic [ref=e744]:
+              - generic [ref=e745]: About the Institute
+              - heading "See how VBI is positioned for veterinary leaders, teams, and growth-minded practices." [level=3] [ref=e746]
+              - paragraph [ref=e747]: A clearer story of why the platform exists, what it covers, and how it connects business education with real practice decisions.
+          - link "Podcast Archive Move from a generic episode list to a more editorial listening experience. Featured episodes, host authority, and sharper topic grouping make the podcast library easier to browse and trust." [ref=e748] [cursor=pointer]:
+            - /url: /podcast
+            - generic [ref=e749]:
+              - generic [ref=e750]: Podcast Archive
+              - heading "Move from a generic episode list to a more editorial listening experience." [level=3] [ref=e751]
+              - paragraph [ref=e752]: Featured episodes, host authority, and sharper topic grouping make the podcast library easier to browse and trust.
+          - link "Event Panels Turn recurring expert panels into a visible content pillar with replay-ready access. The Vimeo event folder now becomes a first-class route with dates, categories, and strong discovery paths." [ref=e753] [cursor=pointer]:
+            - /url: /events
+            - generic [ref=e754]:
+              - generic [ref=e755]: Event Panels
+              - heading "Turn recurring expert panels into a visible content pillar with replay-ready access." [level=3] [ref=e756]
+              - paragraph [ref=e757]: The Vimeo event folder now becomes a first-class route with dates, categories, and strong discovery paths.
+          - link "Webinar Replay Library Treat the archive like a replay hub instead of a simple list of old event posts. Dates, summaries, themes, and replay framing help the archive keep working long after the live event is over." [ref=e758] [cursor=pointer]:
+            - /url: /webinars
+            - generic [ref=e759]:
+              - generic [ref=e760]: Webinar Replay Library
+              - heading "Treat the archive like a replay hub instead of a simple list of old event posts." [level=3] [ref=e761]
+              - paragraph [ref=e762]: Dates, summaries, themes, and replay framing help the archive keep working long after the live event is over.
+          - link "Marketing Offer Present the audit and strategy offer with more proof, process, and clarity. The marketing page now turns a thin sales block into a stronger conversion path built around the VBI and Ekwa relationship." [ref=e763] [cursor=pointer]:
+            - /url: /marketing
+            - generic [ref=e764]:
+              - generic [ref=e765]: Marketing Offer
+              - heading "Present the audit and strategy offer with more proof, process, and clarity." [level=3] [ref=e766]
+              - paragraph [ref=e767]: The marketing page now turns a thin sales block into a stronger conversion path built around the VBI and Ekwa relationship.
+      - generic [ref=e769]:
+        - generic [ref=e770]:
+          - generic [ref=e771]: Event Panels
+          - heading "Panels now sit alongside the podcast and webinars as a first-class content pillar." [level=2] [ref=e772]
+        - generic [ref=e773]:
+          - article [ref=e774]:
+            - img "Conflict or Connection? Turning Team Tension Into Collaboration" [ref=e775]
+            - generic [ref=e776]: March 23, 2026
+            - heading "Conflict or Connection? Turning Team Tension Into Collaboration" [level=3] [ref=e777]
+            - paragraph [ref=e778]: A panel on leadership friction, communication habits, and how practices can turn recurring team tension into productive collaboration.
+            - link "Watch Panel" [ref=e779] [cursor=pointer]:
+              - /url: https://vimeo.com/reviews/91859b87-afaa-4c6c-aad5-ebadfdafcb70/videos/1176476168
+          - article [ref=e780]:
+            - 'img "Storytelling for Veterinary Practices: Turning Your Mission Into Marketing" [ref=e781]'
+            - generic [ref=e782]: March 16, 2026
+            - 'heading "Storytelling for Veterinary Practices: Turning Your Mission Into Marketing" [level=3] [ref=e783]'
+            - paragraph [ref=e784]: A discussion on brand storytelling, mission-driven positioning, and how practices can make their message more human and memorable.
+            - link "Watch Panel" [ref=e785] [cursor=pointer]:
+              - /url: https://vimeo.com/reviews/91859b87-afaa-4c6c-aad5-ebadfdafcb70/videos/1174277215
+          - article [ref=e786]:
+            - 'img "Cybersecurity in Veterinary Practices: Safeguarding Client and Patient Data" [ref=e787]'
+            - generic [ref=e788]: March 9, 2026
+            - 'heading "Cybersecurity in Veterinary Practices: Safeguarding Client and Patient Data" [level=3] [ref=e789]'
+            - paragraph [ref=e790]: A panel focused on data protection, risk exposure, and what veterinary teams should tighten as digital systems become more central.
+            - link "Watch Panel" [ref=e791] [cursor=pointer]:
+              - /url: https://vimeo.com/reviews/91859b87-afaa-4c6c-aad5-ebadfdafcb70/videos/1172064775
+      - generic [ref=e793]:
+        - generic [ref=e794]:
+          - generic [ref=e795]: Replay Library
+          - heading "Recent webinar replays still matter, but they no longer carry the whole education layer alone." [level=2] [ref=e796]
+        - generic [ref=e797]:
+          - article [ref=e798]:
+            - img "Elevating Veterinary Practice Performance Through Marketing, Technology, Team Productivity, and Financial Resilience" [ref=e799]
+            - generic [ref=e800]: March 26, 2026
+            - heading "Elevating Veterinary Practice Performance Through Marketing, Technology, Team Productivity, and Financial Resilience" [level=3] [ref=e801]
+            - paragraph [ref=e802]: "A replay focused on the operating system of a stronger practice: visibility, systems, people performance, and financial discipline."
+            - link "Watch Replay" [ref=e803] [cursor=pointer]:
+              - /url: https://www.veterinarybusinessinstitute.com/webinar-archive/elevating-veterinary-practice-performance-through-marketing-technology-team-productivity-and-financial-resilience/
+          - article [ref=e804]:
+            - img "Shaping Future-Ready Veterinary Practices Through Strategic Planning, Culture, Retention, Financial Resilience and Practice Continuity" [ref=e805]
+            - generic [ref=e806]: February 19, 2026
+            - heading "Shaping Future-Ready Veterinary Practices Through Strategic Planning, Culture, Retention, Financial Resilience and Practice Continuity" [level=3] [ref=e807]
+            - paragraph [ref=e808]: A broader strategy session on long-term planning, people retention, resilience, and how practices can protect continuity while growing.
+            - link "Watch Replay" [ref=e809] [cursor=pointer]:
+              - /url: https://www.veterinarybusinessinstitute.com/webinar-archive/shaping-future-ready-veterinary-practices-through-strategic-planning-culture-retention-financial-resilience-and-practice-continuity/
+          - article [ref=e810]:
+            - img "Strengthening Modern Veterinary Clinics Through Culture, Communication, Technology and Client Care" [ref=e811]
+            - generic [ref=e812]: January 29, 2026
+            - heading "Strengthening Modern Veterinary Clinics Through Culture, Communication, Technology and Client Care" [level=3] [ref=e813]
+            - paragraph [ref=e814]: A clinic-level conversation on better communication, service quality, and the role of technology in supporting teams and clients.
+            - link "Watch Replay" [ref=e815] [cursor=pointer]:
+              - /url: https://www.veterinarybusinessinstitute.com/webinar-archive/strengthening-modern-veterinary-clinics-through-culture-communication-technology-and-client-care/
+      - generic [ref=e816]:
+        - generic: TOOLS
+        - generic [ref=e817]:
+          - generic [ref=e818]:
+            - generic [ref=e819]: Free Resources
+            - heading "Practical tools built for veterinary practice teams." [level=2] [ref=e820]
+          - generic [ref=e821]:
+            - link "Practice Growth Checklist A step-by-step checklist for veterinary owners to audit and improve their practice growth strategy across six key areas." [ref=e822] [cursor=pointer]:
+              - /url: /resources/hub
+              - generic [ref=e823]:
+                - img [ref=e825]
+                - heading "Practice Growth Checklist" [level=3] [ref=e828]
+                - paragraph [ref=e829]: A step-by-step checklist for veterinary owners to audit and improve their practice growth strategy across six key areas.
+            - link "Onboarding SOP Template A ready-to-use standard operating procedure for onboarding relief vets, new hires, and support staff into your practice." [ref=e830] [cursor=pointer]:
+              - /url: /resources/hub
+              - generic [ref=e831]:
+                - img [ref=e833]
+                - heading "Onboarding SOP Template" [level=3] [ref=e836]
+                - paragraph [ref=e837]: A ready-to-use standard operating procedure for onboarding relief vets, new hires, and support staff into your practice.
+            - link "KPI Tracking Worksheet Track the metrics that matter — client retention, revenue per visit, new client acquisition, and team productivity benchmarks." [ref=e838] [cursor=pointer]:
+              - /url: /resources/hub
+              - generic [ref=e839]:
+                - img [ref=e841]
+                - heading "KPI Tracking Worksheet" [level=3] [ref=e842]
+                - paragraph [ref=e843]: Track the metrics that matter — client retention, revenue per visit, new client acquisition, and team productivity benchmarks.
+            - link "Compliance Quick-Audit A self-assessment tool covering data security, client communication standards, and operational risk areas for veterinary clinics." [ref=e844] [cursor=pointer]:
+              - /url: /resources/hub
+              - generic [ref=e845]:
+                - img [ref=e847]
+                - heading "Compliance Quick-Audit" [level=3] [ref=e849]
+                - paragraph [ref=e850]: A self-assessment tool covering data security, client communication standards, and operational risk areas for veterinary clinics.
+          - generic [ref=e851]:
+            - generic [ref=e852]: Free sign-up, then instant access
+            - generic [ref=e853]:
+              - link "Explore All Resources" [ref=e854] [cursor=pointer]:
+                - /url: /resources/hub
+              - link "Sign Up Free" [ref=e855] [cursor=pointer]:
+                - /url: /community
+      - generic [ref=e857]:
+        - generic [ref=e858]:
+          - generic [ref=e859]: Visual System
+          - heading "Panels, webinars, and podcast content now feel like parts of one designed platform." [level=2] [ref=e860]
+        - generic [ref=e861]:
+          - article [ref=e862]:
+            - img "Leadership and culture panels" [ref=e863]
+            - heading "Leadership and culture panels" [level=3] [ref=e864]
+          - article [ref=e865]:
+            - img "Management and storytelling sessions" [ref=e866]
+            - heading "Management and storytelling sessions" [level=3] [ref=e867]
+          - article [ref=e868]:
+            - img "Replay-ready webinars" [ref=e869]
+            - heading "Replay-ready webinars" [level=3] [ref=e870]
+          - article [ref=e871]:
+            - img "Podcast flagship episodes" [ref=e872]
+            - heading "Podcast flagship episodes" [level=3] [ref=e873]
+      - generic [ref=e874]:
+        - generic: GROW
+        - generic [ref=e875]:
+          - generic [ref=e876]:
+            - text: Next Step
+            - heading "Stop leaving growth on the table." [level=2] [ref=e877]
+            - paragraph [ref=e878]: Start with the podcast, panel archive, or replay library, then move into a strategy conversation when your practice is ready for sharper visibility and growth planning.
+          - generic [ref=e879]:
+            - link "Book Free Strategy Call" [ref=e880] [cursor=pointer]:
+              - /url: /consultation
+              - generic [ref=e881]:
+                - img [ref=e882]
+                - text: Book Free Strategy Call
+            - link "Listen to the Podcast" [ref=e884] [cursor=pointer]:
+              - /url: /podcast
+    - contentinfo [ref=e885]:
+      - generic [ref=e886]:
+        - generic [ref=e887]: Stay Connected
+        - heading "Your next step starts here." [level=2] [ref=e888]
+        - paragraph [ref=e889]: Explore the latest podcast, catch up on event panels, or book your free marketing strategy session.
+        - generic [ref=e890]:
+          - link "▶ Latest Podcast" [ref=e891] [cursor=pointer]:
+            - /url: https://www.veterinarybusinessinstitute.com/strategic-relief-integration-building-profitable-high-performance-veterinary-staffing-models-in-todays-market/
+            - generic [ref=e892]: ▶
+            - text: Latest Podcast
+          - link "Latest Event Panel" [ref=e893] [cursor=pointer]:
+            - /url: https://vimeo.com/reviews/91859b87-afaa-4c6c-aad5-ebadfdafcb70/videos/1176476168
+          - link "Book the Audit" [ref=e894] [cursor=pointer]:
+            - /url: https://www.veterinarybusinessinstitute.com/msm/ryan/
+      - generic [ref=e895]:
+        - generic [ref=e896]:
+          - img "Veterinary Business Institute" [ref=e897]
+          - paragraph [ref=e898]: Veterinary Business Institute is a resource hub for veterinarians focused on business growth, leadership, operations, culture, client experience, and digital visibility.
+          - generic [ref=e899]:
+            - generic [ref=e900]:
+              - img [ref=e901]
+              - generic [ref=e904]: SSL Secured
+            - generic [ref=e905]:
+              - img [ref=e906]
+              - generic [ref=e908]: Data Protection
+            - generic [ref=e909]:
+              - img [ref=e910]
+              - generic [ref=e912]: CCPA / GDPR Ready
+        - generic [ref=e913]:
+          - heading "Contact" [level=3] [ref=e914]
+          - list [ref=e915]:
+            - listitem [ref=e916]:
+              - link "(833) 523-1845" [ref=e917] [cursor=pointer]:
+                - /url: tel:+18335231845
+            - listitem [ref=e918]:
+              - link "(213) 325-1745" [ref=e919] [cursor=pointer]:
+                - /url: tel:+12133251745
+            - listitem [ref=e920]:
+              - link "team@veterinarybusinessinstitute.com" [ref=e921] [cursor=pointer]:
+                - /url: mailto:team@veterinarybusinessinstitute.com
+            - listitem [ref=e922]: 303, Pinetree Way Mississauga, Ontario L5G 2R4 Canada
+        - generic [ref=e923]:
+          - heading "Explore" [level=3] [ref=e924]
+          - list [ref=e925]:
+            - listitem [ref=e926]:
+              - link "Home" [ref=e927] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e928]:
+              - link "About Us" [ref=e929] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e930]:
+              - link "Events" [ref=e931] [cursor=pointer]:
+                - /url: /events
+            - listitem [ref=e932]:
+              - link "Reviews" [ref=e933] [cursor=pointer]:
+                - /url: /reviews
+            - listitem [ref=e934]:
+              - link "Podcast" [ref=e935] [cursor=pointer]:
+                - /url: /podcast
+            - listitem [ref=e936]:
+              - link "Blog" [ref=e937] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e938]:
+              - link "Resources" [ref=e939] [cursor=pointer]:
+                - /url: /resources
+            - listitem [ref=e940]:
+              - link "Guest / Speaker" [ref=e941] [cursor=pointer]:
+                - /url: /guest-speaker
+            - listitem [ref=e942]:
+              - link "Community" [ref=e943] [cursor=pointer]:
+                - /url: /community
+            - listitem [ref=e944]:
+              - link "Newsletter" [ref=e945] [cursor=pointer]:
+                - /url: /newsletter
+            - listitem [ref=e946]:
+              - link "Webinars" [ref=e947] [cursor=pointer]:
+                - /url: /webinars
+            - listitem [ref=e948]:
+              - link "Marketing" [ref=e949] [cursor=pointer]:
+                - /url: /marketing
+            - listitem [ref=e950]:
+              - link "Contact Us" [ref=e951] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e952]:
+          - heading "Resources" [level=3] [ref=e953]
+          - list [ref=e954]:
+            - listitem [ref=e955]:
+              - link "Podcast Show" [ref=e956] [cursor=pointer]:
+                - /url: https://www.veterinarybusinessinstitute.com/podcast-show/
+            - listitem [ref=e957]:
+              - link "Event Panels Folder" [ref=e958] [cursor=pointer]:
+                - /url: https://vimeo.com/reviews/91859b87-afaa-4c6c-aad5-ebadfdafcb70/users/246277785/folders/27398884
+            - listitem [ref=e959]:
+              - link "Webinar Archive" [ref=e960] [cursor=pointer]:
+                - /url: https://www.veterinarybusinessinstitute.com/webinar-archive/
+            - listitem [ref=e961]:
+              - link "Marketing Audit" [ref=e962] [cursor=pointer]:
+                - /url: https://www.veterinarybusinessinstitute.com/msm/ryan/
+            - listitem [ref=e963]:
+              - link "Ekwa Marketing" [ref=e964] [cursor=pointer]:
+                - /url: https://www.ekwa.com/
+            - listitem [ref=e965]:
+              - link "Knowledge Base (FAQ)" [ref=e966] [cursor=pointer]:
+                - /url: /resources/faq
+            - listitem [ref=e967]:
+              - link "Free Downloads Hub" [ref=e968] [cursor=pointer]:
+                - /url: /resources/hub
+      - generic [ref=e969]:
+        - generic [ref=e970]: Copyright 2026 Veterinary Business Institute. All rights reserved.
+        - generic [ref=e971]:
+          - link "Facebook" [ref=e972] [cursor=pointer]:
+            - /url: https://www.facebook.com/profile.php?id=100094602681699
+          - link "LinkedIn" [ref=e973] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/veterinary-business-podcast/?viewAsMember=true
+          - link "Instagram" [ref=e974] [cursor=pointer]:
+            - /url: https://www.instagram.com/veterinarybusinesspodcast/
+          - link "YouTube" [ref=e975] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UCVesVVBLy84s5Jm6tVigGyg
+          - link "Privacy Policy" [ref=e976] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms of Service" [ref=e977] [cursor=pointer]:
+            - /url: /terms-of-service
+    - button "Open Live Chat" [ref=e979] [cursor=pointer]:
+      - img [ref=e980]
+    - button "Back to top":
+      - img
+  - button "Open Next.js Dev Tools" [ref=e987] [cursor=pointer]:
+    - img [ref=e988]

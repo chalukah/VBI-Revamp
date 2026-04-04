@@ -22,69 +22,45 @@ export const topBarItems = [
 ];
 
 export const headerNavigation = [
-  { type: "link", label: "Home", href: "/" },
   { type: "link", label: "About Us", href: "/about" },
   {
     type: "group",
     label: "Events",
     href: "/events",
     description:
-      "Browse veterinary event panels, replay-ready sessions, and related feedback from recent conversations.",
+      "Browse veterinary event panels, webinars, and replay-ready sessions.",
     items: [
+      {
+        label: "Webinars & Events",
+        href: "/webinars/registration",
+        description: "Register for the next live VBI masterclass or panel session.",
+      },
       {
         label: "Reviews",
         href: "/reviews",
         description:
-          "Read how veterinary owners, managers, and teams describe the value of the podcast, panels, and education hub.",
-      },
-      {
-        label: "Upcoming Webinars",
-        href: "/webinars/registration",
-        description: "Register for the next live VBI masterclass or panel session.",
+          "Hear how veterinary owners and teams describe the value of VBI content.",
       },
     ],
   },
   { type: "link", label: "Podcast", href: "/podcast" },
-  { type: "link", label: "Blog", href: "/blog" },
+  { type: "link", label: "Reviews", href: "/reviews" },
   {
     type: "group",
     label: "Resources",
     href: "/resources",
     description:
-      "Find practical next steps, collaboration paths, and supporting content around VBI's education ecosystem.",
+      "Free downloads, tools, blog content, and educational resources for veterinary teams.",
     items: [
       {
-        label: "Guest / Speaker",
-        href: "/guest-speaker",
-        description:
-          "Invite VBI to speak, suggest a guest conversation, or explore collaborative educational programming.",
+        label: "Blog & Insights",
+        href: "/blog",
+        description: "Articles, guides, and thought leadership for veterinary business owners.",
       },
       {
-        label: "Community Sign Up",
-        href: "/community",
-        description:
-          "Stay connected with VBI through recurring content, updates, and shared learning shaped for veterinary teams.",
-      },
-      {
-        label: "Client KPI Dashboard (Mockup)",
-        href: "/dashboard",
-        description: "A private interface mock for tracking practice growth, retention, and visibility metrics.",
-      },
-      {
-        label: "Member Forum (Portal)",
-        href: "/community/forum",
-        description: "A private discussion board for veterinary practice owners and managers to share SOPs and guidance.",
-      },
-      {
-        label: "Newsletter",
-        href: "/newsletter",
-        description: "Get a weekly summary of the best veterinary business advice from our podcast and coaching sessions.",
-      },
-      {
-        label: "Marketing",
-        href: "/marketing",
-        description:
-          "Move from content into action with the audit-first marketing offer built for veterinary practice growth.",
+        label: "Free Downloads",
+        href: "/resources/hub",
+        description: "SOPs, templates, and lead magnets for your practice.",
       },
       {
         label: "Knowledge Base / FAQ",
@@ -92,12 +68,15 @@ export const headerNavigation = [
         description: "Answers to common questions about VBI coaching, events, and marketing.",
       },
       {
-        label: "Free Downloads Hub",
-        href: "/resources/hub",
-        description: "Access our collection of veterinary practice SOPs, templates, and lead magnets.",
+        label: "Newsletter",
+        href: "/newsletter",
+        description: "Weekly summary of the best veterinary business advice.",
       },
     ],
   },
+  { type: "link", label: "Guest / Speaker", href: "/guest-speaker" },
+  { type: "link", label: "Community", href: "/community" },
+  { type: "link", label: "Marketing", href: "/marketing" },
 ];
 
 export const footerExploreLinks = [
@@ -507,5 +486,116 @@ export const contactReasons = [
   {
     title: "General questions and partnerships",
     body: "For webinar access, platform questions, sponsorships, or educational partnerships, this page should make the next step obvious.",
+  },
+];
+
+export const testimonials = [
+  {
+    quote: "The VBI podcast changed how I think about staffing and leadership. Every episode gives me something I can apply the same week.",
+    name: "Dr. Sarah Mitchell",
+    role: "Practice Owner, Colorado",
+    rating: 5,
+  },
+  {
+    quote: "The event panels are like a masterclass series. I've replayed the leadership panel three times with my management team.",
+    name: "Dr. James Chen",
+    role: "Multi-location Owner, Texas",
+    rating: 5,
+  },
+  {
+    quote: "Naren and the team bring real business strategy to an industry that desperately needs it. The webinar replays alone are worth it.",
+    name: "Karen Albrecht",
+    role: "Hospital Manager, Ontario",
+    rating: 5,
+  },
+  {
+    quote: "We went from guessing at marketing to actually understanding our visibility gaps. The audit was a turning point for our practice.",
+    name: "Dr. Michael Torres",
+    role: "Practice Owner, Florida",
+    rating: 5,
+  },
+  {
+    quote: "The community and free resources helped us build our first real onboarding SOP. Our new hires now ramp up twice as fast.",
+    name: "Lisa Nguyen",
+    role: "Operations Manager, California",
+    rating: 5,
+  },
+];
+
+export const freeResources = [
+  {
+    icon: "clipboard",
+    title: "Practice Growth Checklist",
+    body: "A step-by-step checklist for veterinary owners to audit and improve their practice growth strategy across six key areas.",
+    href: "/resources/hub",
+  },
+  {
+    icon: "file-text",
+    title: "Onboarding SOP Template",
+    body: "A ready-to-use standard operating procedure for onboarding relief vets, new hires, and support staff into your practice.",
+    href: "/resources/hub",
+  },
+  {
+    icon: "bar-chart",
+    title: "KPI Tracking Worksheet",
+    body: "Track the metrics that matter — client retention, revenue per visit, new client acquisition, and team productivity benchmarks.",
+    href: "/resources/hub",
+  },
+  {
+    icon: "shield",
+    title: "Compliance Quick-Audit",
+    body: "A self-assessment tool covering data security, client communication standards, and operational risk areas for veterinary clinics.",
+    href: "/resources/hub",
+  },
+];
+
+export const servicePillars = [
+  {
+    icon: "users",
+    title: "Leadership & Culture",
+    body: "Build stronger teams through communication, retention strategy, and leadership habits that stick.",
+    href: "/events",
+  },
+  {
+    icon: "briefcase",
+    title: "Operations & Staffing",
+    body: "Streamline workflows, relief integration, and onboarding to reduce friction and improve continuity.",
+    href: "/podcast",
+  },
+  {
+    icon: "trending-up",
+    title: "Marketing & Visibility",
+    body: "Local SEO, website positioning, and client-facing messaging that brings the right pet owners to your door.",
+    href: "/marketing",
+  },
+  {
+    icon: "monitor",
+    title: "Technology & Systems",
+    body: "Practical guidance on automation, PIMS, and digital tools that reduce overhead without creating complexity.",
+    href: "/podcast",
+  },
+  {
+    icon: "dollar-sign",
+    title: "Financial Health",
+    body: "Pricing strategy, profitability levers, and the financial discipline that keeps practices sustainable.",
+    href: "/events",
+  },
+  {
+    icon: "heart",
+    title: "Client Experience",
+    body: "Improve the client journey from first call to follow-up with communication, empathy, and service design.",
+    href: "/events",
+  },
+  {
+    icon: "shield",
+    title: "Risk & Compliance",
+    body: "Data protection, cybersecurity basics, and operational risk management for modern veterinary clinics.",
+    href: "/events",
+  },
+  {
+    icon: "target",
+    title: "Growth Strategy",
+    body: "Expansion timing, succession planning, and the strategic thinking that separates growing practices from stuck ones.",
+    href: "/marketing",
   },
 ];

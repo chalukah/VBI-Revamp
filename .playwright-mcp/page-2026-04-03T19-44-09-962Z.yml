@@ -1,0 +1,651 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - 'link "Latest Podcast Episode 103: Strategic Relief Integration for High-Performance Veterinary Staffing" [ref=e5] [cursor=pointer]':
+          - /url: https://www.veterinarybusinessinstitute.com/strategic-relief-integration-building-profitable-high-performance-veterinary-staffing-models-in-todays-market/
+          - generic [ref=e6]: Latest Podcast
+          - generic [ref=e7]: "Episode 103: Strategic Relief Integration for High-Performance Veterinary Staffing"
+        - 'link "Latest Event Panel March 23, 2026: Conflict or Connection? Turning Team Tension Into Collaboration" [ref=e8] [cursor=pointer]':
+          - /url: https://vimeo.com/reviews/91859b87-afaa-4c6c-aad5-ebadfdafcb70/videos/1176476168
+          - generic [ref=e9]: Latest Event Panel
+          - generic [ref=e10]: "March 23, 2026: Conflict or Connection? Turning Team Tension Into Collaboration"
+    - navigation "Site navigation" [ref=e11]:
+      - generic [ref=e14]:
+        - link "Veterinary Business Institute home" [ref=e15] [cursor=pointer]:
+          - /url: /
+          - img "Veterinary Business Institute" [ref=e16]
+        - navigation "Main" [ref=e18]:
+          - list [ref=e20]:
+            - listitem [ref=e21]:
+              - link "Home" [ref=e22] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e23]:
+              - link "About Us" [ref=e24] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e25]:
+              - button "Events" [ref=e26]:
+                - text: Events
+                - img [ref=e27]
+            - listitem [ref=e29]:
+              - link "Podcast" [ref=e30] [cursor=pointer]:
+                - /url: /podcast
+            - listitem [ref=e31]:
+              - link "Blog" [ref=e32] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e33]:
+              - button "Resources" [ref=e34]:
+                - text: Resources
+                - img [ref=e35]
+        - link "Contact Now" [ref=e37] [cursor=pointer]:
+          - /url: /contact
+          - generic [ref=e39]: Contact Now
+          - generic [ref=e40]: →
+    - dialog "Navigation menu" [ref=e41]:
+      - generic [ref=e42]:
+        - link "Veterinary Business Institute" [ref=e43] [cursor=pointer]:
+          - /url: /
+          - img "Veterinary Business Institute" [ref=e44]
+        - button "Close menu" [ref=e45] [cursor=pointer]:
+          - img [ref=e46]
+      - navigation [ref=e50]:
+        - link "Home" [ref=e51] [cursor=pointer]:
+          - /url: /
+        - link "About Us" [ref=e52] [cursor=pointer]:
+          - /url: /about
+        - generic [ref=e53]:
+          - button "Events" [ref=e54] [cursor=pointer]:
+            - generic [ref=e55]: Events
+            - img [ref=e56]
+          - generic [ref=e59]:
+            - link "Events Overview" [ref=e60] [cursor=pointer]:
+              - /url: /events
+            - link "Reviews Read how veterinary owners, managers, and teams describe the value of the podcast, panels, and education hub." [ref=e61] [cursor=pointer]:
+              - /url: /reviews
+              - generic [ref=e62]: Reviews
+              - paragraph [ref=e63]: Read how veterinary owners, managers, and teams describe the value of the podcast, panels, and education hub.
+            - link "Upcoming Webinars Register for the next live VBI masterclass or panel session." [ref=e64] [cursor=pointer]:
+              - /url: /webinars/registration
+              - generic [ref=e65]: Upcoming Webinars
+              - paragraph [ref=e66]: Register for the next live VBI masterclass or panel session.
+        - link "Podcast" [ref=e67] [cursor=pointer]:
+          - /url: /podcast
+        - link "Blog" [ref=e68] [cursor=pointer]:
+          - /url: /blog
+        - generic [ref=e69]:
+          - button "Resources" [ref=e70] [cursor=pointer]:
+            - generic [ref=e71]: Resources
+            - img [ref=e72]
+          - generic [ref=e75]:
+            - link "Resources Overview" [ref=e76] [cursor=pointer]:
+              - /url: /resources
+            - link "Guest / Speaker Invite VBI to speak, suggest a guest conversation, or explore collaborative educational programming." [ref=e77] [cursor=pointer]:
+              - /url: /guest-speaker
+              - generic [ref=e78]: Guest / Speaker
+              - paragraph [ref=e79]: Invite VBI to speak, suggest a guest conversation, or explore collaborative educational programming.
+            - link "Community Sign Up Stay connected with VBI through recurring content, updates, and shared learning shaped for veterinary teams." [ref=e80] [cursor=pointer]:
+              - /url: /community
+              - generic [ref=e81]: Community Sign Up
+              - paragraph [ref=e82]: Stay connected with VBI through recurring content, updates, and shared learning shaped for veterinary teams.
+            - link "Client KPI Dashboard (Mockup) A private interface mock for tracking practice growth, retention, and visibility metrics." [ref=e83] [cursor=pointer]:
+              - /url: /dashboard
+              - generic [ref=e84]: Client KPI Dashboard (Mockup)
+              - paragraph [ref=e85]: A private interface mock for tracking practice growth, retention, and visibility metrics.
+            - link "Member Forum (Portal) A private discussion board for veterinary practice owners and managers to share SOPs and guidance." [ref=e86] [cursor=pointer]:
+              - /url: /community/forum
+              - generic [ref=e87]: Member Forum (Portal)
+              - paragraph [ref=e88]: A private discussion board for veterinary practice owners and managers to share SOPs and guidance.
+            - link "Newsletter Get a weekly summary of the best veterinary business advice from our podcast and coaching sessions." [ref=e89] [cursor=pointer]:
+              - /url: /newsletter
+              - generic [ref=e90]: Newsletter
+              - paragraph [ref=e91]: Get a weekly summary of the best veterinary business advice from our podcast and coaching sessions.
+            - link "Marketing Move from content into action with the audit-first marketing offer built for veterinary practice growth." [ref=e92] [cursor=pointer]:
+              - /url: /marketing
+              - generic [ref=e93]: Marketing
+              - paragraph [ref=e94]: Move from content into action with the audit-first marketing offer built for veterinary practice growth.
+            - link "Knowledge Base / FAQ Answers to common questions about VBI coaching, events, and marketing." [ref=e95] [cursor=pointer]:
+              - /url: /resources/faq
+              - generic [ref=e96]: Knowledge Base / FAQ
+              - paragraph [ref=e97]: Answers to common questions about VBI coaching, events, and marketing.
+            - link "Free Downloads Hub Access our collection of veterinary practice SOPs, templates, and lead magnets." [ref=e98] [cursor=pointer]:
+              - /url: /resources/hub
+              - generic [ref=e99]: Free Downloads Hub
+              - paragraph [ref=e100]: Access our collection of veterinary practice SOPs, templates, and lead magnets.
+      - generic [ref=e101]:
+        - link "Contact Now →" [ref=e102] [cursor=pointer]:
+          - /url: /contact
+        - link "Free Strategy Call" [ref=e103] [cursor=pointer]:
+          - /url: https://www.veterinarybusinessinstitute.com/msm/ryan/
+    - main [ref=e104]:
+      - generic [ref=e107]:
+        - generic [ref=e108]:
+          - text: Free · No Commitments
+          - heading "Book a Free Marketing Strategy Meeting" [level=1] [ref=e109]:
+            - text: Book a Free
+            - emphasis [ref=e110]: Marketing Strategy Meeting
+          - paragraph [ref=e111]: Learn how you can leverage digital marketing to grow your veterinary practice — at no cost, with no commitments attached.
+          - link "Book Your Free Meeting" [ref=e112] [cursor=pointer]:
+            - /url: https://www.veterinarybusinessinstitute.com/msm/ryan/
+        - generic [ref=e113]:
+          - text: 60-Minute Session
+          - paragraph [ref=e114]:
+            - text: Lila Stone & her team invest
+            - strong [ref=e115]: 4–5 hours
+            - text: preparing a customised marketing plan for your practice before the call.
+      - generic [ref=e117]:
+        - generic [ref=e118]:
+          - text: What We'll Cover
+          - heading "A plan built around your practice" [level=2] [ref=e119]
+          - paragraph [ref=e120]: Please select a time slot to join Lila Stone, Marketing Strategy Advisor at Ekwa Marketing, for an informative 60-minute session. Lila and her team will invest 4 to 5 hours prior to your meeting to develop a customised marketing plan tailored specifically to your veterinary practice.
+          - paragraph [ref=e121]: "This plan will help you understand your current online presence and provide clear recommendations on:"
+          - list [ref=e122]:
+            - listitem [ref=e123]: Attract high-quality new clients to your practice
+            - listitem [ref=e124]: "Rank #1 on Google within your local community"
+            - listitem [ref=e125]: Increase the number of new client calls consistently, month after month
+          - generic [ref=e126]:
+            - strong [ref=e127]: After the meeting
+            - text: ", Lila will follow up with a detailed report that includes the full plan — so you can implement these recommendations in your practice right away."
+          - generic [ref=e128]:
+            - paragraph [ref=e129]: How to book
+            - generic [ref=e130]:
+              - generic [ref=e131]: 01Select a date
+              - generic [ref=e132]: 02Select a time
+              - generic [ref=e133]: 03Fill in your details
+              - generic [ref=e134]: 04Confirm your booking
+        - generic [ref=e136]:
+          - paragraph [ref=e137]: Select a time that works for you
+          - paragraph [ref=e138]: The calendar below is connected directly to Lila's availability. Pick a slot and you'll receive a confirmation instantly.
+          - iframe [ref=e139]:
+            - main [ref=f2e2]:
+              - generic [ref=f2e3]:
+                - generic [ref=f2e6]:
+                  - generic "Language selector" [ref=f2e7] [cursor=pointer]:
+                    - generic [ref=f2e8]:
+                      - img [ref=f2e9]
+                      - generic [ref=f2e13]: English
+                      - img [ref=f2e14]
+                  - link "Talk to sales" [ref=f2e17] [cursor=pointer]:
+                    - /url: /contact
+                - navigation [ref=f2e18]:
+                  - generic [ref=f2e19]:
+                    - link "Calendly logo" [ref=f2e20] [cursor=pointer]:
+                      - /url: /
+                      - img "Calendly logo" [ref=f2e23]
+                    - list [ref=f2e24]:
+                      - listitem [ref=f2e25]:
+                        - link "Log In" [ref=f2e26] [cursor=pointer]:
+                          - /url: /login
+                          - generic [ref=f2e27]: Log In
+                      - listitem [ref=f2e28]:
+                        - link "Get started" [ref=f2e30] [cursor=pointer]:
+                          - /url: /signup
+                          - generic [ref=f2e31]: Get started
+                      - listitem [ref=f2e32]:
+                        - button "Open menu" [ref=f2e33]
+                  - generic:
+                    - generic:
+                      - generic: Product
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: Platform
+              - generic [ref=f2e36]:
+                - img [ref=f2e37]
+                - generic [ref=f2e42]:
+                  - generic [ref=f2e43]: "404"
+                  - heading "Page not found" [level=1] [ref=f2e44]
+                  - generic [ref=f2e46]:
+                    - paragraph [ref=f2e47]: Sorry, but the page you were looking for could not be found.
+                    - link "Return to homepage" [ref=f2e49] [cursor=pointer]:
+                      - /url: /
+                      - generic [ref=f2e50]: Return to homepage
+              - generic [ref=f2e56]:
+                - generic [ref=f2e57]:
+                  - heading "Looking to explore?" [level=2] [ref=f2e58]
+                  - paragraph [ref=f2e60]: Be sure to check out some of our resources.
+                - generic [ref=f2e61]:
+                  - 'link "LinkedIn + Calendly: Never lose a meeting opportunity" [ref=f2e63] [cursor=pointer]':
+                    - /url: /blog/linkedin-browser-extension
+                    - 'img "Blog Post - LinkedIn + Calendly: Never lose a meeting opportunity" [ref=f2e66]'
+                    - generic [ref=f2e67]:
+                      - generic [ref=f2e68]:
+                        - paragraph [ref=f2e69]: "LinkedIn + Calendly: Never lose a meeting opportunity"
+                        - paragraph [ref=f2e71]: Share scheduling links instantly in LinkedIn Messaging with Calendly’s updated browser extension.
+                      - button "Read now" [ref=f2e73]:
+                        - generic [ref=f2e74]: Read now
+                  - 'link "Introducing Meeting Polls: Now it’s even easier for everyone to find time together" [ref=f2e78] [cursor=pointer]':
+                    - /url: /blog/meeting-polls
+                    - img "blog post - Now you can vote on times to schedule events AND book the meeting, all within Calendly" [ref=f2e81]
+                    - generic [ref=f2e82]:
+                      - generic [ref=f2e83]:
+                        - paragraph [ref=f2e84]: "Introducing Meeting Polls: Now it’s even easier for everyone to find time together"
+                        - paragraph [ref=f2e86]: Now you can vote on times to schedule events AND book the meeting, all within Calendly.
+                      - button "Read now" [ref=f2e88]:
+                        - generic [ref=f2e89]: Read now
+                  - 'link "Calendly etiquette: How to share your scheduling link politely" [ref=f2e93] [cursor=pointer]':
+                    - /url: /blog/is-calendly-rude
+                    - 'img "Calendly etiquette: How to share your scheduling link politely" [ref=f2e96]'
+                    - generic [ref=f2e97]:
+                      - generic [ref=f2e98]:
+                        - paragraph [ref=f2e99]: "Calendly etiquette: How to share your scheduling link politely"
+                        - paragraph [ref=f2e101]: Learn the basics of scheduling etiquette.
+                      - button "Read now" [ref=f2e103]:
+                        - generic [ref=f2e104]: Read now
+              - generic [ref=f2e109]:
+                - generic [ref=f2e110]:
+                  - generic [ref=f2e111]:
+                    - heading "Product" [level=5] [ref=f2e112]
+                    - list [ref=f2e113]:
+                      - listitem [ref=f2e114]:
+                        - link "Scheduling automation" [ref=f2e115] [cursor=pointer]:
+                          - /url: /scheduling
+                      - listitem [ref=f2e116]:
+                        - link "Meeting Notetaker" [ref=f2e117] [cursor=pointer]:
+                          - /url: /notetaker
+                      - listitem [ref=f2e118]:
+                        - link "Payments" [ref=f2e119] [cursor=pointer]:
+                          - /url: /payments
+                      - listitem [ref=f2e120]:
+                        - link "Customizable availability" [ref=f2e121] [cursor=pointer]:
+                          - /url: /scheduling/availability
+                      - listitem [ref=f2e122]:
+                        - link "Mobile apps" [ref=f2e123] [cursor=pointer]:
+                          - /url: /features/mobile-apps
+                      - listitem [ref=f2e124]:
+                        - link "Browser extensions" [ref=f2e125] [cursor=pointer]:
+                          - /url: /features/browser-extensions
+                      - listitem [ref=f2e126]:
+                        - link "Meeting routing" [ref=f2e127] [cursor=pointer]:
+                          - /url: /scheduling/routing
+                      - listitem [ref=f2e128]:
+                        - link "Event Types" [ref=f2e129] [cursor=pointer]:
+                          - /url: /scheduling/event-types
+                      - listitem [ref=f2e130]:
+                        - link "Email & website embeds" [ref=f2e131] [cursor=pointer]:
+                          - /url: /scheduling/embed-options
+                      - listitem [ref=f2e132]:
+                        - link "Reminders & follow-ups" [ref=f2e133] [cursor=pointer]:
+                          - /url: /scheduling/automated-communication
+                      - listitem [ref=f2e134]:
+                        - link "Meeting polls" [ref=f2e135] [cursor=pointer]:
+                          - /url: /scheduling/meeting-polls
+                      - listitem [ref=f2e136]:
+                        - link "Analytics" [ref=f2e137] [cursor=pointer]:
+                          - /url: /features/analytics
+                      - listitem [ref=f2e138]:
+                        - link "Admin management" [ref=f2e139] [cursor=pointer]:
+                          - /url: /features/admin-management
+                  - generic [ref=f2e140]:
+                    - heading "Integrations" [level=5] [ref=f2e141]
+                    - list [ref=f2e142]:
+                      - listitem [ref=f2e143]:
+                        - link "Google ecosystem" [ref=f2e144] [cursor=pointer]:
+                          - /url: /integration?search=google
+                      - listitem [ref=f2e145]:
+                        - link "Microsoft ecosystem" [ref=f2e146] [cursor=pointer]:
+                          - /url: /integration?search=microsoft
+                      - listitem [ref=f2e147]:
+                        - link "Calendars" [ref=f2e148] [cursor=pointer]:
+                          - /url: /integration#calendars
+                      - listitem [ref=f2e149]:
+                        - link "Video conferencing" [ref=f2e150] [cursor=pointer]:
+                          - /url: /integration#video-conferencing
+                      - listitem [ref=f2e151]:
+                        - link "Payment processors" [ref=f2e152] [cursor=pointer]:
+                          - /url: /integration#payments
+                      - listitem [ref=f2e153]:
+                        - link "Sales & CRM" [ref=f2e154] [cursor=pointer]:
+                          - /url: /integration#sales-and-crm
+                      - listitem [ref=f2e155]:
+                        - link "Recruiting & ATS" [ref=f2e156] [cursor=pointer]:
+                          - /url: /integration#recruiting-and-ats
+                      - listitem [ref=f2e157]:
+                        - link "Email messaging" [ref=f2e158] [cursor=pointer]:
+                          - /url: /integration#email-messaging
+                      - listitem [ref=f2e159]:
+                        - link "Embed Calendly" [ref=f2e160] [cursor=pointer]:
+                          - /url: /integration#embed-calendly
+                      - listitem [ref=f2e161]:
+                        - link "Analytics" [ref=f2e162] [cursor=pointer]:
+                          - /url: /integration#analytics
+                      - listitem [ref=f2e163]:
+                        - link "API & connectors" [ref=f2e164] [cursor=pointer]:
+                          - /url: /integration#api-and-connectors
+                      - listitem [ref=f2e165]:
+                        - link "Security & compliance" [ref=f2e166] [cursor=pointer]:
+                          - /url: /integration#security-and-compliance
+                  - generic [ref=f2e167]:
+                    - heading "Calendly" [level=5] [ref=f2e168]
+                    - list [ref=f2e169]:
+                      - listitem [ref=f2e170]:
+                        - link "Pricing" [ref=f2e171] [cursor=pointer]:
+                          - /url: /pricing
+                      - listitem [ref=f2e172]:
+                        - link "Product overview" [ref=f2e173] [cursor=pointer]:
+                          - /url: /features
+                      - listitem [ref=f2e174]:
+                        - link "Solutions" [ref=f2e175] [cursor=pointer]:
+                          - /url: /solutions
+                      - listitem [ref=f2e176]:
+                        - link "For individuals" [ref=f2e177] [cursor=pointer]:
+                          - /url: /solutions/individuals
+                      - listitem [ref=f2e178]:
+                        - link "For small businesses" [ref=f2e179] [cursor=pointer]:
+                          - /url: /solutions/small-business
+                      - listitem [ref=f2e180]:
+                        - link "For large companies" [ref=f2e181] [cursor=pointer]:
+                          - /url: /solutions/enterprise
+                      - listitem [ref=f2e182]:
+                        - link "Compare" [ref=f2e183] [cursor=pointer]:
+                          - /url: /compare
+                      - listitem [ref=f2e184]:
+                        - link "Security" [ref=f2e185] [cursor=pointer]:
+                          - /url: /security
+                      - listitem [ref=f2e186]:
+                        - link "Sign up for free" [ref=f2e187] [cursor=pointer]:
+                          - /url: /signup
+                      - listitem [ref=f2e188]:
+                        - link "Talk to sales" [ref=f2e189] [cursor=pointer]:
+                          - /url: /contact
+                      - listitem [ref=f2e190]:
+                        - link "Get a demo" [ref=f2e191] [cursor=pointer]:
+                          - /url: /contact/demo
+                  - generic [ref=f2e192]:
+                    - heading "Resources" [level=5] [ref=f2e193]
+                    - list [ref=f2e194]:
+                      - listitem [ref=f2e195]:
+                        - link "Help center" [ref=f2e196] [cursor=pointer]:
+                          - /url: /help
+                      - listitem [ref=f2e197]:
+                        - link "Resource center" [ref=f2e198] [cursor=pointer]:
+                          - /url: /resources
+                      - listitem [ref=f2e199]:
+                        - link "Blog" [ref=f2e200] [cursor=pointer]:
+                          - /url: /blog
+                      - listitem [ref=f2e201]:
+                        - link "Customer stories" [ref=f2e202] [cursor=pointer]:
+                          - /url: /customers
+                      - listitem [ref=f2e203]:
+                        - link "Learning hub" [ref=f2e204] [cursor=pointer]:
+                          - /url: /learn
+                      - listitem [ref=f2e205]:
+                        - link "Calendly community" [ref=f2e206] [cursor=pointer]:
+                          - /url: https://community.calendly.com/?_ga=2.256195651.97573991.1727360292-272702306.1727360288
+                      - listitem [ref=f2e207]:
+                        - link "Developer tools" [ref=f2e208] [cursor=pointer]:
+                          - /url: https://developer.calendly.com/?_ga=2.256195651.97573991.1727360292-272702306.1727360288
+                      - listitem [ref=f2e209]:
+                        - link "Release notes" [ref=f2e210] [cursor=pointer]:
+                          - /url: /release-notes
+                  - generic [ref=f2e211]:
+                    - heading "Company" [level=5] [ref=f2e212]
+                    - list [ref=f2e213]:
+                      - listitem [ref=f2e214]:
+                        - link "About us" [ref=f2e215] [cursor=pointer]:
+                          - /url: /about
+                      - listitem [ref=f2e216]:
+                        - link "Leadership" [ref=f2e217] [cursor=pointer]:
+                          - /url: /leadership
+                      - listitem [ref=f2e218]:
+                        - link "Careers" [ref=f2e219] [cursor=pointer]:
+                          - /url: /careers
+                        - generic [ref=f2e220]: We’re hiring!
+                      - listitem [ref=f2e221]:
+                        - link "Newsroom" [ref=f2e222] [cursor=pointer]:
+                          - /url: /newsroom
+                      - listitem [ref=f2e223]:
+                        - link "Become a partner" [ref=f2e224] [cursor=pointer]:
+                          - /url: /partners/contact
+                      - listitem [ref=f2e225]:
+                        - link "Contact us" [ref=f2e226] [cursor=pointer]:
+                          - /url: /contact-us
+                - generic [ref=f2e227]:
+                  - generic [ref=f2e228]:
+                    - heading "Downloads" [level=5] [ref=f2e229]
+                    - generic [ref=f2e230]:
+                      - link "Apple Brand Icon" [ref=f2e231] [cursor=pointer]:
+                        - /url: https://apps.apple.com/app/calendly-mobile/id1451094657?pt=118425599&mt=8&ct=footer&utm_source=calendly&utm_medium=marketing_site&utm_campaign=footer&utm_content=ios&utm_term=ios&l=en-us
+                        - generic [ref=f2e232]: App Store
+                        - img [ref=f2e235]
+                      - link "Google Play Simple" [ref=f2e237] [cursor=pointer]:
+                        - /url: https://play.google.com/store/apps/details?id=com.calendly.app&utm_source=calendly&utm_medium=marketing_site&utm_campaign=footer&utm_content=android&utm_term=android&hl=en-us
+                        - generic [ref=f2e238]: Google Play
+                        - img [ref=f2e241]
+                      - link "Chrome" [ref=f2e248] [cursor=pointer]:
+                        - /url: https://chromewebstore.google.com/detail/calendly-meeting-scheduli/cbhilkcodigmigfbnphipnnmamjfkipp?utm_source=calendly&utm_medium=marketing_site&utm_campaign=footer&utm_content=chrome&utm_term=chrome&hl=en-us
+                        - generic [ref=f2e249]: Chrome extension
+                        - img [ref=f2e252]
+                      - link "Edge" [ref=f2e261] [cursor=pointer]:
+                        - /url: https://microsoftedge.microsoft.com/addons/detail/calendly-meeting-schedul/hfngfpepejakabkhocoamdlnipilcpga?utm_source=calendly&utm_medium=marketing_site&utm_campaign=footer&utm_content=edge&utm_term=edge&hl=en-us
+                        - generic [ref=f2e262]: Edge extension
+                        - img [ref=f2e265]
+                      - link "Firefox" [ref=f2e273] [cursor=pointer]:
+                        - /url: https://addons.mozilla.org/en-US/firefox/addon/calendly-meeting-scheduling/?utm_source=calendly&utm_medium=marketing_site&utm_campaign=footer&utm_content=firefox&utm_term=firefox
+                        - generic [ref=f2e274]: Firefox extension
+                        - img [ref=f2e277]
+                      - link "Safari" [ref=f2e290] [cursor=pointer]:
+                        - /url: https://apps.apple.com/us/app/calendly-meeting-scheduling/id6746816242?mt=12&utm_source=calendly&utm_medium=marketing_site&utm_campaign=footer
+                        - generic [ref=f2e291]: Safari extension
+                        - img [ref=f2e294]
+                      - link "Outlook" [ref=f2e431] [cursor=pointer]:
+                        - /url: https://appsource.microsoft.com/en-us/product/office/WA104381446?utm_source=calendly&utm_medium=marketing_site&utm_campaign=footer&utm_content=outlook&utm_term=outlookaddin
+                        - generic [ref=f2e432]: Outlook add-in
+                        - img [ref=f2e435]
+                  - generic [ref=f2e449]:
+                    - link "Link to Calendly Twitter account" [ref=f2e450] [cursor=pointer]:
+                      - /url: https://x.com/calendly
+                      - generic "Link to Calendly Twitter account" [ref=f2e451]:
+                        - img [ref=f2e452]
+                    - link "Link to Calendly Facebook account" [ref=f2e454] [cursor=pointer]:
+                      - /url: https://www.facebook.com/calendly
+                      - generic "Link to Calendly Facebook account" [ref=f2e455]:
+                        - img [ref=f2e456]
+                    - link "Link to Calendly Instagram account" [ref=f2e459] [cursor=pointer]:
+                      - /url: https://www.instagram.com/calendly/
+                      - generic "Link to Calendly Instagram account" [ref=f2e460]:
+                        - img [ref=f2e461]
+                    - link "Link to Calendly Linkedin account" [ref=f2e464] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/calendly/life/lifeatcalendly/
+                      - generic "Link to Calendly Linkedin account" [ref=f2e465]:
+                        - img [ref=f2e466]
+                    - link "Link to Calendly Youtube account" [ref=f2e469] [cursor=pointer]:
+                      - /url: https://www.youtube.com/c/Calendly
+                      - generic "Link to Calendly Youtube account" [ref=f2e470]:
+                        - img [ref=f2e471]
+                - generic [ref=f2e475]:
+                  - generic "Language selector" [ref=f2e476] [cursor=pointer]:
+                    - generic [ref=f2e477]:
+                      - img [ref=f2e478]
+                      - generic [ref=f2e482]: English
+                      - img [ref=f2e483]
+                  - generic [ref=f2e485]:
+                    - link "Privacy Policy" [ref=f2e486] [cursor=pointer]:
+                      - /url: /legal/privacy-notice
+                      - generic [ref=f2e487]: Privacy Policy
+                    - link "Legal" [ref=f2e488] [cursor=pointer]:
+                      - /url: /legal
+                      - generic [ref=f2e489]: Legal
+                    - link "Status" [ref=f2e490] [cursor=pointer]:
+                      - /url: https://www.calendlystatus.com/
+                    - button "Cookie Settings" [ref=f2e491] [cursor=pointer]:
+                      - generic [ref=f2e492]: Cookie Settings
+                    - button "Your Privacy Choices" [ref=f2e493] [cursor=pointer]:
+                      - generic [ref=f2e494]:
+                        - img [ref=f2e495]
+                        - text: Your Privacy Choices
+                  - generic [ref=f2e501]: Copyright Calendly
+          - paragraph [ref=e140]:
+            - text: Prefer to book via the VBI portal?
+            - link "Open booking page →" [ref=e141] [cursor=pointer]:
+              - /url: https://www.veterinarybusinessinstitute.com/msm/ryan/
+      - generic [ref=e143]:
+        - paragraph [ref=e144]: Have a question?
+        - generic [ref=e145]:
+          - link "📞(833) 523-1845" [ref=e146] [cursor=pointer]:
+            - /url: tel:+18335231845
+          - link "📞(213) 325-1745" [ref=e147] [cursor=pointer]:
+            - /url: tel:+12133251745
+          - link "✉team@veterinarybusinessinstitute.com" [ref=e148] [cursor=pointer]:
+            - /url: mailto:team@veterinarybusinessinstitute.com
+    - contentinfo [ref=e149]:
+      - generic [ref=e150]:
+        - generic [ref=e151]:
+          - text: Stay Connected
+          - heading "Stay connected with the content, conversations, and strategy that move veterinary practices forward." [level=2] [ref=e152]
+          - paragraph [ref=e153]: Start with the latest podcast conversation or event panel, then move into webinar replays and marketing strategy when your practice is ready for the next step.
+        - generic [ref=e154]:
+          - link "Latest Podcast" [ref=e155] [cursor=pointer]:
+            - /url: https://www.veterinarybusinessinstitute.com/strategic-relief-integration-building-profitable-high-performance-veterinary-staffing-models-in-todays-market/
+          - link "Latest Event Panel" [ref=e156] [cursor=pointer]:
+            - /url: https://vimeo.com/reviews/91859b87-afaa-4c6c-aad5-ebadfdafcb70/videos/1176476168
+          - link "Book the Audit" [ref=e157] [cursor=pointer]:
+            - /url: https://www.veterinarybusinessinstitute.com/msm/ryan/
+      - generic [ref=e158]:
+        - generic [ref=e159]:
+          - img "Veterinary Business Institute" [ref=e160]
+          - paragraph [ref=e161]: Veterinary Business Institute is a resource hub for veterinarians focused on business growth, leadership, operations, culture, client experience, and digital visibility.
+          - generic [ref=e162]:
+            - generic [ref=e163]:
+              - img [ref=e164]
+              - generic [ref=e167]: SSL Secured
+            - generic [ref=e168]:
+              - img [ref=e169]
+              - generic [ref=e171]: Data Protection
+            - generic [ref=e172]:
+              - img [ref=e173]
+              - generic [ref=e175]: CCPA / GDPR Ready
+        - generic [ref=e176]:
+          - heading "Contact" [level=3] [ref=e177]
+          - list [ref=e178]:
+            - listitem [ref=e179]:
+              - link "(833) 523-1845" [ref=e180] [cursor=pointer]:
+                - /url: tel:+18335231845
+            - listitem [ref=e181]:
+              - link "(213) 325-1745" [ref=e182] [cursor=pointer]:
+                - /url: tel:+12133251745
+            - listitem [ref=e183]:
+              - link "team@veterinarybusinessinstitute.com" [ref=e184] [cursor=pointer]:
+                - /url: mailto:team@veterinarybusinessinstitute.com
+            - listitem [ref=e185]: 303, Pinetree Way Mississauga, Ontario L5G 2R4 Canada
+        - generic [ref=e186]:
+          - heading "Explore" [level=3] [ref=e187]
+          - list [ref=e188]:
+            - listitem [ref=e189]:
+              - link "Home" [ref=e190] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e191]:
+              - link "About Us" [ref=e192] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e193]:
+              - link "Events" [ref=e194] [cursor=pointer]:
+                - /url: /events
+            - listitem [ref=e195]:
+              - link "Reviews" [ref=e196] [cursor=pointer]:
+                - /url: /reviews
+            - listitem [ref=e197]:
+              - link "Podcast" [ref=e198] [cursor=pointer]:
+                - /url: /podcast
+            - listitem [ref=e199]:
+              - link "Blog" [ref=e200] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e201]:
+              - link "Resources" [ref=e202] [cursor=pointer]:
+                - /url: /resources
+            - listitem [ref=e203]:
+              - link "Guest / Speaker" [ref=e204] [cursor=pointer]:
+                - /url: /guest-speaker
+            - listitem [ref=e205]:
+              - link "Community" [ref=e206] [cursor=pointer]:
+                - /url: /community
+            - listitem [ref=e207]:
+              - link "Newsletter" [ref=e208] [cursor=pointer]:
+                - /url: /newsletter
+            - listitem [ref=e209]:
+              - link "Webinars" [ref=e210] [cursor=pointer]:
+                - /url: /webinars
+            - listitem [ref=e211]:
+              - link "Marketing" [ref=e212] [cursor=pointer]:
+                - /url: /marketing
+            - listitem [ref=e213]:
+              - link "Contact Us" [ref=e214] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e215]:
+          - heading "Resources" [level=3] [ref=e216]
+          - list [ref=e217]:
+            - listitem [ref=e218]:
+              - link "Podcast Show" [ref=e219] [cursor=pointer]:
+                - /url: https://www.veterinarybusinessinstitute.com/podcast-show/
+            - listitem [ref=e220]:
+              - link "Event Panels Folder" [ref=e221] [cursor=pointer]:
+                - /url: https://vimeo.com/reviews/91859b87-afaa-4c6c-aad5-ebadfdafcb70/users/246277785/folders/27398884
+            - listitem [ref=e222]:
+              - link "Webinar Archive" [ref=e223] [cursor=pointer]:
+                - /url: https://www.veterinarybusinessinstitute.com/webinar-archive/
+            - listitem [ref=e224]:
+              - link "Marketing Audit" [ref=e225] [cursor=pointer]:
+                - /url: https://www.veterinarybusinessinstitute.com/msm/ryan/
+            - listitem [ref=e226]:
+              - link "Ekwa Marketing" [ref=e227] [cursor=pointer]:
+                - /url: https://www.ekwa.com/
+            - listitem [ref=e228]:
+              - link "Knowledge Base (FAQ)" [ref=e229] [cursor=pointer]:
+                - /url: /resources/faq
+            - listitem [ref=e230]:
+              - link "Free Downloads Hub" [ref=e231] [cursor=pointer]:
+                - /url: /resources/hub
+      - generic [ref=e232]:
+        - generic [ref=e233]: Copyright 2026 Veterinary Business Institute. All rights reserved.
+        - generic [ref=e234]:
+          - link "Facebook" [ref=e235] [cursor=pointer]:
+            - /url: https://www.facebook.com/profile.php?id=100094602681699
+          - link "LinkedIn" [ref=e236] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/veterinary-business-podcast/?viewAsMember=true
+          - link "Instagram" [ref=e237] [cursor=pointer]:
+            - /url: https://www.instagram.com/veterinarybusinesspodcast/
+          - link "YouTube" [ref=e238] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UCVesVVBLy84s5Jm6tVigGyg
+          - link "Privacy Policy" [ref=e239] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms of Service" [ref=e240] [cursor=pointer]:
+            - /url: /terms-of-service
+    - generic [ref=e241]:
+      - paragraph [ref=e242]: We use cookies to improve your experience, analyze local visibility trends, and suggest the right content for your practice.
+      - generic [ref=e243]:
+        - button "Decline" [ref=e244] [cursor=pointer]
+        - button "Accept" [ref=e245] [cursor=pointer]
+    - button "Open Live Chat" [ref=e247] [cursor=pointer]:
+      - img [ref=e248]
+    - dialog "What's new on VBI" [ref=e251]:
+      - generic [ref=e252]:
+        - generic [ref=e253]: What's New on VBI
+        - generic [ref=e254]: Don't miss these →
+        - button "Close" [ref=e255] [cursor=pointer]: ×
+      - generic [ref=e256]:
+        - generic [ref=e257]:
+          - generic [ref=e258]: Latest Podcast
+          - generic [ref=e260]:
+            - img "Episode 103" [ref=e261]
+            - generic [ref=e262]:
+              - paragraph [ref=e263]: "Episode #103"
+              - paragraph [ref=e264]: "Strategic Relief Integration: Building Profitable, High-Performance Veterinary Staffing Models in Today's Market"
+          - link "▶ Listen Now" [ref=e265] [cursor=pointer]:
+            - /url: https://www.veterinarybusinessinstitute.com/strategic-relief-integration-building-profitable-high-performance-veterinary-staffing-models-in-todays-market/
+        - generic [ref=e267]:
+          - generic [ref=e268]: Latest Webinar
+          - paragraph [ref=e270]: March 26, 2026
+          - paragraph [ref=e271]: Elevating Veterinary Practice Performance Through Marketing, Technology, Team Productivity, and Financial Resilience
+          - paragraph [ref=e272]: "A replay focused on the operating system of a stronger practice: visibility, systems, people performance, and financial discipline."
+          - link "Watch Replay →" [ref=e273] [cursor=pointer]:
+            - /url: https://www.veterinarybusinessinstitute.com/webinar-archive/elevating-veterinary-practice-performance-through-marketing-technology-team-productivity-and-financial-resilience/
+        - generic [ref=e275]:
+          - generic [ref=e276]: Latest Event Panel
+          - paragraph [ref=e278]: March 23, 2026
+          - paragraph [ref=e279]: Conflict or Connection? Turning Team Tension Into Collaboration
+          - paragraph [ref=e280]: A panel on leadership friction, communication habits, and how practices can turn recurring team tension into productive collaboration.
+          - link "Watch Now →" [ref=e281] [cursor=pointer]:
+            - /url: https://vimeo.com/reviews/91859b87-afaa-4c6c-aad5-ebadfdafcb70/videos/1176476168
+    - button "Back to top":
+      - img
+  - button "Open Next.js Dev Tools" [ref=e287] [cursor=pointer]:
+    - img [ref=e288]
+  - alert [ref=e291]

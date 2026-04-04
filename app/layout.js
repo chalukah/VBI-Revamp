@@ -5,6 +5,8 @@ import SiteFooter from "./components/SiteFooter";
 import CookieBanner from "./components/CookieBanner";
 import ExitIntentPopup from "./components/ExitIntentPopup";
 import ChatWidget from "./components/ChatWidget";
+import WhatsNewBanner from "./components/WhatsNewBanner";
+import BackToTop from "./components/BackToTop";
 import {
   contactAddress,
   contactDetails,
@@ -155,6 +157,8 @@ export default function RootLayout({ children }) {
           <CookieBanner />
           <ExitIntentPopup />
           <ChatWidget />
+          <WhatsNewBanner />
+          <BackToTop />
         </div>
       </body>
     </html>

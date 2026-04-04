@@ -5,6 +5,7 @@ import Link from "next/link";
 import styles from "./HeroRedesign.module.css";
 import { withBasePath } from "../lib/base-path";
 import { episodes } from "../lib/site-data";
+import AttractButton from "./AttractButton";
 import ConicGradientBorder from "./ConicGradientBorder";
 import SolarIcon from "./SolarIcon";
 import StarCloudBackdrop from "./StarCloudBackdrop";
@@ -130,19 +131,9 @@ export default function HeroRedesign() {
                 </span>
               </Link>
             </ConicGradientBorder>
-            <ConicGradientBorder
-              borderColor="#3f7b4f"
-              overlayBorderColor="rgba(63, 123, 79, 0.15)"
-              backgroundColor="rgba(255, 255, 255, 0.03)"
-              borderRadius={50}
-              animationDuration={5}
-              blurRadius={2}
-              overlayMargin={1.5}
-            >
-              <a href={featuredEpisode.href} target="_blank" rel="noreferrer" className={styles.howItWorksBtn}>
-                Listen to Episode 103
-              </a>
-            </ConicGradientBorder>
+            <AttractButton href="/consultation">
+              Free Strategy Call
+            </AttractButton>
           </div>
 
           <div className={`${styles.trustedSection} ${styles.animateReveal}`} style={{ "--delay": "0.9s" }}>

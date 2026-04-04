@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { withBasePath } from "../lib/base-path";
 import { auditLink, marketingPillars, marketingPageLink } from "../lib/site-data";
+import AttractButton from "../components/AttractButton";
 
 const processSteps = [
   {
@@ -49,9 +50,9 @@ export default function MarketingPage() {
               conversion, and long-term growth.
             </p>
             <div className="button-row">
-              <a className="button button-primary" href={auditLink} target="_blank" rel="noreferrer">
+              <AttractButton href="/consultation">
                 Book a Free Strategy Meeting
-              </a>
+              </AttractButton>
               <a className="button button-secondary" href={marketingPageLink} target="_blank" rel="noreferrer">
                 Open Live Marketing Page
               </a>
