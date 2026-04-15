@@ -21,6 +21,7 @@ const nextConfig = {
     NEXT_PUBLIC_BASE_PATH: basePath,
     NEXT_PUBLIC_REPO_NAME: repoName,
     NEXT_PUBLIC_REPO_SLUG: repoSlug,
+    NEXT_PUBLIC_REGISTRATION_WEBHOOK: process.env.NEXT_PUBLIC_REGISTRATION_WEBHOOK || "",
   },
   turbopack: {
     root: __dirname,

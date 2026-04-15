@@ -1,18 +1,42 @@
 import Link from "next/link";
 import { withBasePath } from "../lib/base-path";
-import { eventPanels, webinarArchiveLink, webinars } from "../lib/site-data";
+import { pillarIcons } from "../lib/pillar-icons";
+import {
+  eventPanels,
+  focusAreas,
+  servicePillars,
+  webinarArchiveLink,
+  webinars,
+} from "../lib/site-data";
+import SignalMarquee from "../components/SignalMarquee";
+import ParallaxCard from "../components/ParallaxCard";
+import AnimatedCounter from "../components/AnimatedCounter";
+import AttractButton from "../components/AttractButton";
 
-const replayBenefits = [
-  "Replay-first framing keeps webinar education useful after the live session ends.",
-  "Dates and summaries help visitors understand what is relevant before opening a replay.",
-  "Theme-based language makes the archive feel curated instead of simply chronological.",
+const signalRows = [
+  [
+    { label: "Webinar", title: webinars[0].title, body: webinars[0].summary },
+    { label: "Webinar", title: webinars[1].title, body: webinars[1].summary },
+    { label: "Webinar", title: webinars[2].title, body: webinars[2].summary },
+  ],
+  focusAreas.map((item) => ({
+    label: "Focus Area",
+    title: item.title,
+    body: item.body,
+  })),
 ];
 
-const replaySnapshots = [
-  withBasePath("/assets/webinar-mar26.jpg"),
-  withBasePath("/assets/webinar-feb19.jpg"),
-  withBasePath("/assets/webinar-jan29.jpg"),
-  withBasePath("/assets/about-speaker.jpg"),
+const reverseMarqueeItems = [
+  "Replay Library",
+  "Strategic Planning",
+  "Team Culture",
+  "Client Care",
+  "Financial Resilience",
+  "Marketing Systems",
+  "Technology Stack",
+  "Succession Planning",
+  "Leadership Habits",
+  "Growth Strategy",
 ];
 
 export const metadata = {
@@ -55,6 +79,69 @@ export default function WebinarsPage() {
         </div>
       </section>
 
+      {/* ── Signal Marquee ── */}
+      <SignalMarquee heading="The webinar library now moves across the page as one editorial system." rows={signalRows} />
+
+      {/* ── Ghost Text Stats ── */}
+      <section className="section section-stats-ghost">
+        <div className="ghost-text" aria-hidden="true">REPLAY</div>
+        <div className="container stats-ghost-grid">
+          <div className="stats-ghost-counters">
+            <div className="ghost-counter-item">
+              <AnimatedCounter end={webinars.length} suffix="+" />
+              <p>Webinar replays available on demand with summaries and direct links</p>
+            </div>
+            <div className="ghost-counter-item">
+              <AnimatedCounter end={90} suffix=" min" />
+              <p>Average replay runtime packed with frameworks veterinary teams can apply immediately</p>
+            </div>
+            <div className="ghost-counter-item">
+              <AnimatedCounter end={16000} suffix="+" duration={2500} />
+              <p>Positive testimonials referenced across the broader Ekwa marketing ecosystem</p>
+            </div>
+          </div>
+          <div className="stats-ghost-copy">
+            <span className="eyebrow text-accent">Built for Veterinary Leaders</span>
+            <h2>An on-demand education library built for veterinary teams.</h2>
+            <p>
+              Every webinar is designed to keep teaching after the live session ends. Watch alone,
+              share with your team, and turn the frameworks into practice decisions.
+            </p>
+            <div className="button-row">
+              <a className="button button-primary" href={webinarArchiveLink} target="_blank" rel="noreferrer">
+                Open Live Archive
+              </a>
+              <AttractButton href="/consultation">
+                Free Strategy Call
+              </AttractButton>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 8 Pillars Grid ── */}
+      <section className="section section-muted">
+        <div className="container">
+          <div className="section-heading section-heading-centered">
+            <span className="eyebrow text-accent">What Replays Cover</span>
+            <h2>Eight themes our webinar library returns to every quarter.</h2>
+          </div>
+          <div className="pillars-grid">
+            {servicePillars.map((item) => (
+              <Link key={item.title} href={item.href} style={{ display: "block" }}>
+                <ParallaxCard as="div" className="card pillar-card" tiltDepth={6}>
+                  <div className="pillar-icon">{pillarIcons[item.icon]}</div>
+                  <h3>{item.title}</h3>
+                  <p>{item.body}</p>
+                  <span className="pillar-arrow">&rarr;</span>
+                </ParallaxCard>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Featured Replay Dark (existing primary) ── */}
       <section className="section section-dark">
         <div className="container">
           <article className="card card-dark feature-panel">
@@ -86,7 +173,42 @@ export default function WebinarsPage() {
         </div>
       </section>
 
+      {/* ── Marketing Split ── */}
       <section className="section">
+        <div className="container marketing-split">
+          <div className="marketing-split-image">
+            <img src={withBasePath("/assets/webinar-feb19.jpg")} alt="Veterinary webinar replay" />
+            <div className="marketing-split-badge">
+              Replay-First Education
+            </div>
+          </div>
+          <div className="marketing-split-copy">
+            <span className="eyebrow text-accent">Built to Keep Teaching</span>
+            <h2>Replay-ready content your team can watch on their schedule.</h2>
+            <p>
+              VBI webinars are designed so the education does not expire the moment the live session
+              ends. Each replay comes with summaries, frameworks, and links into deeper content.
+            </p>
+            <ul className="check-list">
+              <li>Structured summaries that let teams scan before watching</li>
+              <li>Frameworks that survive the transition from live to replay viewing</li>
+              <li>Direct routes into panel discussions and podcast episodes on related topics</li>
+              <li>A clean handoff into strategy conversations when the team is ready</li>
+            </ul>
+            <div className="button-row">
+              <Link className="button button-primary" href="/marketing">
+                Explore Marketing
+              </Link>
+              <Link className="button button-secondary" href="/events">
+                Go to Event Panels
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Webinar Archive (primary content) ── */}
+      <section className="section section-muted">
         <div className="container">
           <div className="section-heading">
             <span className="eyebrow text-accent">Archive</span>
@@ -108,23 +230,85 @@ export default function WebinarsPage() {
         </div>
       </section>
 
-      <section className="section section-muted">
+      {/* ── 3-Card Practice Mgmt Row ── */}
+      <section className="section">
         <div className="container">
-          <div className="section-heading">
-            <span className="eyebrow text-accent">Replay Visuals</span>
-            <h2>Strong archive pages use visual hierarchy to signal depth, quality, and recency.</h2>
+          <div className="section-heading section-heading-centered">
+            <span className="eyebrow text-accent">Replay Themes</span>
+            <h2>Three areas our webinar library returns to most often.</h2>
           </div>
-          <div className="grid-three">
-            {replaySnapshots.map((image, index) => (
-              <article className="card archive-card" key={image}>
-                <img src={image} alt={`Replay visual ${index + 1}`} />
-                <h3>Archive imagery supporting replay discovery</h3>
-              </article>
+          <div className="practice-mgmt-grid">
+            {focusAreas.slice(0, 3).map((item, index) => (
+              <ParallaxCard key={item.title} as="article" className="card practice-mgmt-card" tiltDepth={6}>
+                <div className="practice-mgmt-icon">
+                  {pillarIcons[["users", "briefcase", "trending-up"][index]]}
+                </div>
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+                <div className="practice-mgmt-tags">
+                  {index === 0 && (
+                    <>
+                      <span className="tag-pill">Leadership</span>
+                      <span className="tag-pill">Retention</span>
+                      <span className="tag-pill">Culture</span>
+                    </>
+                  )}
+                  {index === 1 && (
+                    <>
+                      <span className="tag-pill">Staffing</span>
+                      <span className="tag-pill">Workflow</span>
+                      <span className="tag-pill">Onboarding</span>
+                    </>
+                  )}
+                  {index === 2 && (
+                    <>
+                      <span className="tag-pill">SEO</span>
+                      <span className="tag-pill">Local Search</span>
+                      <span className="tag-pill">Growth</span>
+                    </>
+                  )}
+                </div>
+              </ParallaxCard>
             ))}
           </div>
         </div>
       </section>
 
+      {/* ── 4-Card Dark VetTech ── */}
+      <section className="section section-dark section-vettech">
+        <div className="container">
+          <div className="section-heading section-heading-centered">
+            <span className="eyebrow text-accent">VetTech &amp; Systems</span>
+            <h2 style={{ color: "rgba(255,255,255,0.95)" }}>
+              Replay topics that help teams pick the right tools and systems.
+            </h2>
+          </div>
+          <div className="vettech-grid">
+            <article className="vettech-card">
+              <div className="vettech-icon">{pillarIcons.monitor}</div>
+              <h3>Practice Management Software</h3>
+              <p>Replays on choosing a PIMS and supporting tools to streamline workflows.</p>
+            </article>
+            <article className="vettech-card">
+              <div className="vettech-icon">{pillarIcons["bar-chart"]}</div>
+              <h3>Analytics &amp; Reporting</h3>
+              <p>Sessions on measuring acquisition, retention, and marketing ROI with discipline.</p>
+            </article>
+            <article className="vettech-card">
+              <div className="vettech-icon">{pillarIcons.target}</div>
+              <h3>Automation &amp; Efficiency</h3>
+              <p>Replays on automating the repetitive parts of the client journey and team workflow.</p>
+            </article>
+            <article className="vettech-card">
+              <div className="vettech-icon">{pillarIcons.shield}</div>
+              <h3>Client Experience Systems</h3>
+              <p>Webinars on communication, reminders, and follow-up flows that build loyalty.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Related Event Panel ── */}
       <section className="section">
         <div className="container split-grid">
           <article className="card">
@@ -153,38 +337,37 @@ export default function WebinarsPage() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container split-grid">
-          <article className="card">
-            <span className="eyebrow text-accent">Why This Page Needed Work</span>
-            <h2>Webinar archives decay fast unless the page is designed for replay value.</h2>
-            <ul className="check-list">
-              {replayBenefits.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </article>
+      {/* ── Reverse Marquee ── */}
+      <div className="reverse-marquee-band">
+        <div className="reverse-marquee-track">
+          {[...reverseMarqueeItems, ...reverseMarqueeItems].map((item, i) => (
+            <span key={i} className="reverse-marquee-item">
+              {item}
+              <span className="reverse-marquee-dot" />
+            </span>
+          ))}
+        </div>
+      </div>
 
-          <div className="page-cta">
-            <div>
-              <span className="eyebrow text-accent">Next Move</span>
-              <h2>Use replays for education, then route serious prospects into strategy.</h2>
-              <p>
-                Replay content should support the learning journey while still creating a clear path
-                into direct conversations about growth, marketing, and business strategy.
-              </p>
-            </div>
-            <div className="cta-actions">
-              <Link className="button button-primary" href="/contact">
-                Contact the Team
-              </Link>
-              <Link className="button button-secondary" href="/events">
-                Explore Event Panels
-              </Link>
-              <Link className="button button-secondary" href="/podcast">
-                Explore the Podcast
-              </Link>
-            </div>
+      {/* ── Final CTA ── */}
+      <section className="section section-final-cta">
+        <div className="ghost-text ghost-text-cta" aria-hidden="true">REPLAY</div>
+        <div className="container final-cta-inner">
+          <div className="final-cta-copy">
+            <span className="eyebrow" style={{ color: "rgba(255,255,255,0.6)" }}>Next Step</span>
+            <h2>Replays are the start. Strategy is the next step.</h2>
+            <p>
+              Use the library to educate your team, then move into a strategy conversation when
+              your practice is ready for sharper visibility, stronger systems, and growth planning.
+            </p>
+          </div>
+          <div className="final-cta-buttons">
+            <AttractButton href="/consultation">
+              Book Free Strategy Call
+            </AttractButton>
+            <Link className="button button-secondary button-dark" href="/webinars/registration">
+              Register for Next Live Session
+            </Link>
           </div>
         </div>
       </section>

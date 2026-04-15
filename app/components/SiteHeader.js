@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronRight } from "lucide-react";
 import AttractButton from "./AttractButton";
+import ThemeToggle from "./ThemeToggle";
 import { withBasePath } from "../lib/base-path";
 import { headerNavigation, topBarItems } from "../lib/site-data";
 import { cn } from "../../lib/utils";
@@ -67,7 +68,8 @@ export default function SiteHeader() {
 
               {/* Logo */}
               <Link className="brand shrink-0" href="/" aria-label="Veterinary Business Institute home">
-                <img src={withBasePath("/assets/logo.svg")} alt="Veterinary Business Institute" />
+                <img className="brand-logo brand-logo-light" src={withBasePath("/assets/logo.svg")} alt="Veterinary Business Institute" />
+                <img className="brand-logo brand-logo-dark" src={withBasePath("/assets/logo-white.svg")} alt="Veterinary Business Institute" />
               </Link>
 
               {/* Desktop Nav */}
@@ -134,6 +136,9 @@ export default function SiteHeader() {
               </NavigationMenu>
               </div>
 
+              {/* Theme toggle (desktop) */}
+              <ThemeToggle className="nav-desktop-only" />
+
               {/* Desktop CTA */}
               <Link
                 className="button button-primary button-compact nav-cta nav-desktop-only"
@@ -144,16 +149,19 @@ export default function SiteHeader() {
                 <span aria-hidden="true" className="nav-cta-icon">&rarr;</span>
               </Link>
 
-              {/* Mobile hamburger */}
-              <button
-                className="vbi-menu-toggle nav-mobile-only"
-                type="button"
-                aria-expanded={sheetOpen}
-                aria-label={sheetOpen ? "Close menu" : "Open menu"}
-                onClick={() => setSheetOpen(true)}
-              >
-                <Menu size={22} strokeWidth={2} />
-              </button>
+              {/* Mobile controls: theme toggle + hamburger */}
+              <div className="nav-mobile-controls nav-mobile-only">
+                <ThemeToggle />
+                <button
+                  className="vbi-menu-toggle"
+                  type="button"
+                  aria-expanded={sheetOpen}
+                  aria-label={sheetOpen ? "Close menu" : "Open menu"}
+                  onClick={() => setSheetOpen(true)}
+                >
+                  <Menu size={22} strokeWidth={2} />
+                </button>
+              </div>
             </div>
           </div>
         </div>

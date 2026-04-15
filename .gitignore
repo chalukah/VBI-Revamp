@@ -5,3 +5,11 @@ dist
 out
 .netlify
 vendor/autoresearch
+
+# Playwright MCP artifacts
+.playwright-mcp/
+
+# Local screenshots and scratch snapshots
+*.png
+artifact-*.md
+reg-form-snapshot.md

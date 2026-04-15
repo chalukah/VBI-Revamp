@@ -248,6 +248,51 @@ export const episodes = [
     summary:
       "A milestone conversation focused on the operating pressures, decision-making demands, and growth barriers confronting practice owners.",
   },
+  {
+    number: "099",
+    date: "November 2025",
+    title: "Retention, Burnout, and the Real Cost of Turnover in Veterinary Teams",
+    image: withBasePath("/assets/episode-103.jpg"),
+    href: podcastHubLink,
+    summary:
+      "An honest look at team turnover, burnout prevention, and building a culture where veterinary professionals want to stay.",
+  },
+  {
+    number: "098",
+    date: "October 2025",
+    title: "Financial Benchmarks Every Veterinary Practice Owner Should Track Monthly",
+    image: withBasePath("/assets/episode-102.jpg"),
+    href: podcastHubLink,
+    summary:
+      "A practical breakdown of the financial KPIs that reveal practice health long before problems show up in the bank account.",
+  },
+  {
+    number: "097",
+    date: "September 2025",
+    title: "Winning Local Search: How Veterinary Practices Rank Above the Competition",
+    image: withBasePath("/assets/episode-101.jpg"),
+    href: podcastHubLink,
+    summary:
+      "A focused discussion on local SEO signals, Google Business profiles, and the review strategies that move practices up the map pack.",
+  },
+  {
+    number: "096",
+    date: "August 2025",
+    title: "Client Experience Systems: Turning Pet Owners Into Long-Term Advocates",
+    image: withBasePath("/assets/episode-100.jpg"),
+    href: podcastHubLink,
+    summary:
+      "How communication cadence, reminders, and follow-up flows create the client loyalty that drives referrals and lifetime value.",
+  },
+  {
+    number: "095",
+    date: "July 2025",
+    title: "Hiring and Onboarding Associates Who Actually Stay",
+    image: withBasePath("/assets/episode-103.jpg"),
+    href: podcastHubLink,
+    summary:
+      "Practical hiring filters, onboarding rhythms, and mentorship structures that dramatically improve associate retention.",
+  },
 ];
 
 export const webinars = [
@@ -598,4 +643,104 @@ export const servicePillars = [
     body: "Expansion timing, succession planning, and the strategic thinking that separates growing practices from stuck ones.",
     href: "/marketing",
   },
+];
+
+/* ─── Registration landing-page data ─── */
+
+export const registrationEvents = [
+  {
+    slug: "conflict-or-connection",
+    title: "Conflict or Connection? Turning Team Tension Into Collaboration",
+    titleAccent: "Team Tension Into Collaboration",
+    subtitle: "Veterinary Culture and Leadership Panel",
+    date: "2026-05-04T20:00:00-04:00",
+    durationMinutes: 60,
+    platform: "Zoom",
+    format: "Panel + Live Q&A",
+    seatsTotal: 100,
+    seatsRemaining: 37,
+    image: withBasePath("/assets/panels/panel-01.jpg"),
+    description:
+      "Four veterinary leadership experts break down what's actually working in 2026 — from de-escalating recurring team conflict to building trust-based communication systems that stick.",
+    bonusCallout:
+      "Attendees will be eligible for a special strategy meeting from VBI after the event",
+    discussionPoints: [
+      {
+        title: "De-escalating Team Conflict",
+        description:
+          "Practical frameworks for resolving recurring friction before it erodes team morale and client experience.",
+      },
+      {
+        title: "Building Trust Through Feedback",
+        description:
+          "Structured feedback systems that move teams from defensiveness to collaboration and shared accountability.",
+      },
+      {
+        title: "Communication Under Pressure",
+        description:
+          "How high-performing clinics maintain clear communication when caseloads spike and emotions run high.",
+      },
+      {
+        title: "Converting Tension Into Growth",
+        description:
+          "Turning difficult team dynamics into opportunities for stronger culture, better retention, and measurable practice improvement.",
+      },
+    ],
+    audience: [
+      {
+        icon: "🏥",
+        title: "Practice Owners",
+        description:
+          "Who want a healthier team culture without more ad spend — and a clear leadership plan for 2026.",
+      },
+      {
+        icon: "📈",
+        title: "Practice Managers",
+        description:
+          "Looking to reduce staff turnover and improve internal communication across the team.",
+      },
+      {
+        icon: "🤝",
+        title: "Team Leads & Associates",
+        description:
+          "Who need practical tools to handle conflict and build trust in a high-pressure environment.",
+      },
+    ],
+    speakers: [
+      {
+        name: "Naren Arulrajah",
+        role: "CEO, Ekwa Marketing & Founder, VBI",
+        image: withBasePath("/assets/host-naren.jpg"),
+        bio: "Naren helps veterinary practices grow through stronger digital visibility, sharper positioning, and more disciplined business systems.",
+      },
+      {
+        name: "Dr. Joel Parker",
+        role: "Co-host & Veterinary Industry Voice",
+        image: withBasePath("/assets/host-joel.jpg"),
+        bio: "Joel brings practical perspective from the operational side of veterinary practice leadership and growth.",
+      },
+      {
+        name: "Dr. Amanda Landis-Hanna",
+        role: "Leadership & Veterinary Performance",
+        image: withBasePath("/assets/host-amanda.jpg"),
+        bio: "Amanda adds people-centered insight around veterinary teams, culture, and the realities of sustainable practice growth.",
+      },
+      {
+        name: "Dr. Mark Roozen",
+        role: "Practice Value & Strategy",
+        image: withBasePath("/assets/host-mark.jpg"),
+        bio: "Mark contributes a strategic viewpoint on ownership, scale, decision-making, and long-term veterinary business value.",
+      },
+    ],
+    testimonialIndices: [0, 1, 2],
+    registrationNote:
+      "Registration is free. All registrants receive the replay link within 24 hours.",
+  },
+];
+
+export const registrationStats = [
+  { value: 2200, suffix: "+", label: "Practices Coached" },
+  { value: 188, suffix: "", label: "Countries Reached" },
+  { value: 470, suffix: "+", label: "Podcast Episodes" },
+  { value: 10000, suffix: "+", label: "Vets in Community" },
 ];

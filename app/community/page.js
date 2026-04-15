@@ -3,77 +3,36 @@ import CommunityJoinForm from "./CommunityJoinForm";
 import styles from "./page.module.css";
 import {
   contactDetails,
-  episodes,
-  eventPanels,
   focusAreas,
-  hosts,
-  listeningPlatforms,
-  socialLinks,
-  webinars,
+  servicePillars,
 } from "../lib/site-data";
+import { withBasePath } from "../lib/base-path";
+import { pillarIcons } from "../lib/pillar-icons";
+import SignalMarquee from "../components/SignalMarquee";
+import ParallaxCard from "../components/ParallaxCard";
+import AnimatedCounter from "../components/AnimatedCounter";
+import AttractButton from "../components/AttractButton";
 
-const communityBenefits = [
-  {
-    title: "Podcast-first updates",
-    body: "Stay close to the recurring VBI conversations so new episodes, interviews, and strategic ideas never disappear into the archive.",
-  },
-  {
-    title: "Panel and webinar access",
-    body: "Use the hub as the easiest path into fresh event panels, replay-ready education, and the strongest recent discussions across the platform.",
-  },
-  {
-    title: "Practical resources",
-    body: "Move from passive listening into action with curated routes into marketing guidance, team ideas, and follow-on learning.",
-  },
-  {
-    title: "Signals worth sharing",
-    body: "Give practice owners, managers, and leadership teams a single place to point people when they need useful business education.",
-  },
-  {
-    title: "Cross-channel visibility",
-    body: "The hub connects podcast, events, replays, and community touchpoints so visitors can keep moving instead of hitting a dead end.",
-  },
-  {
-    title: "Direct connection to VBI",
-    body: "Use the community route as the softer entry point for collaboration, follow-up questions, and staying in view between bigger decisions.",
-  },
+const signalRows = [
+  focusAreas.map((item) => ({ label: "Focus Area", title: item.title, body: item.body })),
+  [
+    { label: "Community", title: "Podcast-first updates", body: "Stay close to the recurring VBI conversations and never miss an episode." },
+    { label: "Community", title: "Panel and webinar access", body: "The easiest path into fresh event panels and replay-ready education." },
+    { label: "Community", title: "Direct connection to VBI", body: "A softer entry point for collaboration, follow-up questions, and staying in view." },
+  ],
 ];
 
-const communityAudience = [
-  {
-    title: "Practice owners and partners",
-    body: "People making growth, staffing, profitability, and long-term leadership decisions for the whole business.",
-  },
-  {
-    title: "Hospital managers and team leads",
-    body: "Operators who need clear ideas around communication, culture, systems, and everyday execution.",
-  },
-  {
-    title: "Marketing and client-experience teams",
-    body: "Teams working on trust, visibility, messaging, and how the practice shows up online and in person.",
-  },
-  {
-    title: "Growth-minded veterinary professionals",
-    body: "People who want sharper business context, not just clinical perspective, as they step into larger responsibility.",
-  },
-];
-
-const communitySteps = [
-  {
-    index: "01",
-    title: "Start with a strong content stream",
-    body: "Begin with the latest podcast, panel, or webinar replay so the community relationship is grounded in useful ideas.",
-  },
-  {
-    index: "02",
-    title: "Pick the route that fits your team",
-    body: "Use the hub to decide whether your next move is leadership education, replay viewing, marketing support, or direct outreach.",
-  },
-  {
-    index: "03",
-    title: "Stay connected between big decisions",
-    body: "Return through episodes, updates, and shared resources so VBI keeps supporting the practice after the first visit.",
-  },
+const reverseMarqueeItems = [
+  "Community Forum",
+  "Podcast Updates",
+  "Event Panels",
+  "Webinar Replays",
+  "Member Portal",
+  "Practice Growth",
+  "Peer Discussion",
+  "Leadership",
+  "Marketing",
+  "Operations",
 ];
 
 export const metadata = {
@@ -83,481 +42,268 @@ export const metadata = {
 };
 
 export default function CommunityPage() {
-  const featuredEpisode = episodes[0];
-  const featuredPanel = eventPanels[0];
-  const featuredReplay = webinars[0];
-  const featuredHost = hosts[0];
   const contactEmail = contactDetails[2].label;
-  const streamCards = [
-    {
-      label: "Latest Podcast",
-      meta: `Episode ${featuredEpisode.number} · ${featuredEpisode.date}`,
-      title: featuredEpisode.title,
-      body: featuredEpisode.summary,
-      href: featuredEpisode.href,
-      cta: "Listen Now",
-      image: featuredEpisode.image,
-    },
-    {
-      label: "Latest Panel",
-      meta: `${featuredPanel.date} · ${featuredPanel.category}`,
-      title: featuredPanel.title,
-      body: featuredPanel.summary,
-      href: featuredPanel.href,
-      cta: "Watch Panel",
-      image: featuredPanel.image,
-    },
-    {
-      label: "Latest Replay",
-      meta: featuredReplay.date,
-      title: featuredReplay.title,
-      body: featuredReplay.summary,
-      href: featuredReplay.href,
-      cta: "Watch Replay",
-      image: featuredReplay.image,
-    },
-  ];
-  const hubRoutes = [
-    {
-      label: "Events and Panels",
-      title: "Browse fresh conversations without hunting through the archive.",
-      body: "Use the event route for timely leadership, culture, marketing, and operations discussions that still feel current.",
-      href: "/events",
-      cta: "Explore Panels",
-    },
-    {
-      label: "Resource Library",
-      title: "Give your team practical next steps after the content spark.",
-      body: "Move from interesting ideas into repeatable actions through resources, downloads, and related routes across the platform.",
-      href: "/resources",
-      cta: "Explore Resources",
-    },
-    {
-      label: "Marketing Support",
-      title: "Turn education into action when the practice needs growth help.",
-      body: "The hub should not trap people in content forever. It should make the audit-first marketing path visible when the time is right.",
-      href: "/marketing",
-      cta: "Explore Marketing",
-    },
-    {
-      label: "Guest and Speaker",
-      title: "Keep the platform open to better voices and stronger collaborations.",
-      body: "Invite VBI into events, suggest a guest angle, or create a stronger partnership around veterinary business education.",
-      href: "/guest-speaker",
-      cta: "Start a Conversation",
-    },
-  ];
 
   return (
     <>
-      <section className={styles.newsStrip}>
-        <div className={`container ${styles.newsStripInner}`}>
-          <div className={styles.newsIntro}>
-            <span className="eyebrow text-accent">What's New in the Hub</span>
-            <h2>The latest VBI signals, without the scattered experience.</h2>
-          </div>
-
-          <div className={styles.newsCards}>
-            <a className={styles.newsCard} href={featuredEpisode.href} target="_blank" rel="noreferrer">
-              <span className="card-label">Latest Podcast</span>
-              <strong>{featuredEpisode.title}</strong>
-              <p>{featuredEpisode.date}</p>
-            </a>
-            <a className={styles.newsCard} href={featuredPanel.href} target="_blank" rel="noreferrer">
-              <span className="card-label">Latest Event Panel</span>
-              <strong>{featuredPanel.title}</strong>
-              <p>{featuredPanel.date}</p>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section className="page-hero">
+      <section className="page-hero section-about-vbi">
+        <div className="about-vbi-ghost-word" aria-hidden="true">COMMUNITY</div>
         <div className={`container hero-grid ${styles.heroGrid}`}>
           <div className="hero-copy">
             <span className="eyebrow text-accent">VBI Community Hub</span>
             <p className="hero-kicker">Free to follow. Built for veterinary leaders who want stronger business conversations.</p>
             <h1>
-              A community layer for veterinary teams building <em>stronger practices.</em>
+              A community layer for veterinary teams building <em>stronger</em> <span className="outline-txt">practices.</span>
             </h1>
             <p className="hero-lead">
               Veterinary Business Institute works best when podcast episodes, panel replays,
               webinar education, and follow-on conversations all point to the same next step.
-              This hub gives owners, managers, and growth-minded teams one place to stay connected
-              to that flow.
+              This hub gives owners, managers, and growth-minded teams one place to stay connected.
             </p>
             <div className="button-row">
               <Link className="button button-primary" href="/community/forum">
                 Enter Member Portal
               </Link>
-              <a className="button button-secondary" href="#join-hub">
-                Sign Up for Access
-              </a>
+              <AttractButton href="/consultation">
+                Free Strategy Call
+              </AttractButton>
             </div>
           </div>
-
-          <aside className={styles.heroPanel}>
-            <div className={styles.heroPanelHeader}>
-              <span className="card-label">What the Hub Connects</span>
-              <strong>One route into the full VBI ecosystem</strong>
-            </div>
-
-            <div className={styles.metricRow}>
-              <article className={styles.metricCard}>
-                <span className={styles.metricValue}>{episodes.length}+</span>
-                <span className={styles.metricLabel}>featured podcast tracks</span>
-              </article>
-              <article className={styles.metricCard}>
-                <span className={styles.metricValue}>{eventPanels.length}</span>
-                <span className={styles.metricLabel}>event panel replays</span>
-              </article>
-              <article className={styles.metricCard}>
-                <span className={styles.metricValue}>{webinars.length}</span>
-                <span className={styles.metricLabel}>webinar replay paths</span>
-              </article>
-            </div>
-
-            <div className={styles.signalStack}>
-              <article className={styles.signalItem}>
-                <span className="card-label">Latest Podcast</span>
-                <strong>{featuredEpisode.title}</strong>
-                <p>{featuredEpisode.summary}</p>
-              </article>
-              <article className={styles.signalItem}>
-                <span className="card-label">Latest Panel</span>
-                <strong>{featuredPanel.title}</strong>
-                <p>{featuredPanel.summary}</p>
-              </article>
-              <article className={styles.signalItem}>
-                <span className="card-label">Latest Replay</span>
-                <strong>{featuredReplay.title}</strong>
-                <p>{featuredReplay.summary}</p>
-              </article>
-            </div>
-          </aside>
         </div>
       </section>
 
-      <section className={styles.topicTapeSection} aria-label="Hub topics">
-        <div className={styles.topicTape}>
-          {[...focusAreas, ...focusAreas].map((item, index) => (
-            <span className={styles.topicChip} key={`${item.title}-${index}`}>
-              {item.title}
+      {/* ── Signal Marquee ── */}
+      <SignalMarquee heading="The community hub keeps the strongest VBI ideas moving across the platform." rows={signalRows} />
+
+      {/* ── Ghost Text Stats Section ── */}
+      <section className="section section-stats-ghost">
+        <div className="ghost-text" aria-hidden="true">HUB</div>
+        <div className="container stats-ghost-grid">
+          <div className="stats-ghost-counters">
+            <div className="ghost-counter-item">
+              <AnimatedCounter end={103} suffix="+" />
+              <p>Podcast episodes the community stays connected to, all in one place</p>
+            </div>
+            <div className="ghost-counter-item">
+              <AnimatedCounter end={12} />
+              <p>Event panels routed through the community for easier discovery</p>
+            </div>
+            <div className="ghost-counter-item">
+              <AnimatedCounter end={16000} suffix="+" duration={2500} />
+              <p>Positive testimonials across the VBI and Ekwa marketing ecosystem</p>
+            </div>
+          </div>
+          <div className="stats-ghost-copy">
+            <span className="eyebrow text-accent">Why the Community</span>
+            <h2>One connected place for veterinary leaders who think beyond the next task.</h2>
+            <p>
+              The hub brings podcasts, panels, replays, and resources into a single flow so
+              owners, managers, and growth-minded teams can keep moving instead of hitting
+              dead ends between platforms.
+            </p>
+            <div className="button-row">
+              <Link className="button button-primary" href="#join-hub">
+                Join the Hub
+              </Link>
+              <AttractButton href="/consultation">
+                Free Strategy Call
+              </AttractButton>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Service Pillars Grid ── */}
+      <section className="section section-muted">
+        <div className="container">
+          <div className="section-heading section-heading-centered">
+            <span className="eyebrow text-accent">What the Community Covers</span>
+            <h2>Eight pillars of veterinary business education inside the hub.</h2>
+          </div>
+          <div className="pillars-grid">
+            {servicePillars.map((item) => (
+              <Link key={item.title} href={item.href} style={{ display: "block" }}>
+                <ParallaxCard as="div" className="card pillar-card" tiltDepth={6}>
+                  <div className="pillar-icon">{pillarIcons[item.icon]}</div>
+                  <h3>{item.title}</h3>
+                  <p>{item.body}</p>
+                  <span className="pillar-arrow">&rarr;</span>
+                </ParallaxCard>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Marketing Split (Primary Community Content: Join Form) ── */}
+      <section className="section section-marketing-seo" id="join-hub">
+        <div className="container marketing-seo-split">
+          <div className="marketing-seo-copy">
+            <span className="eyebrow text-accent">Join the Hub</span>
+            <h2>Use one entry point into the full VBI ecosystem.</h2>
+            <p>
+              Start here if you want ongoing access to the strongest VBI conversations,
+              replay-ready education, and future member-style updates.
+            </p>
+            <ul className="marketing-seo-list">
+              <li>
+                <div className="marketing-seo-check" aria-hidden="true">&#10003;</div>
+                <div>
+                  <strong>One Route for Every Episode</strong>
+                  <span>Follow new podcasts, panels, and replays from a single connected flow.</span>
+                </div>
+              </li>
+              <li>
+                <div className="marketing-seo-check" aria-hidden="true">&#10003;</div>
+                <div>
+                  <strong>A Page Your Team Can Bookmark</strong>
+                  <span>Give owners, managers, and leads a clear place to revisit every week.</span>
+                </div>
+              </li>
+              <li>
+                <div className="marketing-seo-check" aria-hidden="true">&#10003;</div>
+                <div>
+                  <strong>Content Into Conversation</strong>
+                  <span>Move from following VBI into direct connection whenever the time is right.</span>
+                </div>
+              </li>
+              <li>
+                <div className="marketing-seo-check" aria-hidden="true">&#10003;</div>
+                <div>
+                  <strong>Stronger Relationship Before Strategy</strong>
+                  <span>Build trust with the VBI team well before bigger growth decisions arrive.</span>
+                </div>
+              </li>
+            </ul>
+            <CommunityJoinForm
+              email={contactEmail}
+              title="Join the VBI community flow"
+              description="Start here for ongoing access to the strongest VBI conversations and future member updates."
+              buttonLabel="Join the Hub"
+              note="Instant access is currently handled through the VBI team."
+            />
+          </div>
+          <div className="marketing-seo-image">
+            <img src={withBasePath("/assets/webinar-mar26.jpg")} alt="VBI community hub" />
+            <div className="marketing-seo-image-badge">
+              &#9733; Trusted by Veterinary Practices Nationwide
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Practice Management 3-Card Row ── */}
+      <section className="section section-muted">
+        <div className="container">
+          <div className="section-heading section-heading-centered">
+            <span className="eyebrow text-accent">Who the Hub Serves</span>
+            <h2>Built for the veterinary people shaping the whole practice.</h2>
+          </div>
+          <div className="practice-mgmt-grid">
+            <ParallaxCard as="article" className="card practice-mgmt-card" tiltDepth={6}>
+              <div className="practice-mgmt-icon">{pillarIcons.users}</div>
+              <h3>Practice Owners & Partners</h3>
+              <p>People making growth, staffing, profitability, and long-term leadership decisions for the whole business.</p>
+              <div className="practice-mgmt-tags">
+                <span className="tag-pill">Ownership</span>
+                <span className="tag-pill">Growth</span>
+                <span className="tag-pill">Leadership</span>
+              </div>
+            </ParallaxCard>
+            <ParallaxCard as="article" className="card practice-mgmt-card" tiltDepth={6}>
+              <div className="practice-mgmt-icon">{pillarIcons.briefcase}</div>
+              <h3>Hospital Managers & Team Leads</h3>
+              <p>Operators who need clear ideas around communication, culture, systems, and everyday execution.</p>
+              <div className="practice-mgmt-tags">
+                <span className="tag-pill">Operations</span>
+                <span className="tag-pill">Culture</span>
+                <span className="tag-pill">Systems</span>
+              </div>
+            </ParallaxCard>
+            <ParallaxCard as="article" className="card practice-mgmt-card" tiltDepth={6}>
+              <div className="practice-mgmt-icon">{pillarIcons["trending-up"]}</div>
+              <h3>Marketing & Client-Experience Teams</h3>
+              <p>Teams working on trust, visibility, messaging, and how the practice shows up online and in person.</p>
+              <div className="practice-mgmt-tags">
+                <span className="tag-pill">Marketing</span>
+                <span className="tag-pill">Visibility</span>
+                <span className="tag-pill">CX</span>
+              </div>
+            </ParallaxCard>
+          </div>
+        </div>
+      </section>
+
+      {/* ── VetTech Dark Glassmorphic Cards ── */}
+      <section className="section section-dark section-vettech">
+        <div className="container">
+          <div className="section-heading section-heading-centered">
+            <span className="eyebrow text-accent">Inside the Community</span>
+            <h2 style={{ color: "rgba(255,255,255,0.95)" }}>
+              Everything the VBI community keeps in one connected flow.
+            </h2>
+          </div>
+          <div className="vettech-grid">
+            <article className="vettech-card">
+              <div className="vettech-icon">{pillarIcons.monitor}</div>
+              <h3>Podcast Stream</h3>
+              <p>New episodes and the full archive, always one click away from the community hub.</p>
+            </article>
+            <article className="vettech-card">
+              <div className="vettech-icon">{pillarIcons["bar-chart"]}</div>
+              <h3>Event Panels</h3>
+              <p>Replay-ready panels on leadership, operations, marketing, and client experience.</p>
+            </article>
+            <article className="vettech-card">
+              <div className="vettech-icon">{pillarIcons.target}</div>
+              <h3>Webinar Replays</h3>
+              <p>Deeper educational sessions you can return to whenever the practice needs them.</p>
+            </article>
+            <article className="vettech-card">
+              <div className="vettech-icon">{pillarIcons.shield}</div>
+              <h3>Direct Connection</h3>
+              <p>A softer line into the VBI team for collaboration, questions, and next steps.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Reverse Marquee ── */}
+      <div className="reverse-marquee-band">
+        <div className="reverse-marquee-track">
+          {[...reverseMarqueeItems, ...reverseMarqueeItems].map((item, i) => (
+            <span key={i} className="reverse-marquee-item">
+              {item}
+              <span className="reverse-marquee-dot" />
             </span>
           ))}
         </div>
-      </section>
+      </div>
 
-      <section className="section section-muted" id="join-hub">
-        <div className={`container ${styles.topJoinGrid}`}>
-          <CommunityJoinForm
-            email={contactEmail}
-            title="Join the VBI community flow"
-            description="Start here if you want ongoing access to the strongest VBI conversations, replay-ready education, and future member-style updates."
-            buttonLabel="Join the Hub"
-            note="Instant access is currently handled through the VBI team. No payment step. No generic funnel."
-          />
-
-          <article className={`card ${styles.topJoinSupport}`}>
-            <span className="eyebrow text-accent">Why Join Now</span>
-            <h2>Use one entry point instead of asking visitors to assemble the platform themselves.</h2>
-            <ul className="check-list">
-              <li>Follow new episodes, panels, and replays from one route.</li>
-              <li>Give your team a clear page to bookmark and revisit.</li>
-              <li>Make it easier to move from content into direct conversation.</li>
-              <li>Build a stronger VBI relationship before a bigger marketing or strategy decision.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <div className="section-heading">
-            <span className="eyebrow text-accent">Featured Streams</span>
-            <h2>The hub should make the freshest VBI content impossible to miss.</h2>
-            <p>
-              The reference page works because it gives visitors obvious current entry points.
-              This version does the same with the strongest podcast, panel, and replay paths in
-              the VBI ecosystem.
+      {/* ── Final CTA ── */}
+      <section className="section section-final-cta">
+        <div className="ghost-text ghost-text-cta" aria-hidden="true">JOIN</div>
+        <div className="container final-cta-inner">
+          <div className="final-cta-copy">
+            <span className="eyebrow text-accent">Ready to Grow?</span>
+            <h2 className="final-cta-heading">
+              Create Your VBI<br />
+              Connection <em>Point.</em>
+            </h2>
+            <p className="final-cta-sub">
+              Book your free 30-minute strategy session. We&apos;ll map out how the VBI community,
+              podcasts, and panels can support your practice &mdash; and show you the clearest next
+              steps for stronger growth, at no charge.
             </p>
           </div>
-          <div className={styles.streamGrid}>
-            {streamCards.map((item) => (
-              <a className={`card ${styles.streamCard}`} href={item.href} key={item.title} target="_blank" rel="noreferrer">
-                <img alt={item.title} className={styles.streamImage} src={item.image} />
-                <div className={styles.streamBody}>
-                  <span className="card-label">{item.label}</span>
-                  <p className={styles.streamMeta}>{item.meta}</p>
-                  <h3>{item.title}</h3>
-                  <p>{item.body}</p>
-                  <span className={styles.streamCta}>{item.cta} →</span>
-                </div>
-              </a>
-            ))}
+          <div className="final-cta-buttons">
+            <AttractButton href="/consultation">
+              Book Free Strategy Call
+            </AttractButton>
+            <Link className="button button-secondary button-dark" href="/contact">
+              Contact the Team
+            </Link>
           </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <div className="section-heading">
-            <span className="eyebrow text-accent">What You Get</span>
-            <h2>A member-style hub without the scattered experience.</h2>
-            <p>
-              The goal is not to add noise. It is to make the strongest VBI ideas easier to find,
-              easier to revisit, and easier to share across the people shaping the practice.
-            </p>
-          </div>
-          <div className="grid-three">
-            {communityBenefits.map((item) => (
-              <article className="card" key={item.title}>
-                <h3>{item.title}</h3>
-                <p>{item.body}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section section-muted">
-        <div className="container split-grid">
-          <div className="section-copy">
-            <span className="eyebrow text-accent">Who It Serves</span>
-            <h2>The hub is for veterinary people who think beyond the next task.</h2>
-            <p>
-              This page should feel relevant to owners, managers, and team leaders who see the
-              practice as a business that needs stronger systems, clearer leadership, and better
-              long-term visibility.
-            </p>
-            <p>
-              It is not a random social feed. It is a structured access point into the VBI content
-              system and the conversations around it.
-            </p>
-          </div>
-
-          <div className="grid-two">
-            {communityAudience.map((item) => (
-              <article className="card route-card" key={item.title}>
-                <span className="card-label">Audience</span>
-                <h3>{item.title}</h3>
-                <p>{item.body}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <div className="section-heading">
-            <span className="eyebrow text-accent">How It Works</span>
-            <h2>Three simple moves keep the community useful.</h2>
-          </div>
-          <div className="step-grid">
-            {communitySteps.map((item) => (
-              <article className="card step-card" key={item.index}>
-                <span className="step-index">{item.index}</span>
-                <h3>{item.title}</h3>
-                <p>{item.body}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section section-muted">
-        <div className={`container ${styles.hostGrid}`}>
-          <article className={`card ${styles.hostCard}`}>
-            <div className={styles.hostHeader}>
-              <img alt={featuredHost.name} className={styles.hostImage} src={featuredHost.image} />
-              <div>
-                <span className="eyebrow text-accent">Lead Voice</span>
-                <h2>{featuredHost.name}</h2>
-                <p className={styles.hostRole}>{featuredHost.role}</p>
-              </div>
-            </div>
-            <p className={styles.hostBody}>{featuredHost.body}</p>
-            <p className={styles.hostBody}>
-              Each episode, panel, and replay works better when the hub reminds visitors who is
-              leading the conversation and why the platform exists in the first place.
-            </p>
-            <div className={styles.socialRow}>
-              {socialLinks.map((item) => (
-                <a href={item.href} key={item.label} target="_blank" rel="noreferrer">
-                  {item.label}
-                </a>
-              ))}
-            </div>
-          </article>
-
-          <article className={`card ${styles.platformCard}`}>
-            <span className="eyebrow text-accent">Listen Anywhere</span>
-            <h2>Keep the podcast reachable from the hub.</h2>
-            <p>
-              One of the missing reference details was distribution context. The hub should make
-              the main listening platforms visible instead of assuming visitors will search for
-              them on their own.
-            </p>
-            <div className={styles.platformList}>
-              {listeningPlatforms.map((item) => (
-                <a className={styles.platformItem} href={item.href} key={item.label} target="_blank" rel="noreferrer">
-                  <strong>{item.label}</strong>
-                  <span>Open the VBI podcast feed</span>
-                </a>
-              ))}
-            </div>
-            <div className="button-row">
-              <Link className="button button-secondary" href="/podcast">
-                All Episodes
-              </Link>
-              <Link className="button button-primary" href="/guest-speaker">
-                Be a Guest
-              </Link>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section className="section section-dark">
-        <div className={`container ${styles.joinGrid}`}>
-          <article className={`card card-dark ${styles.joinCard}`}>
-            <span className="eyebrow text-accent">A Message from VBI</span>
-            <h2>Stay close to the conversations shaping veterinary growth.</h2>
-            <p>
-              Hub access currently routes through the VBI team. If you want to stay connected to
-              new podcast episodes, panel releases, webinar replays, and future member-style
-              updates, this is the cleanest place to raise your hand.
-            </p>
-
-            <div className={styles.joinList}>
-              <div className={styles.joinItem}>
-                <strong>Who should join</strong>
-                <span>Owners, managers, marketers, speakers, and veterinary professionals building stronger businesses.</span>
-              </div>
-              <div className={styles.joinItem}>
-                <strong>What to expect</strong>
-                <span>Recurring updates, better discovery across the platform, and clearer paths into the right content.</span>
-              </div>
-              <div className={styles.joinItem}>
-                <strong>How to start</strong>
-                <span>Contact the team directly or begin with the podcast and panel archive while the fuller member flow expands.</span>
-              </div>
-            </div>
-
-            <div className="button-row">
-              <Link className="button button-primary" href="/contact">
-                Request Access
-              </Link>
-              <a className="button button-secondary button-dark" href={contactDetails[2].href}>
-                Email the Team
-              </a>
-            </div>
-          </article>
-
-          <aside className={`card ${styles.founderCard}`}>
-            <div className={styles.founderHeader}>
-              <img src={featuredHost.image} alt={featuredHost.name} className={styles.founderImage} />
-              <div>
-                <span className="card-label">Lead Voice</span>
-                <h3>{featuredHost.name}</h3>
-                <p className={styles.founderRole}>{featuredHost.role}</p>
-              </div>
-            </div>
-            <p className={styles.founderQuote}>
-              The strongest veterinary businesses do not grow from isolated tactics. They grow when
-              leadership, team culture, marketing, operations, and client experience start moving in
-              the same direction.
-            </p>
-            <p>
-              The community hub gives VBI a place to keep those ideas circulating between episodes,
-              replays, and the next practical decision inside the practice.
-            </p>
-          </aside>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <div className="section-heading">
-            <span className="eyebrow text-accent">Practice-Ready Routes</span>
-            <h2>Add the practical detail layer the reference page uses so the hub feels complete.</h2>
-            <p>
-              The community page should not end at inspiration. These routes give visitors a more
-              concrete way to continue based on what they need next.
-            </p>
-          </div>
-          <div className="grid-two">
-            {hubRoutes.map((item) => (
-              <article className={`card route-card ${styles.routeCard}`} key={item.title}>
-                <span className="card-label">{item.label}</span>
-                <h3>{item.title}</h3>
-                <p>{item.body}</p>
-                <Link className={styles.routeLink} href={item.href}>
-                  {item.cta} →
-                </Link>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className={`container ${styles.followSection}`}>
-          <div className="section-heading">
-            <span className="eyebrow text-accent">Stay Connected</span>
-            <h2>Follow VBI everywhere the conversation keeps moving.</h2>
-            <p>
-              Social is useful when it supports the main platform. Use these channels to stay aware
-              of new releases, event reminders, and the next place VBI is showing up.
-            </p>
-          </div>
-
-          <div className={styles.followGrid}>
-            {socialLinks.map((item) => (
-              <a className={`card ${styles.followCard}`} href={item.href} key={item.label} target="_blank" rel="noreferrer">
-                <span className="card-label">Follow</span>
-                <h3>{item.label}</h3>
-                <p>Keep VBI in view through {item.label} updates, new content drops, and recurring business signals.</p>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section section-muted">
-        <div className={`container ${styles.bottomJoinGrid}`}>
-          <div className={styles.bottomJoinCopy}>
-            <span className="eyebrow text-accent">Free Community Access</span>
-            <h2>Create your VBI connection point.</h2>
-            <p>
-              Use this second signup block the way the reference page does: as the final invitation
-              for visitors who made it all the way through and now want a clean next step.
-            </p>
-            <div className="cta-actions">
-              <Link className="button button-secondary" href="/podcast">
-                Explore Podcast
-              </Link>
-              <Link className="button button-secondary" href="/events">
-                Explore Panels
-              </Link>
-              <Link className="button button-secondary" href="/webinars">
-                Explore Replays
-              </Link>
-              <Link className="button button-primary" href="/contact">
-                Contact VBI
-              </Link>
-            </div>
-          </div>
-
-          <CommunityJoinForm
-            email={contactEmail}
-            title="Create your free VBI hub request"
-            description="If the page convinced you, use this final form to request access, updates, and future community-style communication from the team."
-            buttonLabel="Request Free Access"
-            note="This routes directly to the VBI team so the conversation can start with real context instead of a cold generic signup."
-            dark
-          />
         </div>
       </section>
     </>

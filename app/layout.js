@@ -89,8 +89,14 @@ export default function RootLayout({ children }) {
   const gaId = "G-XXXXXXXXXX"; 
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Apply saved theme before first paint to avoid flash */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('vbi-theme');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();`,
+          }}
+        />
         {/* Replace GTM-XXXXXXX with your actual Google Tag Manager ID */}
         <script
           dangerouslySetInnerHTML={{
