@@ -577,6 +577,58 @@
   gap: 16px;
 }
 
+/* ============================================================
+   DARK MODE — restore contrast for community form when used on
+   pages that render against a dark page background (e.g. /webinars/registration).
+   The form card itself has a near-white surface; in dark mode the
+   --forest-* vars get remapped to light, which makes white-on-white text.
+   Force readable colors here.
+   ============================================================ */
+:global(html[data-theme="dark"]) .formShell {
+  background:
+    radial-gradient(circle at top left, rgba(126, 217, 163, 0.18), transparent 34%),
+    rgba(20, 38, 34, 0.92);
+  border-color: rgba(199, 226, 207, 0.14);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+:global(html[data-theme="dark"]) .formShell .formIntro h3,
+:global(html[data-theme="dark"]) .formShell .formIntro p,
+:global(html[data-theme="dark"]) .formShell .formNote {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+:global(html[data-theme="dark"]) .formShell .formField span {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+:global(html[data-theme="dark"]) .formShell .formField input,
+:global(html[data-theme="dark"]) .formShell .formField select {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(199, 226, 207, 0.18);
+  color: #f1f7f3;
+}
+
+:global(html[data-theme="dark"]) .formShell .formField input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+:global(html[data-theme="dark"]) .formShell .formField select option {
+  background: #14241f;
+  color: #f1f7f3;
+}
+
+:global(html[data-theme="dark"]) .formShell .formField input:focus,
+:global(html[data-theme="dark"]) .formShell .formField select:focus {
+  border-color: rgba(126, 217, 163, 0.55);
+  box-shadow: 0 0 0 4px rgba(126, 217, 163, 0.16);
+}
+
+:global(html[data-theme="dark"]) .formShell .formSuccess {
+  background: rgba(126, 217, 163, 0.12);
+  color: rgba(255, 255, 255, 0.9);
+}
+
 @keyframes tapeSlide {
   from {
     transform: translateX(0);

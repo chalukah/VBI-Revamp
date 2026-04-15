@@ -37,7 +37,7 @@ export default function WebinarRegistrationPage() {
                invitation so you do not miss the live conversation.
              </p>
 
-             <div className="note-card" style={{ marginTop: "2rem", padding: "1.5rem", borderLeft: "4px solid var(--accent)", backgroundColor: "var(--background-muted)" }}>
+             <div className="note-card" style={{ marginTop: "2rem", padding: "1.5rem", borderLeft: "4px solid var(--teal-500)", backgroundColor: "var(--sand-100)" }}>
                <h4>Cannot make it live?</h4>
                <p style={{ marginTop: "0.5rem", fontSize: "0.95rem" }}>
                  Register anyway. All registrants will automatically be sent a link 
